@@ -1,0 +1,18 @@
+# System
+.idea
+.vscode
+.history
+
+# Build
+build/
+server/
+configure/
+storybook-static/
+styles/styles.css
+CHANGELOG.md
+CONTRIBUTING.md
+/coverage
+/widget
+
+# npm files
+package.json

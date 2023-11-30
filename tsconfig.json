@@ -1,0 +1,16 @@
+{
+  "extends": "@gravity-ui/tsconfig/tsconfig",
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "build/esm",
+    "module": "esnext",
+    "jsx": "react",
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "paths": {
+      "widget": ["../widget"]
+    }
+  },
+
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}

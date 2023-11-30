@@ -1,0 +1,56 @@
+{
+    "extends": [
+        "@gravity-ui/eslint-config",
+        "@gravity-ui/eslint-config/client",
+        "@gravity-ui/eslint-config/prettier"
+    ],
+    "root": true,
+    "env": {
+        "node": true,
+        "jest": true
+    },
+    "plugins": [
+        "no-not-accumulator-reassign"
+    ],
+    "rules": {
+        "no-not-accumulator-reassign/no-not-accumulator-reassign": [
+            "warn",
+            [
+                "reduce"
+            ],
+            {
+                "props": true
+            }
+        ]
+    },
+    "overrides": [
+        {
+            "files": [
+                "src/**/*.tsx"
+            ],
+            "rules": {
+                "react/jsx-fragments": [
+                    "error",
+                    "element"
+                ]
+            }
+        },
+        {
+            "files": [
+                "**/__tests__/**/*.[jt]s?(x)",
+                "**/?(*.)+(spec|test).[jt]s?(x)"
+            ],
+            "extends": [
+                "plugin:testing-library/react"
+            ]
+        },
+        {
+            "files": [
+                "**/__stories__/**/*.[jt]s?(x)"
+            ],
+            "rules": {
+                "no-console": "off"
+            }
+        }
+    ]
+}
