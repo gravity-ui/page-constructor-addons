@@ -9,11 +9,9 @@ node_modules
 # Generated content
 /build
 /storybook-static
-/server
 /configure
 /styles/**/*.css
 /coverage
-/widget
 
 *.tgz
 .env

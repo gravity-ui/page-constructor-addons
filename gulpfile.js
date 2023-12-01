@@ -29,9 +29,7 @@ function compileTs(modules = false) {
         '!src/stories/**/*',
         '!src/**/__stories__/**/*',
         '!src/**/__tests__/**/*',
-        '!src/server.ts',
         '!src/configure.ts',
-        '!src/widget/**/*',
         '!test-utils/**/*',
     ])
         .pipe(
