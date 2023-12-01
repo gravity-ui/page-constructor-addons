@@ -1,15 +1,11 @@
-import React, {Fragment, useEffect} from 'react';
-import {useTheme} from '../../../src/context/theme';
-import {UIKIT_ROOT_CLASS} from '../../../src/constants';
+import React, {useEffect, useState} from 'react';
+import {StoryFn, StoryContext} from '@storybook/react';
+import {UIKIT_ROOT_CLASS} from '../../src/constants';
 import {Theme} from '@gravity-ui/page-constructor';
 
-export interface GlobalThemeControllerProps {
-    children?: React.ReactNode;
-}
-
-export const GlobalThemeController = ({children}: GlobalThemeControllerProps) => {
-    const theme = useTheme();
-    const [prevTheme, setPrevTheme] = React.useState(theme);
+export const withTheme = (Story: StoryFn, context: StoryContext) => {
+    const [prevTheme, setPrevTheme] = React.useState(context.globals.theme);
+    const theme = context.globals.theme;
 
     const updateBodyClassName = (newTheme: Theme) => {
         const bodyEl = document.body;
@@ -40,5 +36,5 @@ export const GlobalThemeController = ({children}: GlobalThemeControllerProps) =>
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    return <Fragment>{children}</Fragment>;
+    return <Story {...context} />;
 };

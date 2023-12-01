@@ -1,8 +1,11 @@
 import React from 'react';
 
-import {Theme} from '@gravity-ui/page-constructor';
-
 import {DEFAULT_THEME} from '../../constants';
+
+export enum Theme {
+    Light = 'light',
+    Dark = 'dark',
+}
 
 export interface ThemeContextProps {
     theme: Theme;

@@ -1,17 +1,18 @@
 import '../styles/storybook/index.scss';
 import '@gravity-ui/uikit/styles/styles.scss';
 import {MobileProvider, Platform} from '@gravity-ui/uikit';
+import {Theme} from '@gravity-ui/page-constructor';
 
 import React from 'react';
 import {MINIMAL_VIEWPORTS} from '@storybook/addon-viewport';
 import type {Decorator, Preview} from '@storybook/react';
 import {withMobile} from './decorators/withMobile';
 import {withLang} from './decorators/withLang';
+import {withTheme} from './decorators/withTheme';
 import {DocsDecorator} from './decorators/docs';
 import {themeLight} from './theme/light';
 
 import {configure, Lang} from '../src/utils/configure';
-import {GlobalThemeController} from './theme/utils/global-theme-controller';
 
 import '../styles/styles.scss';
 
@@ -20,17 +21,27 @@ configure({
 });
 
 const withContextProvider: Decorator = (Story, context) => {
+    const theme = context.globals.theme;
+
+    // to set theme in docs
+    context.parameters.backgrounds.default = theme;
+    context.globals.backgrounds = {
+        value: theme === Theme.Light ? 'white' : 'black',
+    };
+    context.globals.background = theme;
+
+    // TODO: to switch docs theme dynamically in the future
+    // context.parameters.docs.theme = theme === 'light' ? CommonTheme.light : CommonTheme.dark;
+
     return (
-        <GlobalThemeController>
-            <MobileProvider mobile={false} platform={Platform.BROWSER}>
-                <Story {...context} />
-            </MobileProvider>
-        </GlobalThemeController>
+        <MobileProvider mobile={false} platform={Platform.BROWSER}>
+            <Story {...context} />
+        </MobileProvider>
     );
 };
 
 const preview: Preview = {
-    decorators: [withLang, withMobile, withContextProvider],
+    decorators: [withLang, withMobile, withTheme, withContextProvider],
     parameters: {
         layout: 'fullscreen',
         docs: {

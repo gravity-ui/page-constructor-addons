@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {block} from '../../utils/cn';
+import i18n from '../i18n';
 
 import './DummyComponent.scss';
 
@@ -13,6 +14,6 @@ export interface DummyComponentProps {
 
 export const DummyComponent = ({text, qa}: DummyComponentProps) => (
     <div className={b()} data-qa={qa}>
-        {text}
+        {`${text} ${i18n('message')}`}
     </div>
 );
