@@ -66,8 +66,7 @@
     "test:watch": "jest --watchAll"
   },
   "dependencies": {
-    "@bem-react/classname": "^1.6.0",
-    "lodash": "^4.17.21"
+    "@bem-react/classname": "^1.6.0"
   },
   "peerDependencies": {
     "@gravity-ui/page-constructor": "^4.40.0",

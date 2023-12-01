@@ -1,13 +1,13 @@
-import React, { Fragment, useEffect } from 'react';
-import { useTheme } from '../../../src/context/theme';
-import { UIKIT_ROOT_CLASS } from '../../../src/constants'
-import { Theme } from '@gravity-ui/page-constructor';
+import React, {Fragment, useEffect} from 'react';
+import {useTheme} from '../../../src/context/theme';
+import {UIKIT_ROOT_CLASS} from '../../../src/constants';
+import {Theme} from '@gravity-ui/page-constructor';
 
 export interface GlobalThemeControllerProps {
     children?: React.ReactNode;
 }
 
-export const GlobalThemeController = ({ children }: GlobalThemeControllerProps) => {
+export const GlobalThemeController = ({children}: GlobalThemeControllerProps) => {
     const theme = useTheme();
     const [prevTheme, setPrevTheme] = React.useState(theme);
 
