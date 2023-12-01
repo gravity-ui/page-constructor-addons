@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Meta, StoryFn} from '@storybook/react';
 
-import DummyComponent, {DummyComponentProps} from '../DummyComponent';
+import {DummyComponent, DummyComponentProps} from '..';
 
 import data from './data.json';
 

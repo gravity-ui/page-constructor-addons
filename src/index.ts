@@ -1,1 +1,1 @@
-export const dummy = null;
+export {DummyComponent} from './components/DummyComponent';

@@ -2,7 +2,7 @@ import React from 'react';
 
 import {render, screen} from '@testing-library/react';
 
-import DummyComponent from '../DummyComponent';
+import {DummyComponent} from '..';
 
 const testId = 'dummy';
 

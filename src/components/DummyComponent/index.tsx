@@ -11,10 +11,8 @@ export interface DummyComponentProps {
     qa?: string;
 }
 
-const DummyComponent = ({text, qa}: DummyComponentProps) => (
+export const DummyComponent = ({text, qa}: DummyComponentProps) => (
     <div className={b()} data-qa={qa}>
         {text}
     </div>
 );
-
-export default DummyComponent;
