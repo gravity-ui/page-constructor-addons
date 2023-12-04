@@ -30,9 +30,6 @@ const withContextProvider: Decorator = (Story, context) => {
     };
     context.globals.background = theme;
 
-    // TODO: to switch docs theme dynamically in the future
-    // context.parameters.docs.theme = theme === 'light' ? CommonTheme.light : CommonTheme.dark;
-
     return (
         <MobileProvider mobile={false} platform={Platform.BROWSER}>
             <Story {...context} />
@@ -48,10 +45,6 @@ const preview: Preview = {
             theme: themeLight,
             container: DocsDecorator,
         },
-        // FIXME: Disabled due to performance reasons. See https://github.com/storybookjs/storybook/issues/5551
-        // actions: {
-        //     argTypesRegex: '^on.*',
-        // },
         jsx: {showFunctions: true}, // to show function in sources
         viewport: {
             viewports: MINIMAL_VIEWPORTS,

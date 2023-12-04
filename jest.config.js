@@ -8,9 +8,7 @@ module.exports = {
     transformIgnorePatterns: ['node_modules/(?!(@gravity-ui|react-github-btn|tinygesture)/)'],
     coverageDirectory: './coverage',
     collectCoverageFrom: [
-        'src/blocks/**/*.{ts,tsx,js,jsx}',
         'src/components/**/*.{ts,tsx,js,jsx}',
-        'src/containers/**/*.{ts,tsx,js,jsx}',
         '!**/__stories__/**/*',
         '!**/*/*.stories.{ts,tsx}',
     ],

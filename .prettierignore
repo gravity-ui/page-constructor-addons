@@ -1,16 +1,4 @@
-# System
-.idea
-.vscode
-.history
-
-# Build
-build/
-configure/
-storybook-static/
-styles/styles.css
+storybook-static
+build
 CHANGELOG.md
 CONTRIBUTING.md
-/coverage
-
-# npm files
-package.json

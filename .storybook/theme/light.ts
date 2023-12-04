@@ -18,7 +18,6 @@ export const themeLight = create({
     // Toolbar default and active colors
     barTextColor: 'silver',
     barSelectedColor: '#027bf3',
-    // barBg: '#027bf3',
 
     // Form colors
     inputBg: 'white',
