@@ -1,0 +1,149 @@
+{
+  "name": "@gravity-ui/page-constructor-addons",
+  "version": "4.40.2",
+  "description": "Components and plugins for @gravity-ui/page-constructor",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gravity-ui/page-constructor-addons"
+  },
+  "exports": {
+    ".": {
+      "types": "./build/esm/index.d.ts",
+      "require": "./build/cjs/index.js",
+      "import": "./build/esm/index.js"
+    },
+    "./navigation": {
+      "types": "./build/esm/navigation/index.d.ts",
+      "require": "./build/cjs/navigation/index.js",
+      "import": "./build/esm/navigation/index.js"
+    },
+    "./styles/*": "./styles/*"
+  },
+  "main": "./build/cjs/index.js",
+  "module": "./build/esm/index.js",
+  "types": "./build/esm/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "index.d.ts": [
+        "./build/esm/index.d.ts"
+      ],
+      "navigation": [
+        "./build/esm/navigation/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "build",
+    "styles"
+  ],
+  "sideEffects": [
+    "*.css",
+    "*.scss"
+  ],
+  "scripts": {
+    "deps:install": "npm ci",
+    "deps:truncate": "npm prune --production",
+    "lint:fix": "run-s lint:js:fix lint:styles:fix lint:prettier:fix typecheck",
+    "lint:js": "eslint '**/*.{js,jsx,ts,tsx}' --max-warnings=0",
+    "lint:js:fix": "eslint '**/*.{js,jsx,ts,tsx}' --max-warnings=0 --quiet --fix",
+    "lint:styles": "stylelint '{styles,src}/**/*.scss'",
+    "lint:styles:fix": "stylelint **/*.scss --fix",
+    "lint:prettier": "prettier --check '**/*.{js,jsx,ts,tsx,css,scss,json,yaml,yml,md}'",
+    "lint:prettier:fix": "prettier --write '**/*.{js,jsx,ts,tsx,css,scss,json,yaml,yml,md}'",
+    "lint": "run-p lint:js lint:styles lint:prettier typecheck",
+    "typecheck": "tsc --noEmit",
+    "dev": "npm run storybook:start",
+    "storybook:start": "sb dev -p 7009",
+    "storybook:build": "sb build -c .storybook -o storybook-static",
+    "start": "node dist",
+    "clean": "gulp clean",
+    "build": "gulp",
+    "prepublishOnly": "npm run lint && npm run build",
+    "prepare": "husky install",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watchAll"
+  },
+  "dependencies": {
+    "@bem-react/classname": "^1.6.0"
+  },
+  "peerDependencies": {
+    "@gravity-ui/page-constructor": "^4.40.0",
+    "@gravity-ui/uikit": "^5.12.0",
+    "react": "^16.0.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@gravity-ui/eslint-config": "^2.0.0",
+    "@gravity-ui/prettier-config": "^1.0.1",
+    "@gravity-ui/stylelint-config": "^1.0.0",
+    "@gravity-ui/tsconfig": "^1.0.0",
+    "@gravity-ui/uikit": "^5.12.2",
+    "@storybook/addon-actions": "^7.1.0",
+    "@storybook/addon-essentials": "^7.1.0",
+    "@storybook/addon-knobs": "^7.0.2",
+    "@storybook/addon-viewport": "^7.1.0",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^7.1.0",
+    "@storybook/react-webpack5": "^7.1.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.2.4",
+    "@types/lodash": "^4.14.176",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@types/webpack-env": "^1.18.1",
+    "es5-ext": "0.10.53",
+    "eslint": "^8.34.0",
+    "eslint-plugin-no-not-accumulator-reassign": "^0.1.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-testing-library": "^5.9.1",
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-replace": "^1.1.4",
+    "gulp-ts-alias": "^2.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "html-loader": "^1.3.2",
+    "htmlparser2": "^6.1.0",
+    "husky": "^7.0.4",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "jest-transform-css": "^6.0.0",
+    "lint-staged": "^11.2.6",
+    "move-file-cli": "^3.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.16",
+    "postcss-preset-env": "^9.0.0",
+    "postcss-scss": "^4.0.4",
+    "prettier": "2.4.1",
+    "react": "^18.2.0",
+    "react-docgen-typescript": "^2.2.2",
+    "react-dom": "^18.2.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.63.6",
+    "storybook": "^7.1.0",
+    "stylelint": "^14.11.0",
+    "ts-jest": "^29.0.3",
+    "tslib": "^2.4.0",
+    "typescript": "^4.9.4"
+  },
+  "lint-staged": {
+    "*.{css,scss}": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix --quiet",
+      "prettier --write"
+    ],
+    "*.{json,yaml,yml,md}": [
+      "prettier --write"
+    ]
+  }
+}
