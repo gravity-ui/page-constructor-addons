@@ -1,0 +1,24 @@
+@import 'mixins';
+
+.ServiceTag {
+    @include label();
+
+    border-radius: 4px;
+    text-transform: capitalize;
+
+    &_color_yellow {
+        background-color: var(--www-color-promo-highlight-gold);
+    }
+
+    &_color_green {
+        background-color: var(--www-color-promo-highlight-mint);
+    }
+
+    &_color_blue {
+        background-color: var(--www-color-promo-highlight-sky);
+    }
+
+    &_size_s {
+        @include label($size: s);
+    }
+}

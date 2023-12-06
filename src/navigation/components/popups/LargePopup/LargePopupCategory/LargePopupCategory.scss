@@ -1,0 +1,28 @@
+@import '../../../../../../styles/variables';
+@import '../../../../../../styles/mixins';
+
+.cloud-large-popup-category {
+    margin-bottom: calc($indentXXXS / 2);
+
+    &__button {
+        @include reset-button-style();
+        @include focusable(-2px);
+        padding: $indentXXXS $indentXXS;
+        width: 100%;
+        text-align: initial;
+        cursor: pointer;
+        border-radius: var(--g-border-radius-l);
+
+        &:hover {
+            background-color: var(--g-color-base-simple-hover);
+        }
+
+        &_active {
+            background-color: var(--g-color-base-selection);
+
+            &:hover {
+                background-color: var(--g-color-base-selection-hover);
+            }
+        }
+    }
+}

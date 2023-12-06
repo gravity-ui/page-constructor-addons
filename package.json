@@ -67,7 +67,9 @@
   },
   "dependencies": {
     "@bem-react/classname": "^1.6.0",
-    "@gravity-ui/icons": "^2.8.1"
+    "@gravity-ui/icons": "^2.8.1",
+    "lodash": "^4.17.21",
+    "react-transition-group": "^4.4.5"
   },
   "peerDependencies": {
     "@gravity-ui/page-constructor": "^4.40.0",

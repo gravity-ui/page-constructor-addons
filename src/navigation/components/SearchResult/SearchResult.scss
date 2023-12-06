@@ -1,0 +1,14 @@
+@import '../../../../styles/variables';
+
+$block: '.#{$ns}cloud-search-result';
+
+#{$block} {
+    &__title {
+        margin-bottom: $indentXXXS;
+        padding: $indentXXXS $indentXXS;
+    }
+
+    &__container {
+        padding: $indentXXXS $indentXXS;
+    }
+}

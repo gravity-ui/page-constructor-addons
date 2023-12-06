@@ -1,0 +1,24 @@
+@import '../../../../../styles/variables.scss';
+
+$block: '.#{$ns}navigation-popup';
+
+#{$block} {
+    width: calc(100% + ($indentM * 2));
+    margin: 0 -#{$indentM};
+    padding: $indentS $indentSM $indentSM $indentXXS;
+    border-radius: var(--pc-border-radius);
+    background: var(--g-color-base-float);
+    z-index: 10;
+
+    &:not(&_with-background) {
+        box-shadow: 0 4px 24px var(--g-color-base-generic), 0 2px 8px var(--g-color-base-generic);
+    }
+
+    &__grid-container {
+        padding: 0;
+    }
+
+    &:focus {
+        outline: 0; // to hide the outline when focustrap enabled
+    }
+}

@@ -1,0 +1,110 @@
+/* stylelint-disable declaration-no-important */
+
+@import 'variables';
+@import 'mixins';
+
+.suggest-item {
+    $block: &;
+
+    @include text-size(body-1);
+
+    padding: $indentXXS $indentS;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+
+    &__title,
+    &__description,
+    &__breadcrumbs > * {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__description {
+        margin-top: 4px;
+        color: var(--g-color-text-secondary);
+    }
+
+    &_type {
+        &_page {
+            padding-bottom: 9px;
+
+            #{$block} {
+                &__breadcrumbs {
+                    padding-top: 2px;
+                    color: var(--g-color-text-secondary);
+                }
+            }
+        }
+
+        &_service,
+        &_marketplace {
+            display: flex;
+            padding-top: 9px;
+            padding-bottom: 11px;
+
+            #{$block} {
+                &__logo {
+                    text-align: center;
+                    margin-right: $indentXS;
+                    padding: 3px 0 1px;
+                }
+
+                &__icon {
+                    width: 16px;
+                    height: var(--g-text-body-3-line-height);
+                }
+
+                &__text {
+                    min-width: 0;
+                }
+
+                &__title {
+                    padding: 3px 0 1px;
+                }
+            }
+        }
+
+        &_group {
+            padding: $indentXS $indentS 4px;
+
+            color: var(--www-text-content-color);
+        }
+
+        &_link {
+            display: flex;
+            align-items: baseline;
+
+            padding: 22px $indentS;
+            border-top: 1px solid var(--g-color-line-generic);
+
+            color: var(--g-color-text-link);
+        }
+
+        &_delimiter {
+            height: 1px;
+            padding: 0;
+
+            background-color: var(--g-color-line-generic);
+        }
+    }
+
+    em {
+        position: relative;
+        font-style: inherit;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            top: -3px;
+            bottom: -1px;
+            z-index: -1;
+
+            background-color: var(--g-color-base-selection);
+        }
+    }
+}

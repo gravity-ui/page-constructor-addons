@@ -1,0 +1,114 @@
+@import '../../../../../styles/variables.scss';
+@import '../../../../../styles/mixins.scss';
+
+$imageSizeM: 18px;
+$imageSizeXM: 16px;
+$imageSizeS: 14px;
+$containerIconSize: 20px;
+
+$block: '.#{$ns}navigation-popup-item';
+
+#{$block} {
+    @include text-size(body-2);
+
+    margin-bottom: 2px;
+
+    &__content {
+        @include islands-focus();
+        @include reset-link-style();
+        @include focusable(-2px);
+
+        display: flex;
+        border-radius: var(--g-border-radius-xl);
+        height: 100%;
+
+        &_padding {
+            &_default {
+                padding: $indentXXS;
+            }
+
+            &_s {
+                padding: calc($indentXXS / 2) $indentXXS;
+            }
+        }
+
+        &:hover,
+        &:active {
+            color: var(--g-color-base-brand);
+        }
+
+        &_hover {
+
+            &:hover,
+            &:active {
+                color: inherit;
+            }
+
+            &:hover {
+                background-color: var(--g-color-base-simple-hover);
+            }
+        }
+    }
+
+    &__icon {
+        color: var(--g-color-base-brand);
+
+        &-container {
+            position: absolute;
+            width: $containerIconSize;
+            height: $containerIconSize;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__container {
+        &_with-margin {
+            margin-left: calc(#{$indentS} + #{$indentXXXS});
+        }
+    }
+
+    &__description {
+        @include text-size(body-1);
+
+        display: block;
+        margin-top: 2px;
+        color: var(--g-color-text-secondary);
+    }
+
+    &__tag {
+        position: relative;
+        top: -2px;
+    }
+
+    &__image {
+        display: block;
+        position: relative;
+        top: 2px;
+
+        &_size {
+            &_m {
+                width: $imageSizeM;
+                height: $imageSizeM;
+            }
+
+            &_xm {
+                width: $imageSizeXM;
+                height: $imageSizeXM;
+            }
+
+            &_s {
+                width: $imageSizeS;
+                height: $imageSizeS;
+            }
+        }
+
+        &-container {
+            display: flex;
+            justify-content: center;
+            min-width: $containerIconSize;
+            margin-right: $indentXXXS;
+        }
+    }
+}

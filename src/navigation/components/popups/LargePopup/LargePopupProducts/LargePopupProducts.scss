@@ -1,0 +1,26 @@
+@import '../../../../../../styles/variables';
+
+$titlePadding: 15px;
+$paddingTop: 14px;
+
+$block: '.#{$ns}cloud-large-popup-products';
+
+#{$block} {
+    width: calc(100% + $indentXXS);
+    margin-top: $indentM;
+    margin-left: -$indentXXS;
+    padding-top: $paddingTop;
+    padding-bottom: $indentXS;
+    border-radius: var(--g-border-radius-xl);
+    background-color: var(--g-color-base-generic-ultralight);
+
+    &__title {
+        margin: 0 0 $titlePadding $indentXS;
+    }
+
+    &__items {
+        &.row.row {
+            margin-left: calc($indentXXXS / -2);
+        }
+    }
+}

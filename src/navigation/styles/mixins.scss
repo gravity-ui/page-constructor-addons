@@ -1,0 +1,28 @@
+@mixin cloudNavigationIconHover() {
+    color: var(--g-color-text-complementary);
+}
+
+@mixin popupStyles($borderRadius) {
+    --yc-popup-border-width: 0;
+    --yc-popup-border-color: none;
+
+    border-radius: $borderRadius;
+    box-shadow: 0 3px 10px var(--g-color-base-generic-hover);
+}
+
+@mixin resetHoverButton($block) {
+    &:hover {
+        &:before {
+            background: none;
+        }
+
+        #{$block}__icon {
+            @include cloudNavigationIconHover;
+        }
+    }
+}
+
+@mixin navigation-overflow-popup($indent) {
+    max-height: calc(100vh - var(--header-height) - $indent);
+    overflow: auto;
+}

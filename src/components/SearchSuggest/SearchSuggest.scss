@@ -1,0 +1,19 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+$block: '.#{$ns}SearchSuggest';
+
+#{$block} {
+    &__clear-button {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translate(0, -50%);
+        z-index: 2;
+        color: var(--g-color-text-hint);
+
+        &_isMobileTabletOnly {
+            @include mobile-tablet-only();
+        }
+    }
+}
