@@ -11,7 +11,9 @@ export default {
     title: 'Components/Navigation',
 } as Meta;
 
-const DefaultTemplate: StoryFn<HeaderProps> = (args) => <Header {...args} />;
+const DefaultTemplate: StoryFn<HeaderProps> = (args, context) => (
+    <Header {...args} isMobile={context.globals.platform === 'mobile'} />
+);
 
 export const Default = DefaultTemplate.bind({});
 

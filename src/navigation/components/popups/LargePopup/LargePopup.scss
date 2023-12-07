@@ -33,7 +33,7 @@ $block: '.#{$ns}cloud-large-popup';
 
     &__title {
         margin-bottom: $indentXXXS;
-        padding: $navigationPopupPadding $indentXXS;
+        padding: var(--pc-addons-navigation-popup-padding) $indentXXS;
     }
 
     &__left {

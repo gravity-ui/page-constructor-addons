@@ -33,7 +33,7 @@ $block: '.#{$ns}cloud-search';
         }
 
         .yc-text-input__control {
-            padding: 0 0 0 $searchInputIndent;
+            padding: 0 0 0 var(--pc-addons-navigation-search-input-indent);
             cursor: pointer;
         }
 

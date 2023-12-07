@@ -12,7 +12,7 @@ $block: '.#{$ns}cloud-medium-popup-with-categories';
 
     &__title {
         margin-bottom: $indentXXXS;
-        padding: $navigationPopupPadding $indentS;
+        padding: var(--pc-addons-navigation-popup-padding) $indentS;
     }
 
     &__items {

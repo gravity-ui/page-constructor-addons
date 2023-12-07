@@ -18,7 +18,7 @@ const b = block('cloud-mobile-navigation');
 
 interface MobileNavigationProps {
     isOpened: boolean;
-    handleClick: (isOpened: boolean) => void;
+    toogleOpen: (isOpened: boolean) => void;
     isSearchOpen: boolean;
     data: NavigationItemModel[];
     onMenuScroll: (scrollTop: number) => void;
@@ -29,7 +29,7 @@ interface MobileNavigationProps {
 
 export const MobileNavigation: React.FC<MobileNavigationProps> = ({
     isOpened,
-    handleClick,
+    toogleOpen,
     isSearchOpen,
     data,
     buttons,
@@ -44,13 +44,16 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
                 view="flat"
                 size="l"
                 className={b('icon', {hidden: isSearchOpen})}
-                onClick={() => handleClick(true)}
+                onClick={(e: React.MouseEvent) => {
+                    e.stopPropagation();
+                    toogleOpen(!isOpened);
+                }}
             >
                 <Icon data={icon} size={MOBILE_ICON_SIZE} />
             </Button>
             <MobileNavigationPopup
                 isOpened={isOpened}
-                onClose={() => handleClick(false)}
+                onClose={() => toogleOpen(false)}
                 onMenuScroll={onMenuScroll}
             >
                 <nav>

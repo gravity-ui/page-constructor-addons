@@ -1,3 +1,12 @@
+@mixin navigation-link () {
+    @include reset-link-style();
+
+    outline: none;
+    color: var(--g-color-text-link);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 @mixin cloudNavigationIconHover() {
     color: var(--g-color-text-complementary);
 }
@@ -23,7 +32,7 @@
 }
 
 @mixin navigation-overflow-popup($indent) {
-    max-height: calc(100vh - var(--header-height) - $indent);
+    max-height: calc(100vh - var(--pc-addons-navigation-header-height) - $indent);
     overflow: auto;
 }
 

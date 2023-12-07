@@ -1,2 +1,6 @@
-$navigationPopupPadding: 7px;
-$searchInputIndent: 10px;
+:root {
+    --pc-addons-navigation-header-height: 64px;
+    --pc-addons-navigation-search-input-indent: 10px;
+    --pc-addons-navigation-popup-padding: 7px;
+    --pc-addons-navigation-popup-z-index: 99;
+}

@@ -1,5 +1,6 @@
 @import '../../../../../styles/mixins.scss';
 @import '../../../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
 
 $block: '.#{$ns}cloud-mobile-navigation-item';
 
@@ -12,6 +13,8 @@ $block: '.#{$ns}cloud-mobile-navigation-item';
     padding: $indentXXS 0;
 
     &_type_link {
+        @include reset-link-style();
+
         display: block;
         color: var(--g-color-text-primary);
     }
@@ -58,6 +61,8 @@ $block: '.#{$ns}cloud-mobile-navigation-item';
         }
 
         &-link {
+            @include navigation-link();
+
             display: block;
             padding: calc($indentS / 2) 0;
         }

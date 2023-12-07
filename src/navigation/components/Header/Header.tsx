@@ -245,7 +245,7 @@ export const Header: React.FC<HeaderProps> = ({
                     )} */}
                                     {mobileNavigationConfig ? (
                                         <MobileNavigation
-                                            handleClick={toggleMobileNavigationPopup}
+                                            toogleOpen={toggleMobileNavigationPopup}
                                             isOpened={isMobileNavigationOpen}
                                             isSearchOpen={isSearchMode}
                                             data={mobileNavigationConfig}

@@ -1,7 +1,8 @@
 @import '../../../../../styles/mixins.scss';
 @import '../../../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
 
-$block: '.#{$ns}cloud-mobile-navigation';
+$block: '.#{$ns}cloud-mobile-navigation-popup';
 
 #{$block} {
     $block: &;
@@ -9,9 +10,9 @@ $block: '.#{$ns}cloud-mobile-navigation';
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 99;
+    z-index: var(--pc-addons-navigation-popup-z-index);
     //TODO: remove $indentXS from padding-top after redesign header-block CLOUDFRONT-14848
-    padding: calc(var(--header-height) - $indentXS) 0 $indentM;
+    padding: calc(var(--pc-addons-navigation-header-height) - $indentXS) 0 $indentM;
     background-color: var(--g-color-base-background);
     border-radius: 0 0 var(--pc-border-radius) var(--pc-border-radius);
     box-shadow: 0 3px 10px var(--g-color-base-generic);

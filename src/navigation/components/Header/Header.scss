@@ -14,12 +14,15 @@ $block: '.#{$ns}cloud-header';
     --g-color-scroll-handle: var(--g-color-base-generic);
     --g-color-scroll-handle-hover: var(--g-color-line-generic);
 
-    $block: &;
+    position: fixed;
+    width: 100%;
     max-width: min(calc(100% - ($indentXS * 2)), calc($newContentWidth + ($indentM * 2)));
     margin: 0 auto;
     padding: $indentXXS $indentM 0 $indentM;
     background: var(--pc-transparent);
     border-radius: var(--pc-border-radius);
+
+    z-index: calc(var(--pc-addons-navigation-popup-z-index) + 1);
 
     &_with-background {
         background: var(--g-color-base-background);
