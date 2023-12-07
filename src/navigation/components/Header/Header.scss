@@ -14,7 +14,7 @@ $block: '.#{$ns}cloud-header';
     --g-color-scroll-handle: var(--g-color-base-generic);
     --g-color-scroll-handle-hover: var(--g-color-line-generic);
 
-    position: fixed;
+    position: relative;
     width: 100%;
     max-width: min(calc(100% - ($indentXS * 2)), calc($newContentWidth + ($indentM * 2)));
     margin: 0 auto;
