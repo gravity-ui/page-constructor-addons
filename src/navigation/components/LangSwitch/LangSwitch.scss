@@ -1,9 +1,10 @@
-@import '../../../../styles/variables';
 @import '../../../../styles/mixins';
+@import '../../../../styles/variables';
+@import '../../styles/mixins.scss';
 
-.cloud-lang-switch {
-    $block: &;
+$block: '.#{$ns}cloud-lang-switch';
 
+#{$block} {
     @include resetHoverButton($block);
 
     margin-left: 1px;

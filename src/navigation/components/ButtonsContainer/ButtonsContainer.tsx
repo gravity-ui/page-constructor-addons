@@ -3,8 +3,9 @@ import React from 'react';
 import type {ButtonProps} from '@gravity-ui/page-constructor';
 import {Button as PCButton} from '@gravity-ui/page-constructor';
 import type {ButtonWidth} from '@gravity-ui/uikit';
-import block from 'bem-cn-lite';
-import EnterConsoleLink from 'components/EnterConsoleLink/EnterConsoleLink';
+// import EnterConsoleLink from 'components/EnterConsoleLink/EnterConsoleLink';
+
+import {block} from '../../../utils/cn';
 
 import './ButtonsContainer.scss';
 
@@ -35,7 +36,8 @@ export const ButtonsContainer: React.FC<ButtonsContainerProps> = ({
             <PCButton {...button} size="l" className={b('item')} key={button.text} width={width} />
         ))}
         {hasActionButton && (
-            <EnterConsoleLink context="header" size="l" className={b('item')} width={width} />
+            <button>EXTRA ACTION</button>
+            // <EnterConsoleLink context="header" size="l" className={b('item')} width={width} />
         )}
     </div>
 );

@@ -1,8 +1,9 @@
 @import '../../../../../styles/variables';
 @import '../../../../../styles/mixins';
 
-.cloud-lang-switch-popup {
-    $block: &;
+$block: '.#{$ns}cloud-lang-switch-popup';
+
+#{$block} {
     overflow: hidden;
     margin: calc(-1 * var(--yc-popover-padding));
 

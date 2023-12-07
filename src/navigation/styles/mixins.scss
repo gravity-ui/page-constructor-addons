@@ -26,3 +26,7 @@
     max-height: calc(100vh - var(--header-height) - $indent);
     overflow: auto;
 }
+
+@mixin cloudNavigationIconHover() {
+    color: var(--g-color-text-complementary);
+}

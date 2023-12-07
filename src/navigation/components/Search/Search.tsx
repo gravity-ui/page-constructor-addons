@@ -1,10 +1,10 @@
 import React, {useCallback, useContext, useState} from 'react';
 
-import {Magnifier, Xmark} from '@gravity-ui/icons';
+import {Magnifier} from '@gravity-ui/icons';
 import {OutsideClick} from '@gravity-ui/page-constructor';
 import {Button, Icon, useUniqId} from '@gravity-ui/uikit';
 
-import SearchSuggest from '../../../components/SearchSuggest/SearchSuggest';
+// import SearchSuggest from '../../../components/SearchSuggest/SearchSuggest';
 import {block} from '../../../utils/cn';
 import {MobileContext} from '../../contexts/mobile';
 import {getIconSize} from '../../utils';
@@ -32,19 +32,19 @@ export const Search: React.FC<SearchProps> = ({
     const iconSize = getIconSize(isMobile);
     const [query, setQuery] = useState('');
 
-    const getQuery = useCallback((value: string) => {
-        setQuery(value);
-    }, []);
+    // const getQuery = useCallback((value: string) => {
+    //     setQuery(value);
+    // }, []);
 
     const handleClickOutside = useCallback(() => {
         closeSearch();
         setQuery('');
     }, [closeSearch]);
-    const onSuggestBlur = useCallback(() => {
-        if (!query) {
-            closeSearch();
-        }
-    }, [query, closeSearch]);
+    // const onSuggestBlur = useCallback(() => {
+    //     if (!query) {
+    //         closeSearch();
+    //     }
+    // }, [query, closeSearch]);
 
     const searchTextId = useUniqId();
 
@@ -55,7 +55,7 @@ export const Search: React.FC<SearchProps> = ({
             })}
             onOutsideClick={handleClickOutside}
         >
-            <SearchSuggest
+            {/* <SearchSuggest
                 className={b('suggest')}
                 containerClass={b('container')}
                 query={isSearchMode ? undefined : ''}
@@ -65,7 +65,7 @@ export const Search: React.FC<SearchProps> = ({
                 popupClass={b('suggest-popup')}
                 getValue={getQuery}
                 customClearIcon={Xmark}
-            />
+            /> */}
             <span
                 className={b('text', {'search-mode': isSearchMode, hidden: Boolean(query)})}
                 id={searchTextId}

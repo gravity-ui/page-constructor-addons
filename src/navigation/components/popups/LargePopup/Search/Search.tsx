@@ -14,7 +14,7 @@ import i18n from './i18n';
 
 import './Search.scss';
 
-const b = block('Search');
+const b = block('large-popup-search');
 
 export type SearchSize = 's' | 'm';
 

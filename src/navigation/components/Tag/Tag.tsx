@@ -2,9 +2,9 @@ import React from 'react';
 
 import {block} from '../../../utils/cn';
 
-import './ServiceTag.scss';
+import './Tag.scss';
 
-const b = block('ServiceTag');
+const b = block('navigation-tag');
 
 export enum NavigationTagColor {
     Green = 'green',

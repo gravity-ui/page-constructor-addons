@@ -1,6 +1,9 @@
-@import 'mixins';
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
 
-.ServiceTag {
+$block: '.#{$ns}navigation-tag';
+
+#{$block} {
     @include label();
 
     border-radius: 4px;

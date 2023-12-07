@@ -2,7 +2,7 @@ import type {RefObject} from 'react';
 import React from 'react';
 
 import {Grid} from '@gravity-ui/page-constructor';
-import {FocusTrap} from '@gravity-ui/uikit/build/cjs/components/utils/FocusTrap';
+// import {FocusTrap} from '@gravity-ui/uikit/build/esm/components/utils/FocusTrap';
 import ReactDOM from 'react-dom';
 
 import {block} from '../../../../utils/cn';
@@ -28,11 +28,11 @@ export const NavigationPopup: React.FC<NavigationPopupProps> = ({
 }) => {
     return headerRef?.current
         ? ReactDOM.createPortal(
-              <FocusTrap enabled>
-                  <div className={b({['with-background']: withBackground}, className)} id={id}>
-                      <Grid containerClass={b('grid-container')}>{children}</Grid>
-                  </div>
-              </FocusTrap>,
+              //   <FocusTrap enabled>
+              <div className={b({['with-background']: withBackground}, className)} id={id}>
+                  <Grid containerClass={b('grid-container')}>{children}</Grid>
+              </div>,
+              //   </FocusTrap>,
               headerRef.current,
           )
         : null;

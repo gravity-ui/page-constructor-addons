@@ -31,7 +31,7 @@ const b = block('cloud-header');
 
 export const MOBILE_ICON_SIZE = 24;
 
-interface HeaderProps {
+export interface HeaderProps {
     theme: Theme;
     data: HeaderNavigationData;
     servicesData: ServicesData;
@@ -44,7 +44,7 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({
-    theme,
+    theme = Theme.Light,
     data,
     analytics = {},
     isMobile,

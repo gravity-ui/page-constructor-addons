@@ -1,8 +1,8 @@
-@import '../../../../styles/variables';
+@import '../../../../styles/variables.scss';
 
-.cloud-buttons-container {
-    $block: &;
+$block: '.#{$ns}.cloud-buttons-container';
 
+#{$block} {
     display: flex;
 
     &_direction {

@@ -1,7 +1,9 @@
-@import '../../../styles/variables.scss';
 @import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
 
-.ButtonWithIcon {
+$block: '.#{$ns}ButtonWithIcon';
+
+#{$block} {
     @include reset-button-style();
     @include islands-focus();
 

@@ -1,7 +1,9 @@
-@import '../../../../../../styles/variables';
-@import '../../../../../../styles/mixins';
+@import '../../../../../../styles/mixins.scss';
+@import '../../../../../../styles/variables.scss';
 
-.cloud-large-popup-category {
+$block: '.#{$ns}cloud-large-popup-category';
+
+#{$block} {
     margin-bottom: calc($indentXXXS / 2);
 
     &__button {

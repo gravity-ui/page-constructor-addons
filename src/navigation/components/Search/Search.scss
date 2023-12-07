@@ -1,5 +1,7 @@
-@import '../../../../styles/variables.scss';
 @import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 $block: '.#{$ns}cloud-search';
 
@@ -31,7 +33,7 @@ $block: '.#{$ns}cloud-search';
         }
 
         .yc-text-input__control {
-            padding: 0 0 0 $searcInputIndent;
+            padding: 0 0 0 $searchInputIndent;
             cursor: pointer;
         }
 

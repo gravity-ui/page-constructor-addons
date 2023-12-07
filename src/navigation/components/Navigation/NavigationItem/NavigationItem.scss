@@ -1,8 +1,10 @@
 @import '../../../../../styles/mixins';
 @import '../../../../../styles/variables';
+@import '../../../styles/mixins.scss';
 
-.navigation-item {
-    $block: &;
+$block: '.#{$ns}navigation-item';
+
+#{$block} {
     white-space: nowrap;
 
     color: var(--g-color-text-primary);
@@ -27,6 +29,7 @@
 
     &__text {
         @include reset-button-style();
+        @include reset-link-style();
 
         display: block;
         margin: 0 $indentXXS;
@@ -48,6 +51,7 @@
                 top: 2px;
             }
         }
+
         &:focus:not(:focus-visible) {
             &::before {
                 display: none;

@@ -79,11 +79,11 @@ export enum NavigationItemType {
 export interface HeaderNavigationData {
     logo: boolean;
     search: string;
-    langSwitch: boolean;
     hasActionButton?: boolean;
     buttons: ButtonProps[];
     user: true;
     navigation: NavigationItemModel[];
+    langSwitch?: boolean;
     reverseSolutionCategories?: boolean;
 }
 

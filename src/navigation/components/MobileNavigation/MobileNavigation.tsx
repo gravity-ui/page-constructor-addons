@@ -22,6 +22,7 @@ interface MobileNavigationProps {
     isSearchOpen: boolean;
     data: NavigationItemModel[];
     onMenuScroll: (scrollTop: number) => void;
+    popupClassName?: string;
     buttons?: ButtonProps[];
     hasActionButton?: boolean;
 }
@@ -38,7 +39,7 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
     const icon = isOpened ? Xmark : Bars;
 
     return (
-        <Fragment>
+        <div className={b()}>
             <Button
                 view="flat"
                 size="l"
@@ -77,6 +78,6 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
                     /> */}
                 </nav>
             </MobileNavigationPopup>
-        </Fragment>
+        </div>
     );
 };
