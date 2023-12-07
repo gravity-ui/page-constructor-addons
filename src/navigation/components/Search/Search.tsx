@@ -66,6 +66,7 @@ export const Search: React.FC<SearchProps> = ({
                 getValue={getQuery}
                 customClearIcon={Xmark}
             /> */}
+            <div className={b('dummy-suggest')} />
             <span
                 className={b('text', {'search-mode': isSearchMode, hidden: Boolean(query)})}
                 id={searchTextId}

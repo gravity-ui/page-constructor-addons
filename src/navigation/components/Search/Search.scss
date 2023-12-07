@@ -7,7 +7,7 @@ $block: '.#{$ns}cloud-search';
 
 #{$block} {
     position: relative;
-    width: 76px;
+    width: 80px;
     display: flex;
     border-radius: var(--g-border-radius-l);
     transition: width 0.3s ease-in, background-color 0.3s ease-in;
@@ -40,6 +40,11 @@ $block: '.#{$ns}cloud-search';
         &-popup {
             @include popupStyles(var(--g-border-radius-l));
         }
+    }
+
+    &__dummy-suggest {
+        width: 52px;
+        height: 34px;
     }
 
     &__button {
