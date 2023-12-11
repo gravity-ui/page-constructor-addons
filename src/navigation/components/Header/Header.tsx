@@ -1,10 +1,9 @@
-import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import React, {ReactNode, useCallback, useEffect, useMemo, useRef, useState} from 'react';
 
 import {ChevronLeft} from '@gravity-ui/icons';
 import {OverflowScroller, Theme} from '@gravity-ui/page-constructor';
 import {Button, Icon} from '@gravity-ui/uikit';
 
-// import HeaderUser from 'components/HeaderUser/HeaderUser';
 import {block} from '../../../utils/cn';
 import {AnalyticsContext, AnalyticsContextProps} from '../../contexts/analytics';
 import {Device, DeviceContext} from '../../contexts/device';
@@ -31,6 +30,11 @@ const b = block('cloud-header');
 
 export const MOBILE_ICON_SIZE = 24;
 
+export interface CustomElements {
+    left?: ReactNode;
+    right?: ReactNode;
+    actions?: ReactNode;
+}
 export interface HeaderProps {
     theme: Theme;
     data: HeaderNavigationData;
@@ -41,6 +45,7 @@ export interface HeaderProps {
     device?: Device;
     analytics?: AnalyticsContextProps;
     location?: LocationContextProps;
+    customElements?: CustomElements;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -53,6 +58,7 @@ export const Header: React.FC<HeaderProps> = ({
     solutionsData,
     device,
     location = {},
+    customElements,
 }) => {
     const headerRef = useRef<HTMLDivElement>(null);
     const [withBackground, setWithBackground] = useState(false);
@@ -62,8 +68,8 @@ export const Header: React.FC<HeaderProps> = ({
     const [isMobileNavigationOpen, setIsMobileNavigationOpen] = useState(false);
     const [pageHasScroll, setPageHasScroll] = useState(false);
     const locale = useMemo(() => locales.find(({active}) => active), [locales]);
-
-    const {logo, search, langSwitch, buttons: buttonConfigs, navigation, hasActionButton} = data;
+    const {left, right, actions} = customElements || {};
+    const {logo, search, langSwitch, buttons: buttonConfigs, navigation} = data;
 
     const buttons = buttonConfigs?.map(({analyticsEvents, ...button}) => ({
         ...button,
@@ -207,6 +213,7 @@ export const Header: React.FC<HeaderProps> = ({
                                             <Icon data={ChevronLeft} size={MOBILE_ICON_SIZE} />
                                         </Button>
                                     )}
+                                    {left}
                                 </div>
                                 <div className={b('right')}>
                                     <div className={b('icons-container')}>
@@ -232,17 +239,12 @@ export const Header: React.FC<HeaderProps> = ({
                                     {showButtonsContainer && (
                                         <ButtonsContainer
                                             buttons={buttons}
-                                            hasActionButton={hasActionButton}
                                             className={b('buttons')}
-                                        />
+                                        >
+                                            {actions}
+                                        </ButtonsContainer>
                                     )}
-                                    {/* {!isMobileView && (
-                        <HeaderUser
-                            className={b('user')}
-                            size="l"
-                            popupClassName={b('user-popup')}
-                        />
-                    )} */}
+                                    {right}
                                     {mobileNavigationConfig ? (
                                         <MobileNavigation
                                             toogleOpen={toggleMobileNavigationPopup}
@@ -252,7 +254,7 @@ export const Header: React.FC<HeaderProps> = ({
                                             buttons={buttons}
                                             onMenuScroll={onMenuScroll}
                                             popupClassName={b('user-popup')}
-                                            hasActionButton={hasActionButton}
+                                            customElements={customElements}
                                         />
                                     ) : null}
                                 </div>

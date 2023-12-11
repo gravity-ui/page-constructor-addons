@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 
 import {Bars, Xmark} from '@gravity-ui/icons';
 import type {ButtonProps} from '@gravity-ui/page-constructor';
@@ -7,7 +7,7 @@ import {Button, Icon} from '@gravity-ui/uikit';
 import {block} from '../../../utils/cn';
 import {NavigationItemModel} from '../../models';
 import {ButtonsContainer, ButtonsContainerDirection} from '../ButtonsContainer/ButtonsContainer';
-import {MOBILE_ICON_SIZE} from '../Header/Header';
+import {CustomElements, MOBILE_ICON_SIZE} from '../Header/Header';
 
 import {MobileNavigationItem} from './MobileNavigationItem/MobileNavigationItem';
 import {MobileNavigationPopup} from './MobileNavigationPopup/MobileNavigationPopup';
@@ -24,7 +24,7 @@ interface MobileNavigationProps {
     onMenuScroll: (scrollTop: number) => void;
     popupClassName?: string;
     buttons?: ButtonProps[];
-    hasActionButton?: boolean;
+    customElements?: CustomElements;
 }
 
 export const MobileNavigation: React.FC<MobileNavigationProps> = ({
@@ -34,7 +34,7 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
     data,
     buttons,
     onMenuScroll,
-    hasActionButton,
+    customElements: {actions, right} = {},
 }) => {
     const icon = isOpened ? Xmark : Bars;
 
@@ -70,15 +70,11 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
                             className={b('buttons')}
                             width="max"
                             direction={ButtonsContainerDirection.Column}
-                            hasActionButton={hasActionButton}
-                        />
+                        >
+                            {actions}
+                        </ButtonsContainer>
                     )}
-                    {/* <HeaderUser
-                        className={b('user')}
-                        size="l"
-                        showUserInfo
-                        popupClassName={popupClassName}
-                    /> */}
+                    {right}
                 </nav>
             </MobileNavigationPopup>
         </div>
