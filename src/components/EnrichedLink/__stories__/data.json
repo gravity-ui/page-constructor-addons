@@ -1,0 +1,14 @@
+{
+  "default": {
+    "title": "Main page",
+    "url": "https://google.com/",
+    "blank": true,
+    "noreferrer": true
+  },
+  "icon": {
+    "url": "https://youtube.com/",
+    "title": "Youtube. Opens in a new tab",
+    "type": "icon",
+    "blank": true
+  }
+}

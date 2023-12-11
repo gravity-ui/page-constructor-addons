@@ -1,0 +1,94 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+$block: '.#{$ns}enriched-link';
+
+#{$block} {
+    @include reset-list-style();
+    @include text-size(body-2);
+
+    display: flex;
+    text-decoration: none;
+
+    &_type_default {
+        @include islands-focus();
+        @include focusable();
+
+        cursor: pointer;
+        color: inherit;
+        text-decoration: none;
+
+        &:hover,
+        &:active {
+            --pc-text-header-color: var(--g-color-text-link);
+            color: var(--g-color-text-link);
+        }
+
+        .mobile & {
+            &:hover,
+            &:active {
+                --pc-text-header-color: inherit;
+                color: inherit;
+            }
+        }
+
+        border-radius: var(--g-focus-border-radius);
+
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    &_type_icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        transition: all 0.3s ease;
+
+        border-radius: 50%;
+
+        background-color: var(--g-color-base-generic);
+
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+
+        svg {
+            color: var(--g-color-text-dark-primary);
+        }
+
+        &:hover {
+            background-color: var(--g-color-base-generic-hover);
+        }
+    }
+
+    &_left-icon {
+        padding-left: 26px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        color: var(--g-color-base-brand);
+    }
+
+    &__title {
+        color: var(--g-color-text-primary);
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        &:hover {
+            color: var(--g-color-text-primary);
+        }
+    }
+
+    &:hover {
+        #{$block}__title {
+            color: var(--g-color-text-link);
+        }
+    }
+}

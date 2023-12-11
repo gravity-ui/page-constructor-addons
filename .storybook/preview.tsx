@@ -1,5 +1,7 @@
 import '../styles/storybook/index.scss';
 import '@gravity-ui/uikit/styles/styles.scss';
+import '@gravity-ui/page-constructor/styles/styles.scss';
+
 import {MobileProvider, Platform} from '@gravity-ui/uikit';
 import {Theme} from '@gravity-ui/page-constructor';
 
