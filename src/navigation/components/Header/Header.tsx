@@ -203,8 +203,9 @@ export const Header: React.FC<HeaderProps> = ({
                                 <div className={b('left')}>
                                     {logo && (
                                         <Logo
-                                            className={b('logo')}
+                                            {...logo}
                                             theme={theme}
+                                            className={b('logo')}
                                             imageClassName={b('logo-img')}
                                         />
                                     )}

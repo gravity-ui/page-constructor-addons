@@ -4,6 +4,7 @@ import {ClassNameProps, Theme} from '@gravity-ui/page-constructor';
 
 import {block} from '../../../utils/cn';
 import {MobileContext} from '../../contexts/mobile';
+import {LogoData} from '../../models';
 
 import i18n from './i18n';
 
@@ -11,10 +12,7 @@ import './Logo.scss';
 
 const b = block('logo');
 
-export interface LogoProps extends ClassNameProps {
-    href?: string;
-    src?: string;
-    height?: number;
+export interface LogoProps extends LogoData, ClassNameProps {
     theme?: Theme;
     imageClassName?: string;
 }

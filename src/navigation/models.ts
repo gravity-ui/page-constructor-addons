@@ -76,8 +76,13 @@ export enum NavigationItemType {
     Link = 'link',
 }
 
+export interface LogoData {
+    href?: string;
+    src?: string;
+    height?: number;
+}
 export interface HeaderNavigationData {
-    logo: boolean;
+    logo: LogoData;
     search: string;
     hasActionButton?: boolean;
     buttons: ButtonProps[];

@@ -23,7 +23,10 @@
       "hostname": "ecample.com"
     },
     "data": {
-      "logo": true,
+      "logo": {
+        "href": "https://cloud.yandex.ru",
+        "src": "https://storage.yandexcloud.net/cloud-www-assets/region-assets/ru/light/desktop/logo.svg"
+      },
       "search": "Search",
       "hasActionButton": true,
       "reverseSolutionCategories": true,
