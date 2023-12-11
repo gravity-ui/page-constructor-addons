@@ -46,6 +46,7 @@ export interface HeaderProps {
     analytics?: AnalyticsContextProps;
     location?: LocationContextProps;
     customElements?: CustomElements;
+    setupRouteChangeHandler?: (handler: () => void) => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -59,6 +60,7 @@ export const Header: React.FC<HeaderProps> = ({
     device,
     location = {},
     customElements,
+    setupRouteChangeHandler,
 }) => {
     const headerRef = useRef<HTMLDivElement>(null);
     const [withBackground, setWithBackground] = useState(false);
@@ -163,27 +165,15 @@ export const Header: React.FC<HeaderProps> = ({
                 setPageHasScroll(true);
             }
         };
-
+        window.addEventListener('scroll', onScroll);
         onScroll();
     });
 
-    // TODO - try rewrite using browser api
-    //     const onRouteChange = () => {
-    //         setIsMobileNavigationOpen(false);
-    //     };
+    useEffect(
+        () => setupRouteChangeHandler?.(() => setIsMobileNavigationOpen(false)),
+        [setupRouteChangeHandler],
+    );
 
-    //     router.events?.on('routeChangeComplete', onRouteChange);
-    //     router.events?.on('hashChangeComplete', onRouteChange);
-
-    //     window.addEventListener('scroll', onScroll);
-
-    //     return () => {
-    //         window.removeEventListener('scroll', onScroll);
-
-    //         router.events?.off('routeChangeComplete', onRouteChange);
-    //         router.events?.off('hashChangeComplete', onRouteChange);
-    //     };
-    // }, [pageHasScroll, router.events, withBackground]);
     return (
         <LocationContext.Provider value={location}>
             <AnalyticsContext.Provider value={analytics}>
