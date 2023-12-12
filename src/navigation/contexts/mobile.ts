@@ -1,3 +1,5 @@
 import React from 'react';
 
-export const MobileContext = React.createContext<boolean>(false);
+export type MobileContextProps = boolean;
+
+export const MobileContext = React.createContext<MobileContextProps>(false);

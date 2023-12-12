@@ -1,7 +1,7 @@
 import React from 'react';
 
-export type Device = {
+export type DeviceContextProps = {
     model?: string;
 };
 
-export const DeviceContext = React.createContext<Device | undefined>(undefined);
+export const DeviceContext = React.createContext<DeviceContextProps>({});
