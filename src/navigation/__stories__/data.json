@@ -53,6 +53,466 @@
               "url": "https://status.il.nebius.com/dashboard"
             }
           ],
+          "data": {
+            "categories": {
+              "featured": {
+                "id": 1,
+                "slug": "featured",
+                "name": "Featured",
+                "description": null,
+                "groups": [
+                  {
+                    "title": "Featured",
+                    "url": "/services#featured",
+                    "items": [
+                      {
+                        "id": 1,
+                        "slug": "compute",
+                        "name": "Compute Cloud",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/compute/",
+                        "consoleUrl": "https://console.il.nebius.com/link/compute",
+                        "pricesUrl": "/docs/compute/pricing",
+                        "fullName": "Compute Cloud",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <g clip-path=\"url(#clip0_165_5213)\">\n        <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5.518 3V.986a.986.986 0 0 1 1.97 0V3h-1.97Zm.001 0h-.521a2 2 0 0 0-2 2v.037H.986a.986.986 0 1 0 0 1.971h2.012v1.49H.986a.986.986 0 1 0 0 1.97h2.043a3.003 3.003 0 0 0 1.97 2.4v2.146a.986.986 0 0 0 1.972 0v-1.976h2v1.976a.986.986 0 0 0 1.97 0v-1.976H11a2 2 0 0 0 2-2v-.562H7.52a2 2 0 0 1-2-2V3Zm9.495 2.001h-1.996v1.971h1.996a.986.986 0 0 0 0-1.971Zm0 3.496H13v1.971h2.014a.986.986 0 1 0 0-1.97ZM9.025 3V.986a.986.986 0 0 1 1.972 0V3H9.025Z\" fill=\"currentColor\"></path>\n    </g>\n    <defs>\n        \n            <path fill=\"#fff\" d=\"M0 0h16v16H0z\"></path>\n        \n    </defs>\n</svg>",
+                        "description": "Virtual machines and block storage"
+                      },
+                      {
+                        "id": 4,
+                        "slug": "storage",
+                        "name": "Object Storage",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/storage/",
+                        "consoleUrl": "https://console.il.nebius.com/link/storage",
+                        "pricesUrl": "/docs/storage/pricing",
+                        "fullName": "Object Storage",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3 3a2 2 0 0 1 2-2h6a4 4 0 0 1 4 4v6a2 2 0 0 1-2 2h-1V6a2 2 0 0 0-2-2H3V3Zm0 1H2a2 2 0 0 0-2 2v6a4 4 0 0 0 4 4h6a2 2 0 0 0 2-2v-1H5a2 2 0 0 1-2-2V4Zm2 5a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2H5Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "Scalable data storage"
+                      },
+                      {
+                        "id": 3,
+                        "slug": "managed-kubernetes",
+                        "name": "Managed Service for Kubernetes®",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/managed-kubernetes/",
+                        "consoleUrl": "https://console.il.nebius.com/link/managed-kubernetes",
+                        "pricesUrl": "/docs/managed-kubernetes/pricing",
+                        "fullName": "Managed Service for Kubernetes®",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <g clip-path=\"url(#clip0_165_5136)\">\n        <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"m8.84.23 3.631 2.252c.453.281.728.776.728 1.309V4h.45a1.4 1.4 0 0 1 1.365 1.088l.944 4.13a2.1 2.1 0 0 1-.392 1.762l-3.294 4.213a2.1 2.1 0 0 1-1.655.807H5.384a2.1 2.1 0 0 1-1.655-.807L.434 10.98a2.1 2.1 0 0 1-.393-1.76L.98 5.09A1.4 1.4 0 0 1 2.345 4h.459v-.204c0-.535.278-1.033.735-1.313L7.223.225A1.54 1.54 0 0 1 8.84.23Zm3.493 10.64L8.98 12.932a1.82 1.82 0 0 1-1.9.005L3.678 10.87a1.82 1.82 0 0 1-.874-1.556V4.005l4.389 2.707a1.54 1.54 0 0 0 1.617 0l4.39-2.707V9.32a1.82 1.82 0 0 1-.867 1.55Z\" fill=\"currentColor\"></path>\n    </g>\n    <defs>\n        \n            <path fill=\"#fff\" d=\"M0 0h16v16H0z\"></path>\n        \n    </defs>\n</svg>",
+                        "description": "Managed Kubernetes<sup>&reg;</sup> clusters"
+                      },
+                      {
+                        "id": 20,
+                        "slug": "managed-postgresql",
+                        "name": "Managed Service for PostgreSQL",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/managed-postgresql/",
+                        "consoleUrl": "https://console.il.nebius.com/link/managed-postgresql",
+                        "pricesUrl": "/docs/managed-postgresql/pricing",
+                        "fullName": "Managed Service for PostgreSQL",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13.078 16v-.545c0-.607-.264-1.183-.724-1.578l-1.73-1.487c.19-.324.301-.707.301-1.134V5.708c0-.838-.252-1.657-.724-2.35-1.43-2.1-3.944-2.875-6.162-2.274C4.317.46 4.939 0 5.703 0h5.054A5.245 5.245 0 0 1 16 5.248V16h-2.922ZM4.038 1.084a5.603 5.603 0 0 0-2.941 1.948l-.526.665A2.648 2.648 0 0 0 .89 7.319l6.32 5.61c1.122.997 2.75.597 3.415-.54L9.008 11V7.026c0-2.69-2.32-4.793-4.995-4.525a1.806 1.806 0 0 1 .026-1.416ZM13.004 9a1 1 0 1 0 0-1.999 1 1 0 0 0 0 1.999Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "PostgreSQL database management"
+                      },
+                      {
+                        "id": 17,
+                        "slug": "managed-kafka",
+                        "name": "Managed Service for Apache Kafka®",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/managed-kafka/",
+                        "consoleUrl": "https://console.il.nebius.com/link/managed-kafka",
+                        "pricesUrl": "/docs/managed-kafka/pricing",
+                        "fullName": "Managed Service for Apache Kafka®",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M10.548 3.143c.493-.285.654-.939.22-1.308A3.5 3.5 0 0 0 5 4.429v.184a1 1 0 0 0 1.5.866l4.048-2.336ZM3 6.67c0-.69-.69-1.162-1.238-.742A4.493 4.493 0 0 0 0 9.5a4.49 4.49 0 0 0 1.763 3.572c.548.42 1.238-.052 1.238-.742V6.67ZM5 13a1 1 0 0 0 1 1h5c.336 0 .415-.41.124-.578l-4.623-2.669a1 1 0 0 0-1.5.866V13Zm8.567-.476c.36.208.82.177 1.102-.128a5.001 5.001 0 0 0-1.642-7.968.9.9 0 0 0-.814.062l-4.78 2.76a1 1 0 0 0 0 1.732l6.134 3.542Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "Managed Apache Kafka<sup>&reg;</sup> clusters"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Marketplace",
+                    "url": "/marketplace",
+                    "items": [
+                      {
+                        "id": "eqg0ah5eq8mjck1a37dh",
+                        "slug": "yc/h2o-llmstudio",
+                        "name": "H2O LLM Studio",
+                        "icon": "https://storage.il.nebius.cloud/products/eqg0ah5eq8mjck1a37dh.svg"
+                      },
+                      {
+                        "id": "eqgct4p3uniqffn9q825",
+                        "slug": "yc/ubuntu-22-04-lts-gpu-cuda12",
+                        "name": "Ubuntu 22.04 LTS for NVIDIA® GPUs (CUDA® 12)",
+                        "icon": "https://storage.il.nebius.cloud/products/eqgct4p3uniqffn9q825.svg"
+                      },
+                      {
+                        "id": "eqgftso26n5es83dapm2",
+                        "slug": "hystax/hystax-acura-disaster-recovery",
+                        "name": "Hystax Acura Disaster Recovery to Nebius Israel",
+                        "icon": "https://storage.il.nebius.cloud/products/eqgftso26n5es83dapm2.svg"
+                      },
+                      {
+                        "id": "eqgr6d27equ47q0hhnum",
+                        "slug": "yc/sql-server-2022-enterprise",
+                        "name": "Microsoft SQL Server 2022 Enterprise",
+                        "icon": "https://storage.il.nebius.cloud/products/eqgr6d27equ47q0hhnum.svg"
+                      },
+                      {
+                        "id": "eqglukefdqri17cdcl9n",
+                        "slug": "yc/dsvm",
+                        "name": "Data Science Virtual Machine",
+                        "icon": "https://storage.il.nebius.cloud/products/eqglukefdqri17cdcl9n.svg"
+                      },
+                      {
+                        "id": "eqgm7n0mtusaqamf1p78",
+                        "slug": "yc/ubuntu-20-04-lts-gpu-cuda11",
+                        "name": "Ubuntu 20.04 LTS for NVIDIA® GPUs (CUDA® 11)",
+                        "icon": "https://storage.il.nebius.cloud/products/eqgm7n0mtusaqamf1p78.svg"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "infrastructure-network": {
+                "id": 2,
+                "slug": "infrastructure-network",
+                "name": "Infrastructure & Network",
+                "description": "Managed cloud infrastructure services: virtual machines, networks, and data storage.",
+                "groups": [
+                  {
+                    "title": "Infrastructure & Network",
+                    "url": "/services#infrastructure-network",
+                    "items": [
+                      {
+                        "id": 1,
+                        "slug": "compute",
+                        "name": "Compute Cloud",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/compute/",
+                        "consoleUrl": "https://console.il.nebius.com/link/compute",
+                        "pricesUrl": "/docs/compute/pricing",
+                        "fullName": "Compute Cloud",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <g clip-path=\"url(#clip0_165_5213)\">\n        <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5.518 3V.986a.986.986 0 0 1 1.97 0V3h-1.97Zm.001 0h-.521a2 2 0 0 0-2 2v.037H.986a.986.986 0 1 0 0 1.971h2.012v1.49H.986a.986.986 0 1 0 0 1.97h2.043a3.003 3.003 0 0 0 1.97 2.4v2.146a.986.986 0 0 0 1.972 0v-1.976h2v1.976a.986.986 0 0 0 1.97 0v-1.976H11a2 2 0 0 0 2-2v-.562H7.52a2 2 0 0 1-2-2V3Zm9.495 2.001h-1.996v1.971h1.996a.986.986 0 0 0 0-1.971Zm0 3.496H13v1.971h2.014a.986.986 0 1 0 0-1.97ZM9.025 3V.986a.986.986 0 0 1 1.972 0V3H9.025Z\" fill=\"currentColor\"></path>\n    </g>\n    <defs>\n        \n            <path fill=\"#fff\" d=\"M0 0h16v16H0z\"></path>\n        \n    </defs>\n</svg>",
+                        "description": "Virtual machines and block storage"
+                      },
+                      {
+                        "id": 4,
+                        "slug": "storage",
+                        "name": "Object Storage",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/storage/",
+                        "consoleUrl": "https://console.il.nebius.com/link/storage",
+                        "pricesUrl": "/docs/storage/pricing",
+                        "fullName": "Object Storage",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3 3a2 2 0 0 1 2-2h6a4 4 0 0 1 4 4v6a2 2 0 0 1-2 2h-1V6a2 2 0 0 0-2-2H3V3Zm0 1H2a2 2 0 0 0-2 2v6a4 4 0 0 0 4 4h6a2 2 0 0 0 2-2v-1H5a2 2 0 0 1-2-2V4Zm2 5a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2H5Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "Scalable data storage"
+                      },
+                      {
+                        "id": 9,
+                        "slug": "dns",
+                        "name": "Cloud DNS",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/dns/",
+                        "consoleUrl": "https://console.il.nebius.com/link/dns",
+                        "pricesUrl": "/docs/dns/pricing",
+                        "fullName": "Cloud DNS",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8.832 1H2a2 2 0 0 0-2 2v1.972h1.248c1.435 0 3.26 1.045 3.26 3.229 0 2.178-1.788 3.292-3.408 3.292H0V13a2 2 0 0 0 2 2h2.963V5.482a.75.75 0 0 1 1.342-.46l2.527 3.256V1Zm-2.37 14H14a2 2 0 0 0 2-2V5.994h-2.938c-.567 0-.728.296-.728.506 0 .164.057.273.28.403.266.154.635.25 1.07.353.619.147 1.123.39 1.473.767.366.394.492.858.492 1.292 0 1.018-.78 1.934-2.014 1.934h-2.8v-1.5h2.8c.22 0 .337-.072.4-.136a.42.42 0 0 0 .114-.298c0-.134-.032-.207-.092-.272-.076-.082-.266-.22-.72-.327l-.02-.005c-.392-.093-.974-.231-1.457-.511-.533-.31-1.026-.846-1.026-1.7 0-1.261 1.075-2.006 2.228-2.006H16V3a2 2 0 0 0-2-2h-3.668v9.468a.75.75 0 0 1-1.343.46L6.463 7.671V15ZM0 9.993h1.1c1.017 0 1.908-.651 1.908-1.792 0-1.136-.916-1.73-1.76-1.73H0v3.522Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "Domain name management"
+                      },
+                      {
+                        "id": 5,
+                        "slug": "vpc",
+                        "name": "Virtual Private Cloud",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/vpc/",
+                        "consoleUrl": "https://console.il.nebius.com/link/vpc",
+                        "pricesUrl": "/docs/vpc/pricing",
+                        "fullName": "Virtual Private Cloud",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4 2c0 .685-.345 1.29-.87 1.65L4 8h2l.87-4.35a2 2 0 1 1 2.26 0L10 8h2l.87-4.35a2 2 0 1 1 2.26 0l.392 1.958A2 2 0 0 1 13.56 8H13l-.87 4.35a2 2 0 1 1-2.26 0L9 8H7l-.87 4.35a2 2 0 1 1-2.26 0L3 8h-.56A2 2 0 0 1 .478 5.608L.87 3.65A2 2 0 1 1 4 2Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "Cloud network management"
+                      },
+                      {
+                        "id": 6,
+                        "slug": "network-load-balancer",
+                        "name": "Network Load Balancer",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/network-load-balancer/",
+                        "consoleUrl": "https://console.il.nebius.com/link/network-load-balancer",
+                        "pricesUrl": "/docs/network-load-balancer/pricing",
+                        "fullName": "Network Load Balancer",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16 2a2 2 0 0 1-3.732 1H11a2 2 0 0 0-2 2v2h3.268A2 2 0 0 1 16 8a2 2 0 0 1-3.732 1H9v2a2 2 0 0 0 2 2h1.268A2 2 0 0 1 16 14a2 2 0 0 1-3.732 1H11a4 4 0 0 1-4-4v-1l2-2-2-2V5a4 4 0 0 1 4-4h1.268A2 2 0 0 1 16 2ZM6 6.5H0v3h6v-3Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "Network load balancers"
+                      },
+                      {
+                        "id": 7,
+                        "slug": "application-load-balancer",
+                        "name": "Application Load Balancer",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/application-load-balancer/",
+                        "consoleUrl": "https://console.il.nebius.com/link/application-load-balancer",
+                        "pricesUrl": "/docs/application-load-balancer/pricing",
+                        "fullName": "Application Load Balancer",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3 1h2.627v3.5l3.14 2.747a1 1 0 0 1 0 1.506L5.627 11.5V15H3a2 2 0 0 1-2-2V9h4.627V7H1V3a2 2 0 0 1 2-2Zm10 14H7.627v-2.976a1.5 1.5 0 0 1 2.25-1.299l5.023 2.9A2 2 0 0 1 13 15Zm2-10.275v6.55l-3.421-1.976a1.5 1.5 0 0 1 0-2.598L15 4.725Zm-5.123.55 5.023-2.9A2 2 0 0 0 13 1H7.627v2.976a1.5 1.5 0 0 0 2.25 1.299Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "L7 load balancers"
+                      },
+                      {
+                        "id": 21,
+                        "slug": "monitoring",
+                        "name": "Monitoring",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/monitoring/",
+                        "consoleUrl": "https://monitoring.il.nebius.com",
+                        "pricesUrl": "/docs/monitoring/pricing",
+                        "fullName": "Monitoring",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"m2.698 7.805 1.917.714L9.301.972C10.362-.738 13 .015 13 2.027v.378c1.221-.707 3 .09 3 1.745V13a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-1.075h13v-9.52c-.277.16-.526.399-.718.722L9.113 8.444a2 2 0 0 1-2.416.85l-2.05-.763-.002.004a7 7 0 0 1-3.14 2.729L0 11.925V9.68a2 2 0 0 1 2.698-1.874Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "Collection and visualization of&nbsp;metrics"
+                      },
+                      {
+                        "id": 62,
+                        "slug": "logging",
+                        "name": "Cloud Logging",
+                        "tag": "new",
+                        "status": "public",
+                        "docUrl": "/docs/logging/",
+                        "consoleUrl": "https://console.il.nebius.com/link/logging",
+                        "pricesUrl": "/docs/logging/pricing",
+                        "fullName": "Cloud Logging",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M2 0C0.895431 0 0 0.89543 0 2V3H13V5H0V7H13V9H0V11H11V13H0V14C0 15.1046 0.895431 16 2 16H9C10.1046 16 11 15.1046 11 14V13H13C14.1046 13 15 12.1046 15 11V9C15 7.89543 14.1046 7 13 7V5C14.1046 5 15 4.10457 15 3V2C15 0.895431 14.1046 0 13 0H2Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "Nebius services logging"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Marketplace",
+                    "url": "/marketplace",
+                    "items": [
+                      {
+                        "id": "eqgtqeet87jshce7o7j8",
+                        "slug": "yc/nat-instance-ubuntu-18-04-lts",
+                        "name": "NAT instance based on Ubuntu 18.04 LTS",
+                        "icon": "https://storage.il.nebius.cloud/products/eqgtqeet87jshce7o7j8.svg"
+                      },
+                      {
+                        "id": "eqg70ohdvsd0jgp2302j",
+                        "slug": "yc/ipsec-instance-ubuntu",
+                        "name": "IPSec instance",
+                        "icon": "https://storage.il.nebius.cloud/products/eqg70ohdvsd0jgp2302j.svg"
+                      },
+                      {
+                        "id": "eqgcddoh7vl5id4t774h",
+                        "slug": "yc/nat-instance-ubuntu-2204-lts",
+                        "name": "NAT instance based on Ubuntu 22.04 LTS",
+                        "icon": "https://storage.il.nebius.cloud/products/eqgcddoh7vl5id4t774h.svg"
+                      },
+                      {
+                        "id": "eqg4s0vgoct249lqk4ce",
+                        "slug": "yc/fortigate-vm",
+                        "name": "FortiGate-VM - Fortinet Next-Generation Firewall",
+                        "icon": "https://storage.il.nebius.cloud/products/eqg4s0vgoct249lqk4ce.svg"
+                      },
+                      {
+                        "id": "eqg1aee242rtv6lsrfea",
+                        "slug": "yc/openvpn-access-server",
+                        "name": "OpenVPN Access Server",
+                        "icon": "https://storage.il.nebius.cloud/products/eqg1aee242rtv6lsrfea.svg"
+                      },
+                      {
+                        "id": "eqgj6i3i3vihbfc5tt2u",
+                        "slug": "yc/opnsense",
+                        "name": "OPNsense",
+                        "icon": "https://storage.il.nebius.cloud/products/eqgj6i3i3vihbfc5tt2u.svg"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "data-platform": {
+                "id": 7,
+                "slug": "data-platform",
+                "name": "Data Platform",
+                "description": "The full data lifecycle: from ingestion and storage to&nbsp;analysis and visualization.",
+                "groups": [
+                  {
+                    "title": "Data Platform",
+                    "url": "services#data-platform",
+                    "items": [
+                      {
+                        "id": 20,
+                        "slug": "managed-postgresql",
+                        "name": "Managed Service for PostgreSQL",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/managed-postgresql/",
+                        "consoleUrl": "https://console.il.nebius.com/link/managed-postgresql",
+                        "pricesUrl": "/docs/managed-postgresql/pricing",
+                        "fullName": "Managed Service for PostgreSQL",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13.078 16v-.545c0-.607-.264-1.183-.724-1.578l-1.73-1.487c.19-.324.301-.707.301-1.134V5.708c0-.838-.252-1.657-.724-2.35-1.43-2.1-3.944-2.875-6.162-2.274C4.317.46 4.939 0 5.703 0h5.054A5.245 5.245 0 0 1 16 5.248V16h-2.922ZM4.038 1.084a5.603 5.603 0 0 0-2.941 1.948l-.526.665A2.648 2.648 0 0 0 .89 7.319l6.32 5.61c1.122.997 2.75.597 3.415-.54L9.008 11V7.026c0-2.69-2.32-4.793-4.995-4.525a1.806 1.806 0 0 1 .026-1.416ZM13.004 9a1 1 0 1 0 0-1.999 1 1 0 0 0 0 1.999Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "PostgreSQL database management"
+                      },
+                      {
+                        "id": 19,
+                        "slug": "managed-mysql",
+                        "name": "Managed Service for MySQL®",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/managed-mysql/",
+                        "consoleUrl": "https://console.il.nebius.com/link/managed-mysql",
+                        "pricesUrl": "/docs/managed-mysql/pricing",
+                        "fullName": "Managed Service for MySQL®",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5.5 0C8.538 0 11 1.343 11 3H6a3 3 0 0 0-3 3v1a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-3.313c-.755 1.165-2.792 2-5.187 2C2.462 16 0 14.657 0 13V3c0-1.657 2.462-3 5.5-3Zm4 13H8.15L9.5 6h1.35L9.5 13Zm-1.912-1.167H6.125L5 9.5l1.125-2.333h1.463L6.463 9.5l1.125 2.333Zm3.824 0h1.463L14 9.5l-1.125-2.333h-1.463L12.65 9.5l-1.238 2.333Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "MySQL<sup>&reg;</sup> database management"
+                      },
+                      {
+                        "id": 18,
+                        "slug": "managed-clickhouse",
+                        "name": "Managed Service for ClickHouse®",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/managed-clickhouse/",
+                        "consoleUrl": "https://console.il.nebius.com/link/managed-clickhouse",
+                        "pricesUrl": "/docs/managed-clickhouse/pricing",
+                        "fullName": "Managed Service for ClickHouse®",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M6.5 0C9.538 0 12 1.343 12 3v1H5a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1V6h3v7h1V6h3v7c0 1.657-2.462 3-5.5 3S1 14.657 1 13V3c0-1.657 2.462-3 5.5-3ZM16 8h-3v3h3V8Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "ClickHouse database management"
+                      },
+                      {
+                        "id": 17,
+                        "slug": "managed-kafka",
+                        "name": "Managed Service for Apache Kafka®",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/managed-kafka/",
+                        "consoleUrl": "https://console.il.nebius.com/link/managed-kafka",
+                        "pricesUrl": "/docs/managed-kafka/pricing",
+                        "fullName": "Managed Service for Apache Kafka®",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M10.548 3.143c.493-.285.654-.939.22-1.308A3.5 3.5 0 0 0 5 4.429v.184a1 1 0 0 0 1.5.866l4.048-2.336ZM3 6.67c0-.69-.69-1.162-1.238-.742A4.493 4.493 0 0 0 0 9.5a4.49 4.49 0 0 0 1.763 3.572c.548.42 1.238-.052 1.238-.742V6.67ZM5 13a1 1 0 0 0 1 1h5c.336 0 .415-.41.124-.578l-4.623-2.669a1 1 0 0 0-1.5.866V13Zm8.567-.476c.36.208.82.177 1.102-.128a5.001 5.001 0 0 0-1.642-7.968.9.9 0 0 0-.814.062l-4.78 2.76a1 1 0 0 0 0 1.732l6.134 3.542Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "Managed Apache Kafka<sup>&reg;</sup> clusters"
+                      },
+                      {
+                        "id": 11,
+                        "slug": "data-transfer",
+                        "name": "Data Transfer",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/data-transfer/",
+                        "consoleUrl": "https://console.il.nebius.com/link/data-transfer",
+                        "pricesUrl": "/docs/data-transfer/pricing",
+                        "fullName": "Data Transfer",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8 0c3.314 0 6 1.79 6 4v8c0 2.21-2.686 4-6 4s-6-1.79-6-4V4c0-2.21 2.686-4 6-4Zm-.926 2.883L3.315 7.057c-.579.644-.122 1.67.743 1.67h1.363l-2.106 2.338c-.579.644-.122 1.67.743 1.67h7.885c.866 0 1.322-1.026.743-1.67L10.58 8.726h1.363c.866 0 1.322-1.025.743-1.669L8.927 2.883a1.247 1.247 0 0 0-1.853 0ZM5.427 8.726h5.16L8.932 6.89a1.247 1.247 0 0 0-1.853 0L5.427 8.726Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "Database migration tool"
+                      },
+                      {
+                        "id": 4,
+                        "slug": "storage",
+                        "name": "Object Storage",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/storage/",
+                        "consoleUrl": "https://console.il.nebius.com/link/storage",
+                        "pricesUrl": "/docs/storage/pricing",
+                        "fullName": "Object Storage",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3 3a2 2 0 0 1 2-2h6a4 4 0 0 1 4 4v6a2 2 0 0 1-2 2h-1V6a2 2 0 0 0-2-2H3V3Zm0 1H2a2 2 0 0 0-2 2v6a4 4 0 0 0 4 4h6a2 2 0 0 0 2-2v-1H5a2 2 0 0 1-2-2V4Zm2 5a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2H5Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "Scalable data storage"
+                      },
+                      {
+                        "id": 21,
+                        "slug": "monitoring",
+                        "name": "Monitoring",
+                        "tag": null,
+                        "status": "public",
+                        "docUrl": "/docs/monitoring/",
+                        "consoleUrl": "https://monitoring.il.nebius.com",
+                        "pricesUrl": "/docs/monitoring/pricing",
+                        "fullName": "Monitoring",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"m2.698 7.805 1.917.714L9.301.972C10.362-.738 13 .015 13 2.027v.378c1.221-.707 3 .09 3 1.745V13a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-1.075h13v-9.52c-.277.16-.526.399-.718.722L9.113 8.444a2 2 0 0 1-2.416.85l-2.05-.763-.002.004a7 7 0 0 1-3.14 2.729L0 11.925V9.68a2 2 0 0 1 2.698-1.874Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "Collection and visualization of&nbsp;metrics"
+                      },
+                      {
+                        "id": 26,
+                        "slug": "datalens",
+                        "name": "DataLens",
+                        "tag": "preview",
+                        "status": "public-preview",
+                        "docUrl": "/docs/datalens/",
+                        "consoleUrl": "https://datalens.il.nebius.com/",
+                        "pricesUrl": "/docs/datalens/pricing",
+                        "fullName": "DataLens",
+                        "iamFlag": null,
+                        "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M11 0C9.89543 0 9 0.89543 9 2V4H7C5.89543 4 5 4.89543 5 6V8H3C1.89543 8 1 8.89543 1 10V15H5V8C6.10457 8 7 8.89543 7 10V15H9V4C10.1046 4 11 4.89543 11 6V15H15V2C15 0.895431 14.1046 0 13 0H11Z\" fill=\"currentColor\"></path>\n</svg>",
+                        "description": "Data visualization and analysis"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Data Platform",
+                    "url": "services#data-platform",
+                    "items": [
+                      {
+                        "id": "eqg7jg5hktkt36favi5s",
+                        "slug": "yc/sql-server-2022-web",
+                        "name": "Microsoft SQL Server 2022 Web",
+                        "icon": "https://storage.il.nebius.cloud/products/eqg7jg5hktkt36favi5s.svg"
+                      },
+                      {
+                        "id": "eqgr6d27equ47q0hhnum",
+                        "slug": "yc/sql-server-2022-enterprise",
+                        "name": "Microsoft SQL Server 2022 Enterprise",
+                        "icon": "https://storage.il.nebius.cloud/products/eqgr6d27equ47q0hhnum.svg"
+                      },
+                      {
+                        "id": "eqg51mdjapa40is2r07a",
+                        "slug": "yc/sql-server-2022-standard",
+                        "name": "Microsoft SQL Server 2022 Standard",
+                        "icon": "https://storage.il.nebius.cloud/products/eqg51mdjapa40is2r07a.svg"
+                      },
+                      {
+                        "id": "eqg66ohtg9e8ah1uajht",
+                        "slug": "yc/sql-server-2019-enterprise",
+                        "name": "Microsoft SQL Server 2019 Enterprise",
+                        "icon": "https://storage.il.nebius.cloud/products/eqg66ohtg9e8ah1uajht.svg"
+                      },
+                      {
+                        "id": "eqg65qk0ujja8f4tmk06",
+                        "slug": "yc/sql-server-2019-standard",
+                        "name": "Microsoft SQL Server 2019 Standard",
+                        "icon": "https://storage.il.nebius.cloud/products/eqg65qk0ujja8f4tmk06.svg"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
           "placeholder": "Search by service",
           "marketplace": {
             "title": "Marketplace",
@@ -69,7 +529,216 @@
               "url": "/il/solutions"
             }
           ],
-          "placeholder": "Search by solution"
+          "placeholder": "Search by solution",
+          "data": {
+            "categories": {
+              "industry": {
+                "id": 0,
+                "slug": "industry",
+                "name": "By industry",
+                "groups": [
+                  {
+                    "title": "By industry",
+                    "url": "/solutions",
+                    "items": [
+                      {
+                        "id": 5,
+                        "description": "Cutting-edge technology for creating new customer experiences, digital processes, and sales analytics.",
+                        "name": "E‑Commerce and retail",
+                        "slug": "e-commerce-and-retail",
+                        "url": "/solutions/e-commerce-and-retail",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/e-commerce.svg",
+                        "type": "industry",
+                        "navDescription": "Cutting-edge technology for creating new customer experiences, digital processes, and sales analytics."
+                      },
+                      {
+                        "id": 6,
+                        "description": "A hybrid infrastructure and data analysis platform for the financial sector.",
+                        "name": "Finance and insurance",
+                        "slug": "financial",
+                        "url": "/solutions/financial",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/financial.svg",
+                        "type": "industry",
+                        "navDescription": "A hybrid infrastructure and data analysis platform for the financial sector."
+                      },
+                      {
+                        "id": 7,
+                        "description": "Cloud solutions for healthcare, medical research, and genetics.",
+                        "name": "Healthcare",
+                        "slug": "healthcare",
+                        "url": "/solutions/healthcare",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/healthcare.svg",
+                        "type": "industry",
+                        "navDescription": "Cloud solutions for healthcare, medical research, and genetics."
+                      },
+                      {
+                        "id": 8,
+                        "description": "Digitalization for the energy and heavy industry sectors.",
+                        "name": "Industrial",
+                        "slug": "industrial",
+                        "url": "/solutions/industrial",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/industrial.svg",
+                        "type": "industry",
+                        "navDescription": "Digitalization for the energy and heavy industry sectors."
+                      },
+                      {
+                        "id": 9,
+                        "description": "A cloud platform for online education and a productive research environment.",
+                        "name": "Education",
+                        "slug": "education",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/education.svg",
+                        "type": "industry",
+                        "navDescription": "A cloud platform for online education and a productive research environment."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "useCase": {
+                "id": 1,
+                "slug": "useCase",
+                "name": "By use case",
+                "groups": [
+                  {
+                    "title": "By use case",
+                    "url": "/useCases",
+                    "items": [
+                      {
+                        "id": 1,
+                        "description": "Ensure scalability and fault tolerance for your website or web service by hosting in the cloud.",
+                        "name": "Web service",
+                        "slug": "web-service",
+                        "url": "/solutions/web-service",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/web-service.svg",
+                        "type": "useCase",
+                        "navDescription": "Ensure scalability and fault tolerance for your website or web service by hosting in the cloud."
+                      },
+                      {
+                        "id": 4,
+                        "description": "Automate online sales and store management with scalable Nebius infrastructure.",
+                        "name": "E-commerce website",
+                        "slug": "ecommerce-website",
+                        "url": "/solutions/ecommerce-website",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/online-shop.svg",
+                        "type": "useCase",
+                        "navDescription": "Automate online sales and store management with scalable Nebius infrastructure."
+                      },
+                      {
+                        "id": 2,
+                        "description": "Use popular Microsoft services to build infrastructure on the reliable Nebius platform.",
+                        "name": "Microsoft services in the cloud",
+                        "slug": "microsoft",
+                        "url": "/solutions/microsoft",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/Microsoft.svg",
+                        "type": "useCase",
+                        "navDescription": "Use popular Microsoft services to build infrastructure on the reliable Nebius platform."
+                      },
+                      {
+                        "id": 23,
+                        "description": "Unlock the Full Potential of Your Applications with Our High-Performance GPUs",
+                        "name": "GPU solutions",
+                        "slug": "gpu",
+                        "url": "/solutions/gpu",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/gpu.svg",
+                        "type": "useCase",
+                        "navDescription": "Unlock the Full Potential of Your Applications with Our High-Performance GPUs"
+                      },
+                      {
+                        "id": 19,
+                        "description": "A ready-made solution for companies seeking compliance with data privacy law.",
+                        "name": "Data Residency",
+                        "slug": "data-residency",
+                        "url": "/solutions/data-residency",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/data-residency.svg",
+                        "type": "useCase",
+                        "navDescription": "A ready-made solution for companies seeking compliance with data privacy law."
+                      },
+                      {
+                        "id": 20,
+                        "description": "Move your infrastructure from any platform or provider to Nebius without data losses or service interruption.",
+                        "name": "Cloud migration",
+                        "slug": "migration",
+                        "url": "/solutions/migration",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/migration.svg",
+                        "type": "useCase",
+                        "navDescription": "Move your infrastructure from any platform or provider to Nebius without data losses or service interruption."
+                      },
+                      {
+                        "id": 24,
+                        "description": "Drive Innovation and Control Your Multi-Cloud Environments",
+                        "name": "Multi-Cloud Solutions",
+                        "slug": "multi-cloud",
+                        "url": "/solutions/multi-cloud",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/multi-cloud.svg",
+                        "type": "useCase",
+                        "navDescription": "Drive Innovation and Control Your Multi-Cloud Environments"
+                      },
+                      {
+                        "id": 21,
+                        "description": "Use both platforms, choose an appropriate architecture, and deploy projects within two clouds.",
+                        "name": "Nebius Solution Library for AWS",
+                        "slug": "solution-library-for-aws",
+                        "url": "/solutions/solution-library-for-aws",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/nebius-aws-icon.svg",
+                        "type": "useCase",
+                        "navDescription": "Use both platforms, choose an appropriate architecture, and deploy projects within two clouds."
+                      },
+                      {
+                        "id": 22,
+                        "description": "Use both platforms, choose an appropriate architecture, and deploy projects within two clouds.",
+                        "name": "Nebius Solution Library for Azure",
+                        "slug": "solution-library-for-azure",
+                        "url": "/solutions/solution-library-for-azure",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/nebius-azure-icon.svg",
+                        "type": "useCase",
+                        "navDescription": "Use both platforms, choose an appropriate architecture, and deploy projects within two clouds."
+                      },
+                      {
+                        "id": 25,
+                        "description": "Unlock the Full Potential of Your Applications with Our High-Performance GPUs",
+                        "name": "GPU solutions",
+                        "slug": "gpu-v1",
+                        "url": "/solutions/gpu-v1",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/gpu.svg",
+                        "type": "useCase",
+                        "navDescription": "Unlock the Full Potential of Your Applications with Our High-Performance GPUs"
+                      },
+                      {
+                        "id": 26,
+                        "description": "Create a scalable and reliable corporate data warehouse. Visualize your data and business analytics for all your employees using Nebius’s proprietary BI tool DataLens.",
+                        "name": "Data warehouse and analytics",
+                        "slug": "data-warehouse-and-analytics",
+                        "url": "/solutions/data-warehouse-and-analytics",
+                        "image": "",
+                        "type": "useCase",
+                        "navDescription": "Create a scalable and reliable corporate data warehouse. Visualize your data and business analytics for all your employees using Nebius’s proprietary BI tool DataLens."
+                      },
+                      {
+                        "id": 28,
+                        "description": "The description for the All solutions page",
+                        "name": "The universal template for any use case solution page",
+                        "slug": "use-case-solution-template",
+                        "url": "/solutions/use-case-solution-template",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/web-service.svg",
+                        "type": "useCase",
+                        "navDescription": "The description for the All solutions page"
+                      },
+                      {
+                        "id": 29,
+                        "description": "The description for the All solutions page",
+                        "name": "The universal template for any industry solution page",
+                        "slug": "industry-solution-template",
+                        "url": "/solutions/industry-solution-template",
+                        "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/web-service.svg",
+                        "type": "useCase",
+                        "navDescription": "The description for the All solutions page"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
         },
         {
           "title": "GPU",
@@ -84,80 +753,84 @@
           "title": "Why Nebius",
           "type": "medium-popup-with-categories",
           "section": "why-nebius",
-          "data": [
-            {
-              "title": "Explore the principles",
-              "imageSize": "xm",
-              "items": [
-                {
-                  "name": "Security",
-                  "url": "/il/security",
-                  "description": "Security standards and compliance of our platform",
-                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/shield-check.svg"
-                },
-                {
-                  "name": "Multicloud",
-                  "url": "/il/solutions/multi-cloud",
-                  "description": "Effortless integration with AWS and Azure libraries",
-                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/clouds.svg"
-                },
-                {
-                  "name": "Customer stories",
-                  "url": "/il/customer-stories",
-                  "description": "Explore firsthand experiences from our valued customers",
-                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/seal-check.svg"
-                }
-              ]
-            },
-            {
-              "title": "Connect & сollaborate",
-              "imageSize": "xm",
-              "items": [
-                {
-                  "name": "Support",
-                  "url": "/il/support",
-                  "description": "Dedicated support in Hebrew and English for timely assistance",
-                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/comment.svg"
-                },
-                {
-                  "name": "Partners",
-                  "url": "/il/partner-program",
-                  "description": "Partners for enhanced solutions and cloud adoption",
-                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/briefcase.svg"
-                }
-              ]
-            }
-          ]
+          "data": {
+            "groups": [
+              {
+                "title": "Explore the principles",
+                "imageSize": "xm",
+                "items": [
+                  {
+                    "name": "Security",
+                    "url": "/il/security",
+                    "description": "Security standards and compliance of our platform",
+                    "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/shield-check.svg"
+                  },
+                  {
+                    "name": "Multicloud",
+                    "url": "/il/solutions/multi-cloud",
+                    "description": "Effortless integration with AWS and Azure libraries",
+                    "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/clouds.svg"
+                  },
+                  {
+                    "name": "Customer stories",
+                    "url": "/il/customer-stories",
+                    "description": "Explore firsthand experiences from our valued customers",
+                    "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/seal-check.svg"
+                  }
+                ]
+              },
+              {
+                "title": "Connect & сollaborate",
+                "imageSize": "xm",
+                "items": [
+                  {
+                    "name": "Support",
+                    "url": "/il/support",
+                    "description": "Dedicated support in Hebrew and English for timely assistance",
+                    "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/comment.svg"
+                  },
+                  {
+                    "name": "Partners",
+                    "url": "/il/partner-program",
+                    "description": "Partners for enhanced solutions and cloud adoption",
+                    "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/briefcase.svg"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Pricing",
           "type": "medium-popup",
           "section": "prices",
-          "data": [
-            {
-              "imageSize": "xm",
-              "items": [
-                {
-                  "name": "Pricing",
-                  "url": "/il/prices",
-                  "description": "Transparent, tailored, and competitive pricing",
-                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/pricing.svg"
-                },
-                {
-                  "name": "Grants and offers",
-                  "url": "/il/offers",
-                  "description": "Grants and tailored offers to achieve more in the cloud",
-                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/gift.svg"
-                },
-                {
-                  "name": "Pricing policy",
-                  "url": "/il/docs/billing",
-                  "description": "Detailed documentation about billing, balance and payments",
-                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/text-align-left.svg"
-                }
-              ]
-            }
-          ]
+          "data": {
+            "groups": [
+              {
+                "imageSize": "xm",
+                "items": [
+                  {
+                    "name": "Pricing",
+                    "url": "/il/prices",
+                    "description": "Transparent, tailored, and competitive pricing",
+                    "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/pricing.svg"
+                  },
+                  {
+                    "name": "Grants and offers",
+                    "url": "/il/offers",
+                    "description": "Grants and tailored offers to achieve more in the cloud",
+                    "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/gift.svg"
+                  },
+                  {
+                    "name": "Pricing policy",
+                    "url": "/il/docs/billing",
+                    "description": "Detailed documentation about billing, balance and payments",
+                    "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/text-align-left.svg"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Docs",
@@ -172,73 +845,77 @@
           "title": "Resources",
           "type": "medium-popup",
           "section": "resources",
-          "data": [
-            {
-              "imageSize": "xm",
-              "items": [
-                {
-                  "name": "Blog",
-                  "url": "/il/blog",
-                  "description": "Insightful articles, guides, and expert opinions on cloud technology",
-                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/square-article.svg"
-                },
-                {
-                  "name": "White papers",
-                  "url": "/il/white-papers",
-                  "description": "Detailed research papers, analyses, and technical documents on our offerings",
-                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/file-text.svg"
-                },
-                {
-                  "name": "Documentation",
-                  "description": "Comprehensive guides for smooth platform navigation",
-                  "url": "/il/docs",
-                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/files.svg"
-                },
-                {
-                  "name": "Events",
-                  "url": "/il/events",
-                  "description": "Tech talks, workshops, and webinars for cloud insights and networking",
-                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/calendar.svg"
-                }
-              ]
-            }
-          ]
+          "data": {
+            "groups": [
+              {
+                "imageSize": "xm",
+                "items": [
+                  {
+                    "name": "Blog",
+                    "url": "/il/blog",
+                    "description": "Insightful articles, guides, and expert opinions on cloud technology",
+                    "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/square-article.svg"
+                  },
+                  {
+                    "name": "White papers",
+                    "url": "/il/white-papers",
+                    "description": "Detailed research papers, analyses, and technical documents on our offerings",
+                    "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/file-text.svg"
+                  },
+                  {
+                    "name": "Documentation",
+                    "description": "Comprehensive guides for smooth platform navigation",
+                    "url": "/il/docs",
+                    "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/files.svg"
+                  },
+                  {
+                    "name": "Events",
+                    "url": "/il/events",
+                    "description": "Tech talks, workshops, and webinars for cloud insights and networking",
+                    "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/calendar.svg"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Company",
           "type": "medium-popup",
           "section": "company",
-          "data": [
-            {
-              "imageSize": "xm",
-              "items": [
-                {
-                  "name": "About",
-                  "url": "/il/about",
-                  "description": "Our company's mission, vision, team, and commitment to excellence",
-                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/globe.svg"
-                },
-                {
-                  "name": "News",
-                  "url": "/il/news",
-                  "description": "Latest updates, announcements, and media coverage about our services",
-                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/book-open.svg"
-                },
-                {
-                  "name": "Careers",
-                  "url": "/il/careers",
-                  "description": "Job opportunities, culture, and how to join our innovative team",
-                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/persons.svg"
-                },
-                {
-                  "name": "Contacts",
-                  "url": "/il/contact",
-                  "description": "Reach out for inquiries, support, or personalized service information",
-                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/envelope.svg"
-                }
-              ]
-            }
-          ]
+          "data": {
+            "groups": [
+              {
+                "imageSize": "xm",
+                "items": [
+                  {
+                    "name": "About",
+                    "url": "/il/about",
+                    "description": "Our company's mission, vision, team, and commitment to excellence",
+                    "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/globe.svg"
+                  },
+                  {
+                    "name": "News",
+                    "url": "/il/news",
+                    "description": "Latest updates, announcements, and media coverage about our services",
+                    "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/book-open.svg"
+                  },
+                  {
+                    "name": "Careers",
+                    "url": "/il/careers",
+                    "description": "Job opportunities, culture, and how to join our innovative team",
+                    "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/persons.svg"
+                  },
+                  {
+                    "name": "Contacts",
+                    "url": "/il/contact",
+                    "description": "Reach out for inquiries, support, or personalized service information",
+                    "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/envelope.svg"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
       "searchResult": {
@@ -248,7 +925,467 @@
         }
       }
     },
-    "solutionsData": {
+    "servicesData": {
+      "categories": {
+        "featured": {
+          "id": 1,
+          "slug": "featured",
+          "name": "Featured",
+          "description": null,
+          "groups": [
+            {
+              "title": "Featured",
+              "url": "/services#featured",
+              "items": [
+                {
+                  "id": 1,
+                  "slug": "compute",
+                  "name": "Compute Cloud",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/compute/",
+                  "consoleUrl": "https://console.il.nebius.com/link/compute",
+                  "pricesUrl": "/docs/compute/pricing",
+                  "fullName": "Compute Cloud",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <g clip-path=\"url(#clip0_165_5213)\">\n        <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5.518 3V.986a.986.986 0 0 1 1.97 0V3h-1.97Zm.001 0h-.521a2 2 0 0 0-2 2v.037H.986a.986.986 0 1 0 0 1.971h2.012v1.49H.986a.986.986 0 1 0 0 1.97h2.043a3.003 3.003 0 0 0 1.97 2.4v2.146a.986.986 0 0 0 1.972 0v-1.976h2v1.976a.986.986 0 0 0 1.97 0v-1.976H11a2 2 0 0 0 2-2v-.562H7.52a2 2 0 0 1-2-2V3Zm9.495 2.001h-1.996v1.971h1.996a.986.986 0 0 0 0-1.971Zm0 3.496H13v1.971h2.014a.986.986 0 1 0 0-1.97ZM9.025 3V.986a.986.986 0 0 1 1.972 0V3H9.025Z\" fill=\"currentColor\"></path>\n    </g>\n    <defs>\n        \n            <path fill=\"#fff\" d=\"M0 0h16v16H0z\"></path>\n        \n    </defs>\n</svg>",
+                  "description": "Virtual machines and block storage"
+                },
+                {
+                  "id": 4,
+                  "slug": "storage",
+                  "name": "Object Storage",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/storage/",
+                  "consoleUrl": "https://console.il.nebius.com/link/storage",
+                  "pricesUrl": "/docs/storage/pricing",
+                  "fullName": "Object Storage",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3 3a2 2 0 0 1 2-2h6a4 4 0 0 1 4 4v6a2 2 0 0 1-2 2h-1V6a2 2 0 0 0-2-2H3V3Zm0 1H2a2 2 0 0 0-2 2v6a4 4 0 0 0 4 4h6a2 2 0 0 0 2-2v-1H5a2 2 0 0 1-2-2V4Zm2 5a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2H5Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "Scalable data storage"
+                },
+                {
+                  "id": 3,
+                  "slug": "managed-kubernetes",
+                  "name": "Managed Service for Kubernetes®",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/managed-kubernetes/",
+                  "consoleUrl": "https://console.il.nebius.com/link/managed-kubernetes",
+                  "pricesUrl": "/docs/managed-kubernetes/pricing",
+                  "fullName": "Managed Service for Kubernetes®",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <g clip-path=\"url(#clip0_165_5136)\">\n        <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"m8.84.23 3.631 2.252c.453.281.728.776.728 1.309V4h.45a1.4 1.4 0 0 1 1.365 1.088l.944 4.13a2.1 2.1 0 0 1-.392 1.762l-3.294 4.213a2.1 2.1 0 0 1-1.655.807H5.384a2.1 2.1 0 0 1-1.655-.807L.434 10.98a2.1 2.1 0 0 1-.393-1.76L.98 5.09A1.4 1.4 0 0 1 2.345 4h.459v-.204c0-.535.278-1.033.735-1.313L7.223.225A1.54 1.54 0 0 1 8.84.23Zm3.493 10.64L8.98 12.932a1.82 1.82 0 0 1-1.9.005L3.678 10.87a1.82 1.82 0 0 1-.874-1.556V4.005l4.389 2.707a1.54 1.54 0 0 0 1.617 0l4.39-2.707V9.32a1.82 1.82 0 0 1-.867 1.55Z\" fill=\"currentColor\"></path>\n    </g>\n    <defs>\n        \n            <path fill=\"#fff\" d=\"M0 0h16v16H0z\"></path>\n        \n    </defs>\n</svg>",
+                  "description": "Managed Kubernetes<sup>&reg;</sup> clusters"
+                },
+                {
+                  "id": 20,
+                  "slug": "managed-postgresql",
+                  "name": "Managed Service for PostgreSQL",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/managed-postgresql/",
+                  "consoleUrl": "https://console.il.nebius.com/link/managed-postgresql",
+                  "pricesUrl": "/docs/managed-postgresql/pricing",
+                  "fullName": "Managed Service for PostgreSQL",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13.078 16v-.545c0-.607-.264-1.183-.724-1.578l-1.73-1.487c.19-.324.301-.707.301-1.134V5.708c0-.838-.252-1.657-.724-2.35-1.43-2.1-3.944-2.875-6.162-2.274C4.317.46 4.939 0 5.703 0h5.054A5.245 5.245 0 0 1 16 5.248V16h-2.922ZM4.038 1.084a5.603 5.603 0 0 0-2.941 1.948l-.526.665A2.648 2.648 0 0 0 .89 7.319l6.32 5.61c1.122.997 2.75.597 3.415-.54L9.008 11V7.026c0-2.69-2.32-4.793-4.995-4.525a1.806 1.806 0 0 1 .026-1.416ZM13.004 9a1 1 0 1 0 0-1.999 1 1 0 0 0 0 1.999Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "PostgreSQL database management"
+                },
+                {
+                  "id": 17,
+                  "slug": "managed-kafka",
+                  "name": "Managed Service for Apache Kafka®",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/managed-kafka/",
+                  "consoleUrl": "https://console.il.nebius.com/link/managed-kafka",
+                  "pricesUrl": "/docs/managed-kafka/pricing",
+                  "fullName": "Managed Service for Apache Kafka®",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M10.548 3.143c.493-.285.654-.939.22-1.308A3.5 3.5 0 0 0 5 4.429v.184a1 1 0 0 0 1.5.866l4.048-2.336ZM3 6.67c0-.69-.69-1.162-1.238-.742A4.493 4.493 0 0 0 0 9.5a4.49 4.49 0 0 0 1.763 3.572c.548.42 1.238-.052 1.238-.742V6.67ZM5 13a1 1 0 0 0 1 1h5c.336 0 .415-.41.124-.578l-4.623-2.669a1 1 0 0 0-1.5.866V13Zm8.567-.476c.36.208.82.177 1.102-.128a5.001 5.001 0 0 0-1.642-7.968.9.9 0 0 0-.814.062l-4.78 2.76a1 1 0 0 0 0 1.732l6.134 3.542Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "Managed Apache Kafka<sup>&reg;</sup> clusters"
+                }
+              ]
+            },
+            {
+              "title": "Marketplace",
+              "url": "/marketplace",
+              "items": [
+                {
+                  "id": "eqg0ah5eq8mjck1a37dh",
+                  "slug": "yc/h2o-llmstudio",
+                  "name": "H2O LLM Studio",
+                  "icon": "https://storage.il.nebius.cloud/products/eqg0ah5eq8mjck1a37dh.svg"
+                },
+                {
+                  "id": "eqgct4p3uniqffn9q825",
+                  "slug": "yc/ubuntu-22-04-lts-gpu-cuda12",
+                  "name": "Ubuntu 22.04 LTS for NVIDIA® GPUs (CUDA® 12)",
+                  "icon": "https://storage.il.nebius.cloud/products/eqgct4p3uniqffn9q825.svg"
+                },
+                {
+                  "id": "eqgftso26n5es83dapm2",
+                  "slug": "hystax/hystax-acura-disaster-recovery",
+                  "name": "Hystax Acura Disaster Recovery to Nebius Israel",
+                  "icon": "https://storage.il.nebius.cloud/products/eqgftso26n5es83dapm2.svg"
+                },
+                {
+                  "id": "eqgr6d27equ47q0hhnum",
+                  "slug": "yc/sql-server-2022-enterprise",
+                  "name": "Microsoft SQL Server 2022 Enterprise",
+                  "icon": "https://storage.il.nebius.cloud/products/eqgr6d27equ47q0hhnum.svg"
+                },
+                {
+                  "id": "eqglukefdqri17cdcl9n",
+                  "slug": "yc/dsvm",
+                  "name": "Data Science Virtual Machine",
+                  "icon": "https://storage.il.nebius.cloud/products/eqglukefdqri17cdcl9n.svg"
+                },
+                {
+                  "id": "eqgm7n0mtusaqamf1p78",
+                  "slug": "yc/ubuntu-20-04-lts-gpu-cuda11",
+                  "name": "Ubuntu 20.04 LTS for NVIDIA® GPUs (CUDA® 11)",
+                  "icon": "https://storage.il.nebius.cloud/products/eqgm7n0mtusaqamf1p78.svg"
+                }
+              ]
+            }
+          ]
+        },
+        "infrastructure-network": {
+          "id": 2,
+          "slug": "infrastructure-network",
+          "name": "Infrastructure & Network",
+          "description": "Managed cloud infrastructure services: virtual machines, networks, and data storage.",
+          "groups": [
+            {
+              "title": "Infrastructure & Network",
+              "url": "/services#infrastructure-network",
+              "items": [
+                {
+                  "id": 1,
+                  "slug": "compute",
+                  "name": "Compute Cloud",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/compute/",
+                  "consoleUrl": "https://console.il.nebius.com/link/compute",
+                  "pricesUrl": "/docs/compute/pricing",
+                  "fullName": "Compute Cloud",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <g clip-path=\"url(#clip0_165_5213)\">\n        <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5.518 3V.986a.986.986 0 0 1 1.97 0V3h-1.97Zm.001 0h-.521a2 2 0 0 0-2 2v.037H.986a.986.986 0 1 0 0 1.971h2.012v1.49H.986a.986.986 0 1 0 0 1.97h2.043a3.003 3.003 0 0 0 1.97 2.4v2.146a.986.986 0 0 0 1.972 0v-1.976h2v1.976a.986.986 0 0 0 1.97 0v-1.976H11a2 2 0 0 0 2-2v-.562H7.52a2 2 0 0 1-2-2V3Zm9.495 2.001h-1.996v1.971h1.996a.986.986 0 0 0 0-1.971Zm0 3.496H13v1.971h2.014a.986.986 0 1 0 0-1.97ZM9.025 3V.986a.986.986 0 0 1 1.972 0V3H9.025Z\" fill=\"currentColor\"></path>\n    </g>\n    <defs>\n        \n            <path fill=\"#fff\" d=\"M0 0h16v16H0z\"></path>\n        \n    </defs>\n</svg>",
+                  "description": "Virtual machines and block storage"
+                },
+                {
+                  "id": 4,
+                  "slug": "storage",
+                  "name": "Object Storage",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/storage/",
+                  "consoleUrl": "https://console.il.nebius.com/link/storage",
+                  "pricesUrl": "/docs/storage/pricing",
+                  "fullName": "Object Storage",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3 3a2 2 0 0 1 2-2h6a4 4 0 0 1 4 4v6a2 2 0 0 1-2 2h-1V6a2 2 0 0 0-2-2H3V3Zm0 1H2a2 2 0 0 0-2 2v6a4 4 0 0 0 4 4h6a2 2 0 0 0 2-2v-1H5a2 2 0 0 1-2-2V4Zm2 5a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2H5Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "Scalable data storage"
+                },
+                {
+                  "id": 9,
+                  "slug": "dns",
+                  "name": "Cloud DNS",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/dns/",
+                  "consoleUrl": "https://console.il.nebius.com/link/dns",
+                  "pricesUrl": "/docs/dns/pricing",
+                  "fullName": "Cloud DNS",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8.832 1H2a2 2 0 0 0-2 2v1.972h1.248c1.435 0 3.26 1.045 3.26 3.229 0 2.178-1.788 3.292-3.408 3.292H0V13a2 2 0 0 0 2 2h2.963V5.482a.75.75 0 0 1 1.342-.46l2.527 3.256V1Zm-2.37 14H14a2 2 0 0 0 2-2V5.994h-2.938c-.567 0-.728.296-.728.506 0 .164.057.273.28.403.266.154.635.25 1.07.353.619.147 1.123.39 1.473.767.366.394.492.858.492 1.292 0 1.018-.78 1.934-2.014 1.934h-2.8v-1.5h2.8c.22 0 .337-.072.4-.136a.42.42 0 0 0 .114-.298c0-.134-.032-.207-.092-.272-.076-.082-.266-.22-.72-.327l-.02-.005c-.392-.093-.974-.231-1.457-.511-.533-.31-1.026-.846-1.026-1.7 0-1.261 1.075-2.006 2.228-2.006H16V3a2 2 0 0 0-2-2h-3.668v9.468a.75.75 0 0 1-1.343.46L6.463 7.671V15ZM0 9.993h1.1c1.017 0 1.908-.651 1.908-1.792 0-1.136-.916-1.73-1.76-1.73H0v3.522Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "Domain name management"
+                },
+                {
+                  "id": 5,
+                  "slug": "vpc",
+                  "name": "Virtual Private Cloud",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/vpc/",
+                  "consoleUrl": "https://console.il.nebius.com/link/vpc",
+                  "pricesUrl": "/docs/vpc/pricing",
+                  "fullName": "Virtual Private Cloud",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4 2c0 .685-.345 1.29-.87 1.65L4 8h2l.87-4.35a2 2 0 1 1 2.26 0L10 8h2l.87-4.35a2 2 0 1 1 2.26 0l.392 1.958A2 2 0 0 1 13.56 8H13l-.87 4.35a2 2 0 1 1-2.26 0L9 8H7l-.87 4.35a2 2 0 1 1-2.26 0L3 8h-.56A2 2 0 0 1 .478 5.608L.87 3.65A2 2 0 1 1 4 2Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "Cloud network management"
+                },
+                {
+                  "id": 6,
+                  "slug": "network-load-balancer",
+                  "name": "Network Load Balancer",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/network-load-balancer/",
+                  "consoleUrl": "https://console.il.nebius.com/link/network-load-balancer",
+                  "pricesUrl": "/docs/network-load-balancer/pricing",
+                  "fullName": "Network Load Balancer",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16 2a2 2 0 0 1-3.732 1H11a2 2 0 0 0-2 2v2h3.268A2 2 0 0 1 16 8a2 2 0 0 1-3.732 1H9v2a2 2 0 0 0 2 2h1.268A2 2 0 0 1 16 14a2 2 0 0 1-3.732 1H11a4 4 0 0 1-4-4v-1l2-2-2-2V5a4 4 0 0 1 4-4h1.268A2 2 0 0 1 16 2ZM6 6.5H0v3h6v-3Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "Network load balancers"
+                },
+                {
+                  "id": 7,
+                  "slug": "application-load-balancer",
+                  "name": "Application Load Balancer",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/application-load-balancer/",
+                  "consoleUrl": "https://console.il.nebius.com/link/application-load-balancer",
+                  "pricesUrl": "/docs/application-load-balancer/pricing",
+                  "fullName": "Application Load Balancer",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3 1h2.627v3.5l3.14 2.747a1 1 0 0 1 0 1.506L5.627 11.5V15H3a2 2 0 0 1-2-2V9h4.627V7H1V3a2 2 0 0 1 2-2Zm10 14H7.627v-2.976a1.5 1.5 0 0 1 2.25-1.299l5.023 2.9A2 2 0 0 1 13 15Zm2-10.275v6.55l-3.421-1.976a1.5 1.5 0 0 1 0-2.598L15 4.725Zm-5.123.55 5.023-2.9A2 2 0 0 0 13 1H7.627v2.976a1.5 1.5 0 0 0 2.25 1.299Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "L7 load balancers"
+                },
+                {
+                  "id": 21,
+                  "slug": "monitoring",
+                  "name": "Monitoring",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/monitoring/",
+                  "consoleUrl": "https://monitoring.il.nebius.com",
+                  "pricesUrl": "/docs/monitoring/pricing",
+                  "fullName": "Monitoring",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"m2.698 7.805 1.917.714L9.301.972C10.362-.738 13 .015 13 2.027v.378c1.221-.707 3 .09 3 1.745V13a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-1.075h13v-9.52c-.277.16-.526.399-.718.722L9.113 8.444a2 2 0 0 1-2.416.85l-2.05-.763-.002.004a7 7 0 0 1-3.14 2.729L0 11.925V9.68a2 2 0 0 1 2.698-1.874Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "Collection and visualization of&nbsp;metrics"
+                },
+                {
+                  "id": 62,
+                  "slug": "logging",
+                  "name": "Cloud Logging",
+                  "tag": "new",
+                  "status": "public",
+                  "docUrl": "/docs/logging/",
+                  "consoleUrl": "https://console.il.nebius.com/link/logging",
+                  "pricesUrl": "/docs/logging/pricing",
+                  "fullName": "Cloud Logging",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M2 0C0.895431 0 0 0.89543 0 2V3H13V5H0V7H13V9H0V11H11V13H0V14C0 15.1046 0.895431 16 2 16H9C10.1046 16 11 15.1046 11 14V13H13C14.1046 13 15 12.1046 15 11V9C15 7.89543 14.1046 7 13 7V5C14.1046 5 15 4.10457 15 3V2C15 0.895431 14.1046 0 13 0H2Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "Nebius services logging"
+                }
+              ]
+            },
+            {
+              "title": "Marketplace",
+              "url": "/marketplace",
+              "items": [
+                {
+                  "id": "eqgtqeet87jshce7o7j8",
+                  "slug": "yc/nat-instance-ubuntu-18-04-lts",
+                  "name": "NAT instance based on Ubuntu 18.04 LTS",
+                  "icon": "https://storage.il.nebius.cloud/products/eqgtqeet87jshce7o7j8.svg"
+                },
+                {
+                  "id": "eqg70ohdvsd0jgp2302j",
+                  "slug": "yc/ipsec-instance-ubuntu",
+                  "name": "IPSec instance",
+                  "icon": "https://storage.il.nebius.cloud/products/eqg70ohdvsd0jgp2302j.svg"
+                },
+                {
+                  "id": "eqgcddoh7vl5id4t774h",
+                  "slug": "yc/nat-instance-ubuntu-2204-lts",
+                  "name": "NAT instance based on Ubuntu 22.04 LTS",
+                  "icon": "https://storage.il.nebius.cloud/products/eqgcddoh7vl5id4t774h.svg"
+                },
+                {
+                  "id": "eqg4s0vgoct249lqk4ce",
+                  "slug": "yc/fortigate-vm",
+                  "name": "FortiGate-VM - Fortinet Next-Generation Firewall",
+                  "icon": "https://storage.il.nebius.cloud/products/eqg4s0vgoct249lqk4ce.svg"
+                },
+                {
+                  "id": "eqg1aee242rtv6lsrfea",
+                  "slug": "yc/openvpn-access-server",
+                  "name": "OpenVPN Access Server",
+                  "icon": "https://storage.il.nebius.cloud/products/eqg1aee242rtv6lsrfea.svg"
+                },
+                {
+                  "id": "eqgj6i3i3vihbfc5tt2u",
+                  "slug": "yc/opnsense",
+                  "name": "OPNsense",
+                  "icon": "https://storage.il.nebius.cloud/products/eqgj6i3i3vihbfc5tt2u.svg"
+                }
+              ]
+            }
+          ]
+        },
+        "data-platform": {
+          "id": 7,
+          "slug": "data-platform",
+          "name": "Data Platform",
+          "description": "The full data lifecycle: from ingestion and storage to&nbsp;analysis and visualization.",
+          "groups": [
+            {
+              "title": "Data Platform",
+              "url": "services#data-platform",
+              "items": [
+                {
+                  "id": 20,
+                  "slug": "managed-postgresql",
+                  "name": "Managed Service for PostgreSQL",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/managed-postgresql/",
+                  "consoleUrl": "https://console.il.nebius.com/link/managed-postgresql",
+                  "pricesUrl": "/docs/managed-postgresql/pricing",
+                  "fullName": "Managed Service for PostgreSQL",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13.078 16v-.545c0-.607-.264-1.183-.724-1.578l-1.73-1.487c.19-.324.301-.707.301-1.134V5.708c0-.838-.252-1.657-.724-2.35-1.43-2.1-3.944-2.875-6.162-2.274C4.317.46 4.939 0 5.703 0h5.054A5.245 5.245 0 0 1 16 5.248V16h-2.922ZM4.038 1.084a5.603 5.603 0 0 0-2.941 1.948l-.526.665A2.648 2.648 0 0 0 .89 7.319l6.32 5.61c1.122.997 2.75.597 3.415-.54L9.008 11V7.026c0-2.69-2.32-4.793-4.995-4.525a1.806 1.806 0 0 1 .026-1.416ZM13.004 9a1 1 0 1 0 0-1.999 1 1 0 0 0 0 1.999Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "PostgreSQL database management"
+                },
+                {
+                  "id": 19,
+                  "slug": "managed-mysql",
+                  "name": "Managed Service for MySQL®",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/managed-mysql/",
+                  "consoleUrl": "https://console.il.nebius.com/link/managed-mysql",
+                  "pricesUrl": "/docs/managed-mysql/pricing",
+                  "fullName": "Managed Service for MySQL®",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5.5 0C8.538 0 11 1.343 11 3H6a3 3 0 0 0-3 3v1a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-3.313c-.755 1.165-2.792 2-5.187 2C2.462 16 0 14.657 0 13V3c0-1.657 2.462-3 5.5-3Zm4 13H8.15L9.5 6h1.35L9.5 13Zm-1.912-1.167H6.125L5 9.5l1.125-2.333h1.463L6.463 9.5l1.125 2.333Zm3.824 0h1.463L14 9.5l-1.125-2.333h-1.463L12.65 9.5l-1.238 2.333Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "MySQL<sup>&reg;</sup> database management"
+                },
+                {
+                  "id": 18,
+                  "slug": "managed-clickhouse",
+                  "name": "Managed Service for ClickHouse®",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/managed-clickhouse/",
+                  "consoleUrl": "https://console.il.nebius.com/link/managed-clickhouse",
+                  "pricesUrl": "/docs/managed-clickhouse/pricing",
+                  "fullName": "Managed Service for ClickHouse®",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M6.5 0C9.538 0 12 1.343 12 3v1H5a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1V6h3v7h1V6h3v7c0 1.657-2.462 3-5.5 3S1 14.657 1 13V3c0-1.657 2.462-3 5.5-3ZM16 8h-3v3h3V8Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "ClickHouse database management"
+                },
+                {
+                  "id": 17,
+                  "slug": "managed-kafka",
+                  "name": "Managed Service for Apache Kafka®",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/managed-kafka/",
+                  "consoleUrl": "https://console.il.nebius.com/link/managed-kafka",
+                  "pricesUrl": "/docs/managed-kafka/pricing",
+                  "fullName": "Managed Service for Apache Kafka®",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M10.548 3.143c.493-.285.654-.939.22-1.308A3.5 3.5 0 0 0 5 4.429v.184a1 1 0 0 0 1.5.866l4.048-2.336ZM3 6.67c0-.69-.69-1.162-1.238-.742A4.493 4.493 0 0 0 0 9.5a4.49 4.49 0 0 0 1.763 3.572c.548.42 1.238-.052 1.238-.742V6.67ZM5 13a1 1 0 0 0 1 1h5c.336 0 .415-.41.124-.578l-4.623-2.669a1 1 0 0 0-1.5.866V13Zm8.567-.476c.36.208.82.177 1.102-.128a5.001 5.001 0 0 0-1.642-7.968.9.9 0 0 0-.814.062l-4.78 2.76a1 1 0 0 0 0 1.732l6.134 3.542Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "Managed Apache Kafka<sup>&reg;</sup> clusters"
+                },
+                {
+                  "id": 11,
+                  "slug": "data-transfer",
+                  "name": "Data Transfer",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/data-transfer/",
+                  "consoleUrl": "https://console.il.nebius.com/link/data-transfer",
+                  "pricesUrl": "/docs/data-transfer/pricing",
+                  "fullName": "Data Transfer",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8 0c3.314 0 6 1.79 6 4v8c0 2.21-2.686 4-6 4s-6-1.79-6-4V4c0-2.21 2.686-4 6-4Zm-.926 2.883L3.315 7.057c-.579.644-.122 1.67.743 1.67h1.363l-2.106 2.338c-.579.644-.122 1.67.743 1.67h7.885c.866 0 1.322-1.026.743-1.67L10.58 8.726h1.363c.866 0 1.322-1.025.743-1.669L8.927 2.883a1.247 1.247 0 0 0-1.853 0ZM5.427 8.726h5.16L8.932 6.89a1.247 1.247 0 0 0-1.853 0L5.427 8.726Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "Database migration tool"
+                },
+                {
+                  "id": 4,
+                  "slug": "storage",
+                  "name": "Object Storage",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/storage/",
+                  "consoleUrl": "https://console.il.nebius.com/link/storage",
+                  "pricesUrl": "/docs/storage/pricing",
+                  "fullName": "Object Storage",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3 3a2 2 0 0 1 2-2h6a4 4 0 0 1 4 4v6a2 2 0 0 1-2 2h-1V6a2 2 0 0 0-2-2H3V3Zm0 1H2a2 2 0 0 0-2 2v6a4 4 0 0 0 4 4h6a2 2 0 0 0 2-2v-1H5a2 2 0 0 1-2-2V4Zm2 5a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2H5Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "Scalable data storage"
+                },
+                {
+                  "id": 21,
+                  "slug": "monitoring",
+                  "name": "Monitoring",
+                  "tag": null,
+                  "status": "public",
+                  "docUrl": "/docs/monitoring/",
+                  "consoleUrl": "https://monitoring.il.nebius.com",
+                  "pricesUrl": "/docs/monitoring/pricing",
+                  "fullName": "Monitoring",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"m2.698 7.805 1.917.714L9.301.972C10.362-.738 13 .015 13 2.027v.378c1.221-.707 3 .09 3 1.745V13a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-1.075h13v-9.52c-.277.16-.526.399-.718.722L9.113 8.444a2 2 0 0 1-2.416.85l-2.05-.763-.002.004a7 7 0 0 1-3.14 2.729L0 11.925V9.68a2 2 0 0 1 2.698-1.874Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "Collection and visualization of&nbsp;metrics"
+                },
+                {
+                  "id": 26,
+                  "slug": "datalens",
+                  "name": "DataLens",
+                  "tag": "preview",
+                  "status": "public-preview",
+                  "docUrl": "/docs/datalens/",
+                  "consoleUrl": "https://datalens.il.nebius.com/",
+                  "pricesUrl": "/docs/datalens/pricing",
+                  "fullName": "DataLens",
+                  "iamFlag": null,
+                  "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M11 0C9.89543 0 9 0.89543 9 2V4H7C5.89543 4 5 4.89543 5 6V8H3C1.89543 8 1 8.89543 1 10V15H5V8C6.10457 8 7 8.89543 7 10V15H9V4C10.1046 4 11 4.89543 11 6V15H15V2C15 0.895431 14.1046 0 13 0H11Z\" fill=\"currentColor\"></path>\n</svg>",
+                  "description": "Data visualization and analysis"
+                }
+              ]
+            },
+            {
+              "title": "Data Platform",
+              "url": "services#data-platform",
+              "items": [
+                {
+                  "id": "eqg7jg5hktkt36favi5s",
+                  "slug": "yc/sql-server-2022-web",
+                  "name": "Microsoft SQL Server 2022 Web",
+                  "icon": "https://storage.il.nebius.cloud/products/eqg7jg5hktkt36favi5s.svg"
+                },
+                {
+                  "id": "eqgr6d27equ47q0hhnum",
+                  "slug": "yc/sql-server-2022-enterprise",
+                  "name": "Microsoft SQL Server 2022 Enterprise",
+                  "icon": "https://storage.il.nebius.cloud/products/eqgr6d27equ47q0hhnum.svg"
+                },
+                {
+                  "id": "eqg51mdjapa40is2r07a",
+                  "slug": "yc/sql-server-2022-standard",
+                  "name": "Microsoft SQL Server 2022 Standard",
+                  "icon": "https://storage.il.nebius.cloud/products/eqg51mdjapa40is2r07a.svg"
+                },
+                {
+                  "id": "eqg66ohtg9e8ah1uajht",
+                  "slug": "yc/sql-server-2019-enterprise",
+                  "name": "Microsoft SQL Server 2019 Enterprise",
+                  "icon": "https://storage.il.nebius.cloud/products/eqg66ohtg9e8ah1uajht.svg"
+                },
+                {
+                  "id": "eqg65qk0ujja8f4tmk06",
+                  "slug": "yc/sql-server-2019-standard",
+                  "name": "Microsoft SQL Server 2019 Standard",
+                  "icon": "https://storage.il.nebius.cloud/products/eqg65qk0ujja8f4tmk06.svg"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "solutionsData__": {
       "dataByCategory": {
         "industry": [
           {
@@ -430,7 +1567,216 @@
         }
       ]
     },
-    "servicesData": {
+    "solutionsData": {
+      "categories": {
+        "industry": {
+          "id": 0,
+          "slug": "industry",
+          "name": "By industry",
+          "groups": [
+            {
+              "title": "By industry",
+              "url": "/solutions",
+              "items": [
+                {
+                  "id": 5,
+                  "description": "Cutting-edge technology for creating new customer experiences, digital processes, and sales analytics.",
+                  "name": "E‑Commerce and retail",
+                  "slug": "e-commerce-and-retail",
+                  "url": "/solutions/e-commerce-and-retail",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/e-commerce.svg",
+                  "type": "industry",
+                  "navDescription": "Cutting-edge technology for creating new customer experiences, digital processes, and sales analytics."
+                },
+                {
+                  "id": 6,
+                  "description": "A hybrid infrastructure and data analysis platform for the financial sector.",
+                  "name": "Finance and insurance",
+                  "slug": "financial",
+                  "url": "/solutions/financial",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/financial.svg",
+                  "type": "industry",
+                  "navDescription": "A hybrid infrastructure and data analysis platform for the financial sector."
+                },
+                {
+                  "id": 7,
+                  "description": "Cloud solutions for healthcare, medical research, and genetics.",
+                  "name": "Healthcare",
+                  "slug": "healthcare",
+                  "url": "/solutions/healthcare",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/healthcare.svg",
+                  "type": "industry",
+                  "navDescription": "Cloud solutions for healthcare, medical research, and genetics."
+                },
+                {
+                  "id": 8,
+                  "description": "Digitalization for the energy and heavy industry sectors.",
+                  "name": "Industrial",
+                  "slug": "industrial",
+                  "url": "/solutions/industrial",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/industrial.svg",
+                  "type": "industry",
+                  "navDescription": "Digitalization for the energy and heavy industry sectors."
+                },
+                {
+                  "id": 9,
+                  "description": "A cloud platform for online education and a productive research environment.",
+                  "name": "Education",
+                  "slug": "education",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/education.svg",
+                  "type": "industry",
+                  "navDescription": "A cloud platform for online education and a productive research environment."
+                }
+              ]
+            }
+          ]
+        },
+        "useCase": {
+          "id": 1,
+          "slug": "useCase",
+          "name": "By use case",
+          "groups": [
+            {
+              "title": "By use case",
+              "url": "/useCases",
+              "items": [
+                {
+                  "id": 1,
+                  "description": "Ensure scalability and fault tolerance for your website or web service by hosting in the cloud.",
+                  "name": "Web service",
+                  "slug": "web-service",
+                  "url": "/solutions/web-service",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/web-service.svg",
+                  "type": "useCase",
+                  "navDescription": "Ensure scalability and fault tolerance for your website or web service by hosting in the cloud."
+                },
+                {
+                  "id": 4,
+                  "description": "Automate online sales and store management with scalable Nebius infrastructure.",
+                  "name": "E-commerce website",
+                  "slug": "ecommerce-website",
+                  "url": "/solutions/ecommerce-website",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/online-shop.svg",
+                  "type": "useCase",
+                  "navDescription": "Automate online sales and store management with scalable Nebius infrastructure."
+                },
+                {
+                  "id": 2,
+                  "description": "Use popular Microsoft services to build infrastructure on the reliable Nebius platform.",
+                  "name": "Microsoft services in the cloud",
+                  "slug": "microsoft",
+                  "url": "/solutions/microsoft",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/Microsoft.svg",
+                  "type": "useCase",
+                  "navDescription": "Use popular Microsoft services to build infrastructure on the reliable Nebius platform."
+                },
+                {
+                  "id": 23,
+                  "description": "Unlock the Full Potential of Your Applications with Our High-Performance GPUs",
+                  "name": "GPU solutions",
+                  "slug": "gpu",
+                  "url": "/solutions/gpu",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/gpu.svg",
+                  "type": "useCase",
+                  "navDescription": "Unlock the Full Potential of Your Applications with Our High-Performance GPUs"
+                },
+                {
+                  "id": 19,
+                  "description": "A ready-made solution for companies seeking compliance with data privacy law.",
+                  "name": "Data Residency",
+                  "slug": "data-residency",
+                  "url": "/solutions/data-residency",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/data-residency.svg",
+                  "type": "useCase",
+                  "navDescription": "A ready-made solution for companies seeking compliance with data privacy law."
+                },
+                {
+                  "id": 20,
+                  "description": "Move your infrastructure from any platform or provider to Nebius without data losses or service interruption.",
+                  "name": "Cloud migration",
+                  "slug": "migration",
+                  "url": "/solutions/migration",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/migration.svg",
+                  "type": "useCase",
+                  "navDescription": "Move your infrastructure from any platform or provider to Nebius without data losses or service interruption."
+                },
+                {
+                  "id": 24,
+                  "description": "Drive Innovation and Control Your Multi-Cloud Environments",
+                  "name": "Multi-Cloud Solutions",
+                  "slug": "multi-cloud",
+                  "url": "/solutions/multi-cloud",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/multi-cloud.svg",
+                  "type": "useCase",
+                  "navDescription": "Drive Innovation and Control Your Multi-Cloud Environments"
+                },
+                {
+                  "id": 21,
+                  "description": "Use both platforms, choose an appropriate architecture, and deploy projects within two clouds.",
+                  "name": "Nebius Solution Library for AWS",
+                  "slug": "solution-library-for-aws",
+                  "url": "/solutions/solution-library-for-aws",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/nebius-aws-icon.svg",
+                  "type": "useCase",
+                  "navDescription": "Use both platforms, choose an appropriate architecture, and deploy projects within two clouds."
+                },
+                {
+                  "id": 22,
+                  "description": "Use both platforms, choose an appropriate architecture, and deploy projects within two clouds.",
+                  "name": "Nebius Solution Library for Azure",
+                  "slug": "solution-library-for-azure",
+                  "url": "/solutions/solution-library-for-azure",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/nebius-azure-icon.svg",
+                  "type": "useCase",
+                  "navDescription": "Use both platforms, choose an appropriate architecture, and deploy projects within two clouds."
+                },
+                {
+                  "id": 25,
+                  "description": "Unlock the Full Potential of Your Applications with Our High-Performance GPUs",
+                  "name": "GPU solutions",
+                  "slug": "gpu-v1",
+                  "url": "/solutions/gpu-v1",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/gpu.svg",
+                  "type": "useCase",
+                  "navDescription": "Unlock the Full Potential of Your Applications with Our High-Performance GPUs"
+                },
+                {
+                  "id": 26,
+                  "description": "Create a scalable and reliable corporate data warehouse. Visualize your data and business analytics for all your employees using Nebius’s proprietary BI tool DataLens.",
+                  "name": "Data warehouse and analytics",
+                  "slug": "data-warehouse-and-analytics",
+                  "url": "/solutions/data-warehouse-and-analytics",
+                  "image": "",
+                  "type": "useCase",
+                  "navDescription": "Create a scalable and reliable corporate data warehouse. Visualize your data and business analytics for all your employees using Nebius’s proprietary BI tool DataLens."
+                },
+                {
+                  "id": 28,
+                  "description": "The description for the All solutions page",
+                  "name": "The universal template for any use case solution page",
+                  "slug": "use-case-solution-template",
+                  "url": "/solutions/use-case-solution-template",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/web-service.svg",
+                  "type": "useCase",
+                  "navDescription": "The description for the All solutions page"
+                },
+                {
+                  "id": 29,
+                  "description": "The description for the All solutions page",
+                  "name": "The universal template for any industry solution page",
+                  "slug": "industry-solution-template",
+                  "url": "/solutions/industry-solution-template",
+                  "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/web-service.svg",
+                  "type": "useCase",
+                  "navDescription": "The description for the All solutions page"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "servicesData__": {
       "categories": [
         {
           "id": 1,

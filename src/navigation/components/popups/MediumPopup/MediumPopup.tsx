@@ -3,7 +3,7 @@ import React from 'react';
 import {Col, GridColumnSize, Row} from '@gravity-ui/page-constructor';
 
 import {block} from '../../../../utils/cn';
-import {PopupDataProps} from '../../../models';
+import {PopupData} from '../../../models';
 import {NavigationPopupItem} from '../../Navigation/NavigationPopupItem/NavigationPopupItem';
 
 import './MediumPopup.scss';
@@ -11,13 +11,13 @@ import './MediumPopup.scss';
 const b = block('cloud-medium-popup');
 
 interface MediumPopupProps {
-    data: PopupDataProps[];
+    data: PopupData;
 }
 
 export const MediumPopup: React.FC<MediumPopupProps> = ({data}) => (
     <Row>
         <Col className={b()}>
-            {data.map((dataItem) =>
+            {data.groups.map((dataItem) =>
                 dataItem.items.map((item) => (
                     <NavigationPopupItem
                         {...item}

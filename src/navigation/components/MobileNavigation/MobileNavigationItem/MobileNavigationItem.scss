@@ -48,6 +48,7 @@ $block: '.#{$ns}cloud-mobile-navigation-item';
         &-title {
             @include text-size(body-2);
 
+            margin: 0;
             padding: calc($indentS / 2) 0;
         }
 

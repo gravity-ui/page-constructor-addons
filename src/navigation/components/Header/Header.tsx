@@ -9,14 +9,7 @@ import {AnalyticsContext, AnalyticsContextProps} from '../../contexts/analytics'
 import {Device, DeviceContext} from '../../contexts/device';
 import {LocationContext, LocationContextProps} from '../../contexts/location';
 import {MobileContext} from '../../contexts/mobile';
-import {
-    HeaderNavigationData,
-    Locale,
-    NavigationSectionType,
-    ServicesData,
-    SolutionsData,
-} from '../../models';
-import {getMobilePopupData, prepareNavigationConfig} from '../../utils';
+import {Locale, NavigationData} from '../../models';
 import {ButtonsContainer} from '../ButtonsContainer/ButtonsContainer';
 import {LangSwitch} from '../LangSwitch/LangSwitch';
 import Logo from '../Logo/Logo';
@@ -37,9 +30,7 @@ export interface CustomElements {
 }
 export interface HeaderProps {
     theme: Theme;
-    data: HeaderNavigationData;
-    servicesData: ServicesData;
-    solutionsData: SolutionsData;
+    data: NavigationData;
     locales: Locale[];
     isMobile?: boolean;
     device?: Device;
@@ -55,8 +46,6 @@ export const Header: React.FC<HeaderProps> = ({
     analytics = {},
     isMobile,
     locales,
-    servicesData,
-    solutionsData,
     device,
     location = {},
     customElements,
@@ -83,27 +72,6 @@ export const Header: React.FC<HeaderProps> = ({
               }
             : undefined,
     }));
-
-    const largePopupData = useMemo(() => {
-        return {
-            services: servicesData,
-            solutions: solutionsData,
-        };
-    }, [servicesData, solutionsData]);
-
-    const mobileLargePopupData = useMemo(() => {
-        return {
-            services: getMobilePopupData(servicesData, NavigationSectionType.Services),
-            solutions: getMobilePopupData(solutionsData, NavigationSectionType.Solutions),
-        };
-    }, [servicesData, solutionsData]);
-
-    const desktopNavigationConfig = navigation
-        ? prepareNavigationConfig(navigation, largePopupData)
-        : undefined;
-    const mobileNavigationConfig = navigation
-        ? prepareNavigationConfig(navigation, mobileLargePopupData)
-        : undefined;
 
     const showButtonsContainer = isMobile
         ? !navigation && buttons && buttons.length === 1
@@ -185,7 +153,7 @@ export const Header: React.FC<HeaderProps> = ({
                                 'with-shadow': withShadow,
                                 search: isSearchMode,
                                 'open-popup': isPopupOpen,
-                                'one-row': !desktopNavigationConfig,
+                                'one-row': !navigation,
                             })}
                             ref={headerRef}
                         >
@@ -236,12 +204,12 @@ export const Header: React.FC<HeaderProps> = ({
                                         </ButtonsContainer>
                                     )}
                                     {right}
-                                    {mobileNavigationConfig ? (
+                                    {navigation ? (
                                         <MobileNavigation
                                             toogleOpen={toggleMobileNavigationPopup}
                                             isOpened={isMobileNavigationOpen}
                                             isSearchOpen={isSearchMode}
-                                            data={mobileNavigationConfig}
+                                            data={navigation}
                                             buttons={buttons}
                                             onMenuScroll={onMenuScroll}
                                             popupClassName={b('user-popup')}
@@ -250,14 +218,14 @@ export const Header: React.FC<HeaderProps> = ({
                                     ) : null}
                                 </div>
                             </div>
-                            {desktopNavigationConfig ? (
+                            {navigation ? (
                                 <div className={b('scroller')}>
                                     <OverflowScroller
                                         arrowClassName={b('scroll-arrow')}
                                         arrowSize={14}
                                     >
                                         <Navigation
-                                            data={desktopNavigationConfig}
+                                            data={navigation}
                                             headerRef={headerRef}
                                             handleOpenPopup={handleOpenPopup}
                                             handleClosePopup={handleClosePopup}

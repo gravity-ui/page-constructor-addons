@@ -3,7 +3,7 @@ import React, {Fragment} from 'react';
 import type {TextSize} from '@gravity-ui/page-constructor';
 import {Row, Title, block} from '@gravity-ui/page-constructor';
 
-import {NavigationItemExtended, NavigationSectionType} from '../../models';
+import {NavigationItem} from '../../models';
 import {applySearch} from '../../utils';
 import {NavigationItemsList} from '../Navigation/NavigationItemsList/NavigationItemsList';
 import {SearchNotFound} from '../SearchNotFound/SearchNotFound';
@@ -16,8 +16,8 @@ const b = block('cloud-search-result');
 
 interface SearchResultProps {
     value: string;
-    data: NavigationItemExtended[];
-    section: NavigationSectionType;
+    data: NavigationItem[];
+    section?: string;
     className?: string;
 }
 

@@ -8,14 +8,14 @@ import {block} from '../../../../utils/cn';
 import {NO_MENU_TAB_SELECTED} from '../../../constants';
 import {AnalyticsContext} from '../../../contexts/analytics';
 import {LocationContext} from '../../../contexts/location';
-import {AnalyticsEventType, NavigationItemModel, NavigationItemType} from '../../../models';
+import {AnalyticsEventType, NavigationItemType, NavigationSectionData} from '../../../models';
 
 import './NavigationItem.scss';
 
 const b = block('navigation-item');
 
 interface NavigationItemOwnProps {
-    item: NavigationItemModel;
+    item: NavigationSectionData;
     isActive: boolean;
     handleOpenPopup: () => void;
     handleClosePopup: () => void;

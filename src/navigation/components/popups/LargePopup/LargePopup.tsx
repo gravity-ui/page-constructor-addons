@@ -6,14 +6,12 @@ import {Col, GridColumnSize, Link, Row, Title} from '@gravity-ui/page-constructo
 
 import {block} from '../../../../utils/cn';
 import {
+    CategorizedPopupData,
     CategoryData,
-    NavigationItemExtended,
-    NavigationItemModel,
-    NavigationSectionType,
-    ServicesData,
-    SolutionsData,
+    NavigationItem,
+    NavigationSectionData,
 } from '../../../models';
-import {getFlatList, getHeaderHeight, getNavigationTitleLink} from '../../../utils';
+import {getFlatList, getHeaderHeight} from '../../../utils';
 import {NavigationItemsList} from '../../Navigation/NavigationItemsList/NavigationItemsList';
 import {SearchResult} from '../../SearchResult/SearchResult';
 
@@ -26,16 +24,17 @@ import './LargePopup.scss';
 const b = block('cloud-large-popup');
 const LARGE_POPUP_INDENT = 240;
 
-interface ExtraPopupProps
-    extends Pick<NavigationItemModel, 'links' | 'section' | 'placeholder' | 'marketplace'> {
-    data: ServicesData | SolutionsData;
+type GroupItemsMap = Record<string, NavigationItem[]>;
+
+export interface LargePopupProps extends Omit<NavigationSectionData, 'data'> {
+    data: CategorizedPopupData;
 }
 
-export const LargePopup: React.FC<ExtraPopupProps> = (props) => {
-    const {data, section, placeholder, links, marketplace} = props;
-    const {categories, dataByCategory, products} = data;
+export const LargePopup: React.FC<LargePopupProps> = (props) => {
+    const {data, section, placeholder, links} = props;
+    const {categories} = data;
 
-    const [currentCategory, setCurrentCategory] = useState(categories[0]);
+    const [currentCategory, setCurrentCategory] = useState(Object.values(categories)[0]);
     const [search, setSearch] = useState('');
     const categoriesRef = useRef<HTMLUListElement>(null);
     const [maxHeightCategories, setMaxHeightCategories] = useState(0);
@@ -44,12 +43,20 @@ export const LargePopup: React.FC<ExtraPopupProps> = (props) => {
     const rightSideRef = useRef<HTMLDivElement>(null);
     const rightSideContentRef = useRef<HTMLDivElement>(null);
     const controlsRef = useRef<HTMLDivElement>(null);
+    const currentCategoryData = categories[currentCategory.slug];
+    const flatList = useMemo(() => {
+        const searchableItems = Object.entries(categories).reduce<GroupItemsMap>(
+            (result, [slug, {groups}]) => {
+                // eslint-disable-next-line no-param-reassign
+                result[slug] = groups[0].items;
 
-    const currentCategoryItems = dataByCategory[currentCategory.slug];
-    const flatList = useMemo(
-        () => getFlatList<NavigationItemExtended>(dataByCategory),
-        [dataByCategory],
-    );
+                return result;
+            },
+            {},
+        );
+
+        return getFlatList(searchableItems);
+    }, [categories]);
 
     const onSearch = useCallback((value: string) => setSearch(value), []);
     const changeCategory = useCallback((value: CategoryData) => {
@@ -60,19 +67,15 @@ export const LargePopup: React.FC<ExtraPopupProps> = (props) => {
         }
         setCurrentCategory(value);
     }, []);
-    const currentProducts = products?.[currentCategory?.slug];
 
+    const {name, groups} = currentCategory;
     const titleProps = useMemo(() => {
         return {
-            text: currentCategory.name,
+            text: name,
             textSize: 'xs' as TextSize,
-            url: getNavigationTitleLink(
-                currentCategory.slug,
-                section,
-                section === NavigationSectionType.Solutions ? 'category' : undefined,
-            ),
+            url: groups[0].url,
         };
-    }, [currentCategory.name, currentCategory.slug, section]);
+    }, [name, groups]);
 
     useEffect(() => {
         const maxHeight = window.innerHeight - getHeaderHeight(false) - LARGE_POPUP_INDENT;
@@ -106,7 +109,7 @@ export const LargePopup: React.FC<ExtraPopupProps> = (props) => {
                             minHeight: `${minHeightCategories}px`,
                         }}
                     >
-                        {categories.map((category) => (
+                        {Object.values(categories).map((category) => (
                             <LargePopupCategory
                                 data={category}
                                 onClick={changeCategory}
@@ -159,24 +162,27 @@ export const LargePopup: React.FC<ExtraPopupProps> = (props) => {
                             />
                         ) : (
                             <Fragment>
-                                <div>
-                                    <Row>
-                                        <Col className={b('title')}>
-                                            <Title title={titleProps} />
-                                        </Col>
-                                    </Row>
-                                    <div>
-                                        <NavigationItemsList
-                                            items={currentCategoryItems}
-                                            section={section}
-                                            itemClassName={b('item')}
-                                            className={b('items')}
-                                        />
-                                    </div>
-                                </div>
-                                {currentProducts && (
-                                    <LargePopupProducts {...marketplace} data={currentProducts} />
-                                )}
+                                {currentCategoryData.groups.map((group, index) => {
+                                    return index ? (
+                                        <LargePopupProducts {...group} />
+                                    ) : (
+                                        <div>
+                                            <Row>
+                                                <Col className={b('title')}>
+                                                    <Title title={titleProps} />
+                                                </Col>
+                                            </Row>
+                                            <div>
+                                                <NavigationItemsList
+                                                    items={group.items}
+                                                    section={section}
+                                                    itemClassName={b('item')}
+                                                    className={b('items')}
+                                                />
+                                            </div>
+                                        </div>
+                                    );
+                                })}
                             </Fragment>
                         )}
                     </div>

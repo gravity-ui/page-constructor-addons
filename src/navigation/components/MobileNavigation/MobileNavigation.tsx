@@ -5,7 +5,7 @@ import type {ButtonProps} from '@gravity-ui/page-constructor';
 import {Button, Icon} from '@gravity-ui/uikit';
 
 import {block} from '../../../utils/cn';
-import {NavigationItemModel} from '../../models';
+import {NavigationSectionData} from '../../models';
 import {ButtonsContainer, ButtonsContainerDirection} from '../ButtonsContainer/ButtonsContainer';
 import {CustomElements, MOBILE_ICON_SIZE} from '../Header/Header';
 
@@ -20,7 +20,7 @@ interface MobileNavigationProps {
     isOpened: boolean;
     toogleOpen: (isOpened: boolean) => void;
     isSearchOpen: boolean;
-    data: NavigationItemModel[];
+    data: NavigationSectionData[];
     onMenuScroll: (scrollTop: number) => void;
     popupClassName?: string;
     buttons?: ButtonProps[];

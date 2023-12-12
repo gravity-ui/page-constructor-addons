@@ -4,20 +4,14 @@ import type {TextSize} from '@gravity-ui/page-constructor';
 import {Row, Title} from '@gravity-ui/page-constructor';
 
 import {block} from '../../../../../utils/cn';
-import {ProductData} from '../../../../models';
+import {CategoryGroupData} from '../../../../models';
 import {NavigationPopupItem} from '../../../Navigation/NavigationPopupItem/NavigationPopupItem';
 
 import './LargePopupProducts.scss';
 
 const b = block('cloud-large-popup-products');
 
-interface ExtraPopupProductsProps {
-    title?: string;
-    url?: string;
-    data: ProductData[];
-}
-
-export const LargePopupProducts: React.FC<ExtraPopupProductsProps> = ({data, title, url}) => {
+export const LargePopupProducts: React.FC<CategoryGroupData> = ({items, title, url}) => {
     const titleProps = useMemo(() => {
         return title
             ? {
@@ -33,13 +27,13 @@ export const LargePopupProducts: React.FC<ExtraPopupProductsProps> = ({data, tit
             {titleProps && <Title className={b('title')} title={titleProps} />}
             <div>
                 <Row className={b('items')}>
-                    {Object.values(data).map(({marketingInfo, url: itemUrl}) => {
+                    {Object.values(items).map(({name, icon, url: itemUrl}) => {
                         return (
                             <NavigationPopupItem
-                                key={marketingInfo.name}
+                                key={name}
                                 url={itemUrl}
-                                image={marketingInfo.logo}
-                                name={marketingInfo.name}
+                                image={icon}
+                                name={name}
                                 description={null}
                                 tag={null}
                                 icon={null}

@@ -10,21 +10,24 @@ import {
 } from '@gravity-ui/page-constructor';
 
 import {block} from '../../../../utils/cn';
-import {NavigationPopupItemProps, PopupDataProps} from '../../../models';
-import {NavigationPopupItem} from '../../Navigation/NavigationPopupItem/NavigationPopupItem';
+import {PopupData} from '../../../models';
+import {
+    NavigationPopupItem,
+    NavigationPopupItemProps,
+} from '../../Navigation/NavigationPopupItem/NavigationPopupItem';
 
 import './MediumPopupWithCategories.scss';
 
 const b = block('cloud-medium-popup-with-categories');
 
 interface MediumPopupWithCategoriesProps {
-    data: PopupDataProps[];
+    data: PopupData;
 }
 
 export const MediumPopupWithCategories: React.FC<MediumPopupWithCategoriesProps> = ({data}) => {
     const breakpoint = useWindowBreakpoint();
 
-    const itemsArrays = data.map((dataItem) =>
+    const itemsArrays = data.groups.map((dataItem) =>
         dataItem.items.map((item) => ({
             ...item,
             imageSize: dataItem.imageSize,
@@ -47,7 +50,7 @@ export const MediumPopupWithCategories: React.FC<MediumPopupWithCategoriesProps>
 
     return (
         <Row className={b()}>
-            {data.map(({title, items, imageSize}) => (
+            {data.groups.map(({title, items, imageSize}) => (
                 <Col
                     key={title}
                     className={b('col')}

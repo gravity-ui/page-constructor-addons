@@ -4,14 +4,8 @@ import React, {useCallback, useEffect, useState} from 'react';
 import {block} from '../../../utils/cn';
 import {NO_MENU_TAB_SELECTED, SWITCH_MENU_TAB_TIMEOUT} from '../../constants';
 import {NavigationSectionContext} from '../../contexts/navigation-section';
-import {
-    LargePopupData,
-    NavigationItemModel,
-    NavigationItemType,
-    NavigationSectionType,
-    PopupDataProps,
-} from '../../models';
-import {LargePopup} from '../popups/LargePopup/LargePopup';
+import {NavigationItemType, NavigationSectionData, PopupData} from '../../models';
+import {LargePopup, LargePopupProps} from '../popups/LargePopup/LargePopup';
 import {MediumPopup} from '../popups/MediumPopup/MediumPopup';
 import {MediumPopupWithCategories} from '../popups/MediumPopupWithCategories/MediumPopupWithCategories';
 
@@ -24,28 +18,22 @@ const b = block('navigation');
 const tooltipPrefixId = 'navigation-item-key';
 
 interface NavigationProps {
-    data: NavigationItemModel[];
+    data: NavigationSectionData[];
     handleOpenPopup: () => void;
     handleClosePopup: () => void;
     headerRef?: RefObject<HTMLDivElement>;
     withBackground: boolean;
 }
 
-interface PopupContentProps {
-    type: NavigationItemType;
-    data: PopupDataProps[] | LargePopupData;
-    largePopupInfo: NavigationItemModel;
-    section: NavigationSectionType;
-}
-
-const getPopupContent = ({type, data, largePopupInfo}: PopupContentProps) => {
+const getPopupContent = (sectionData: NavigationSectionData) => {
+    const {type, data} = sectionData;
     switch (type) {
         case NavigationItemType.LargePopup:
-            return <LargePopup {...largePopupInfo} data={data as LargePopupData} />;
+            return <LargePopup {...(sectionData as LargePopupProps)} />;
         case NavigationItemType.MediumPopup:
-            return <MediumPopup data={data as PopupDataProps[]} />;
+            return <MediumPopup data={data as PopupData} />;
         case NavigationItemType.MediumPopupWithCategories:
-            return <MediumPopupWithCategories data={data as PopupDataProps[]} />;
+            return <MediumPopupWithCategories data={data as PopupData} />;
         default:
             return null;
     }
@@ -100,7 +88,7 @@ export const Navigation: React.FC<NavigationProps> = ({
         <nav>
             <ul className={b()}>
                 {data.map((item, i) => {
-                    const {type, section, data: itemData} = item;
+                    const {type, section} = item;
                     const isMediumPopup =
                         type === NavigationItemType.MediumPopup ||
                         type === NavigationItemType.MediumPopupWithCategories;
@@ -126,12 +114,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                                         className={popupClassName}
                                         id={uniqId}
                                     >
-                                        {getPopupContent({
-                                            type,
-                                            data: itemData,
-                                            largePopupInfo: item,
-                                            section,
-                                        })}
+                                        {getPopupContent(item)}
                                     </NavigationPopup>
                                 )}
                             </NavigationItem>

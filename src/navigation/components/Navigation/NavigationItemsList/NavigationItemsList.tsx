@@ -3,12 +3,12 @@ import React from 'react';
 
 import {Row} from '@gravity-ui/page-constructor';
 
-import {NavigationItemExtended, NavigationSectionType} from '../../../models';
+import {NavigationItem} from '../../../models';
 import {NavigationPopupItem} from '../NavigationPopupItem/NavigationPopupItem';
 
 interface NavigationItemsListProps {
-    items: NavigationItemExtended[];
-    section: NavigationSectionType;
+    items: NavigationItem[];
+    section?: string;
     itemClassName?: string;
     className?: string;
 }
