@@ -59,17 +59,6 @@ export const NavigationItem: FC<NavigationItemOwnProps> = ({
         handleActiveTab(NO_MENU_TAB_SELECTED);
     }, [handleActiveTab, handleClosePopup, isPopupExist]);
 
-    // TODO fix with native browser location
-    // useEffect(() => {
-    //     router.events?.on('routeChangeComplete', handleMouseLeave);
-    //     router.events?.on('hashChangeComplete', handleMouseLeave);
-
-    //     return () => {
-    //         router.events?.off('routeChangeComplete', handleMouseLeave);
-    //         router.events?.off('hashChangeComplete', handleMouseLeave);
-    //     };
-    // });
-
     const handleOnClick = useCallback(() => {
         sendEvents?.([
             {

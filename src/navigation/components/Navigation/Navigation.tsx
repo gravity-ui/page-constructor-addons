@@ -4,7 +4,12 @@ import React, {useCallback, useEffect, useState} from 'react';
 import {block} from '../../../utils/cn';
 import {NO_MENU_TAB_SELECTED, SWITCH_MENU_TAB_TIMEOUT} from '../../constants';
 import {NavigationSectionContext} from '../../contexts/navigation-section';
-import {NavigationItemType, NavigationSectionData, PopupData} from '../../models';
+import {
+    NavigationItemType,
+    NavigationSectionData,
+    PopupData,
+    SetupRouteChangeHandler,
+} from '../../models';
 import {LargePopup, LargePopupProps} from '../popups/LargePopup/LargePopup';
 import {MediumPopup} from '../popups/MediumPopup/MediumPopup';
 import {MediumPopupWithCategories} from '../popups/MediumPopupWithCategories/MediumPopupWithCategories';
@@ -23,6 +28,7 @@ interface NavigationProps {
     handleOpenPopup: () => void;
     handleClosePopup: () => void;
     headerRef?: RefObject<HTMLDivElement>;
+    setupRouteChangeHandler?: SetupRouteChangeHandler;
 }
 
 const getPopupContent = (sectionData: NavigationSectionData) => {
@@ -46,6 +52,7 @@ export const Navigation: React.FC<NavigationProps> = ({
     handleOpenPopup,
     handleClosePopup,
     withBackground,
+    setupRouteChangeHandler,
 }) => {
     const [activeTab, setActiveTab] = useState(NO_MENU_TAB_SELECTED);
     const [pretendentActiveTab, setPretendentAciveTab] = useState(NO_MENU_TAB_SELECTED);
@@ -67,6 +74,14 @@ export const Navigation: React.FC<NavigationProps> = ({
             }
         },
         [previouslyFocusedElement],
+    );
+
+    useEffect(
+        () =>
+            setupRouteChangeHandler?.(() => {
+                handleActiveTab(NO_MENU_TAB_SELECTED);
+            }),
+        [setupRouteChangeHandler, handleActiveTab],
     );
 
     useEffect(() => {

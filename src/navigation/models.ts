@@ -45,6 +45,8 @@ export interface AnalyticsEvent extends PCAnalyticsEvent {
     params?: Partial<Record<string, string>>;
 }
 
+export type SetupRouteChangeHandler = (handler: () => void) => void;
+
 export interface NavigationTag {
     text: string;
     color?: NavigationTagColor;

@@ -16,7 +16,7 @@ import {block} from '../../../utils/cn';
 import {AnalyticsContext} from '../../contexts/analytics';
 import {MobileContext} from '../../contexts/mobile';
 import {ThemeContext} from '../../contexts/theme';
-import {Locale, NavigationData} from '../../models';
+import {Locale, NavigationData, SetupRouteChangeHandler} from '../../models';
 import {ButtonsContainer} from '../ButtonsContainer/ButtonsContainer';
 import {LangSwitch} from '../LangSwitch/LangSwitch';
 import Logo from '../Logo/Logo';
@@ -39,7 +39,7 @@ export interface HeaderProps {
     data: NavigationData;
     locales: Locale[];
     customElements?: CustomElements;
-    setupRouteChangeHandler?: (handler: () => void) => void;
+    setupRouteChangeHandler?: SetupRouteChangeHandler;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -139,8 +139,12 @@ export const Header: React.FC<HeaderProps> = ({
     });
 
     useEffect(
-        () => setupRouteChangeHandler?.(() => setIsMobileNavigationOpen(false)),
-        [setupRouteChangeHandler],
+        () =>
+            setupRouteChangeHandler?.(() => {
+                handleClosePopup();
+                setIsMobileNavigationOpen(false);
+            }),
+        [setupRouteChangeHandler, handleClosePopup],
     );
 
     return (

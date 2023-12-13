@@ -315,37 +315,37 @@
                       {
                         "id": "eqgtqeet87jshce7o7j8",
                         "slug": "yc/nat-instance-ubuntu-18-04-lts",
-                        "name": "NAT instance based on Ubuntu 18.04 LTS",
+                        "title": "NAT instance based on Ubuntu 18.04 LTS",
                         "icon": "https://storage.il.nebius.cloud/products/eqgtqeet87jshce7o7j8.svg"
                       },
                       {
                         "id": "eqg70ohdvsd0jgp2302j",
                         "slug": "yc/ipsec-instance-ubuntu",
-                        "name": "IPSec instance",
+                        "title": "IPSec instance",
                         "icon": "https://storage.il.nebius.cloud/products/eqg70ohdvsd0jgp2302j.svg"
                       },
                       {
                         "id": "eqgcddoh7vl5id4t774h",
                         "slug": "yc/nat-instance-ubuntu-2204-lts",
-                        "name": "NAT instance based on Ubuntu 22.04 LTS",
+                        "title": "NAT instance based on Ubuntu 22.04 LTS",
                         "icon": "https://storage.il.nebius.cloud/products/eqgcddoh7vl5id4t774h.svg"
                       },
                       {
                         "id": "eqg4s0vgoct249lqk4ce",
                         "slug": "yc/fortigate-vm",
-                        "name": "FortiGate-VM - Fortinet Next-Generation Firewall",
+                        "title": "FortiGate-VM - Fortinet Next-Generation Firewall",
                         "icon": "https://storage.il.nebius.cloud/products/eqg4s0vgoct249lqk4ce.svg"
                       },
                       {
                         "id": "eqg1aee242rtv6lsrfea",
                         "slug": "yc/openvpn-access-server",
-                        "name": "OpenVPN Access Server",
+                        "title": "OpenVPN Access Server",
                         "icon": "https://storage.il.nebius.cloud/products/eqg1aee242rtv6lsrfea.svg"
                       },
                       {
                         "id": "eqgj6i3i3vihbfc5tt2u",
                         "slug": "yc/opnsense",
-                        "name": "OPNsense",
+                        "title": "OPNsense",
                         "icon": "https://storage.il.nebius.cloud/products/eqgj6i3i3vihbfc5tt2u.svg"
                       }
                     ]
