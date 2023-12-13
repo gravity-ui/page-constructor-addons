@@ -46,13 +46,13 @@ export const MobileNavigationItem: React.FC<MobileNavigationProps> = ({data}) =>
             <Foldable isOpened={isOpened}>
                 {sectionItemsData &&
                     sectionItemsData.map(({title: itemTitle, items}) => (
-                        <div className={b('list')} key={items[0].name}>
+                        <div className={b('list')} key={items[0].title}>
                             {itemTitle && <h5 className={b('list-title')}>{itemTitle}</h5>}
                             <ul className={b('list-items')}>
                                 {items.map((linkItem) => (
-                                    <li className={b('li')} key={linkItem.name}>
+                                    <li className={b('li')} key={linkItem.title}>
                                         <a href={linkItem.url} className={b('list-item')}>
-                                            {linkItem.name}
+                                            {linkItem.title}
                                         </a>
                                     </li>
                                 ))}
@@ -78,7 +78,7 @@ function pickData({type, data}: NavigationSectionData) {
         return [
             {
                 items: Object.values((data as CategorizedPopupData).categories).map(({groups}) => ({
-                    name: groups[0].title,
+                    title: groups[0].title,
                     url: groups[0].url,
                 })),
             },

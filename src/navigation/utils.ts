@@ -12,7 +12,7 @@ export interface MobileLargePopupDataItem {
     description: string;
     slug: string;
     url: string;
-    name: string;
+    title: string;
 }
 
 export interface MobileLargePopupData {
@@ -46,8 +46,8 @@ export function applySearch(
     const search = searchRaw.toLowerCase();
 
     return navigationItems.filter(
-        ({name, slug, description}) =>
-            (name && name.toLowerCase().includes(search)) ||
+        ({title, slug, description}) =>
+            (title && title.toLowerCase().includes(search)) ||
             slug.includes(search) ||
             (description && description.toLowerCase().includes(search)),
     );

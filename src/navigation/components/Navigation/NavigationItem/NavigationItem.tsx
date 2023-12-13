@@ -15,12 +15,12 @@ import './NavigationItem.scss';
 const b = block('navigation-item');
 
 interface NavigationItemOwnProps {
+    index: number;
     item: NavigationSectionData;
     isActive: boolean;
     handleOpenPopup: () => void;
     handleClosePopup: () => void;
     handleActiveTab: (currentIndex: number) => void;
-    index: number;
     children?: ReactNode;
     tooltipId?: string;
 }

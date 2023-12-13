@@ -9,19 +9,19 @@ import {block} from '../../../../utils/cn';
 import {DefaultCategorizedItemSizes} from '../../../constants';
 import {AnalyticsContext} from '../../../contexts/analytics';
 import {NavigationSectionContext} from '../../../contexts/navigation-section';
-import {AnalyticsEventType, NavigationTag as NavigationTagModel} from '../../../models';
+import {AnalyticsEventType, NavigationItem} from '../../../models';
 import {NavigationTag} from '../../Tag/Tag';
 
 import './NavigationPopupItem.scss';
 
 const b = block('navigation-popup-item');
 
-export interface NavigationPopupItemProps {
-    name: string | null;
-    description?: string | null;
-    tag?: NavigationTagModel;
-    icon?: string | null;
-    url: string;
+export interface NavigationPopupItemProps extends Partial<NavigationItem> {
+    // title: string | null;
+    // description?: string | null;
+    // tag?: NavigationTagModel;
+    // icon?: string | null;
+    // url: string;
     image?: string | null;
     hover?: boolean;
     sizes?: GridColumnSizesType;
@@ -34,7 +34,7 @@ export const NavigationPopupItem: React.FC<NavigationPopupItemProps> = (props) =
     const {
         icon,
         url,
-        name,
+        title,
         tag,
         description,
         image,
@@ -81,7 +81,7 @@ export const NavigationPopupItem: React.FC<NavigationPopupItemProps> = (props) =
                 )}
                 <div className={b('container', {'with-margin': Boolean(icon)})}>
                     <div className={b('title-tag-wrapper')}>
-                        <span className={b('title')}>{name}</span>
+                        <span className={b('title')}>{title}</span>
                         &nbsp;
                         {navigationTag}
                     </div>

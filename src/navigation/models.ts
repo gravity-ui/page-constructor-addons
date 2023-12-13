@@ -52,8 +52,7 @@ export interface NavigationTag {
 }
 
 export interface NavigationItem {
-    id: number;
-    name: string;
+    title: string;
     slug: string;
     url: string;
     description: string;
@@ -69,10 +68,8 @@ export interface CategoryGroupData {
 }
 
 export interface CategoryData {
-    id: string;
     slug: string;
-    name: string;
-    title?: string;
+    title: string;
     description: string;
     groups: CategoryGroupData[];
 }
@@ -86,10 +83,10 @@ export interface PopupData {
 
 export interface NavigationSectionData {
     title: string;
-    section?: string;
+    data: PopupData | CategorizedPopupData;
     type: NavigationItemType;
+    section?: string;
     link?: LinkProps;
     links?: LinkProps[];
     placeholder?: string;
-    data: PopupData | CategorizedPopupData;
 }

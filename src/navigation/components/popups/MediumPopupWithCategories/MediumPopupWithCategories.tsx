@@ -80,7 +80,7 @@ export const MediumPopupWithCategories: React.FC<MediumPopupWithCategoriesProps>
                                             [GridColumnSize.Md]: 4,
                                             [GridColumnSize.All]: 4,
                                         }}
-                                        key={item.name}
+                                        key={item.title}
                                     />
                                 ))}
                             </Row>
@@ -105,7 +105,7 @@ export const MediumPopupWithCategories: React.FC<MediumPopupWithCategoriesProps>
                                 ) : (
                                     <NavigationPopupItem
                                         {...item}
-                                        key={item.name}
+                                        key={item.title}
                                         hover
                                         sizes={{
                                             [GridColumnSize.Xl]: 3,

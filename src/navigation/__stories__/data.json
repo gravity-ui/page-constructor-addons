@@ -56,9 +56,8 @@
           "data": {
             "categories": {
               "featured": {
-                "id": 1,
                 "slug": "featured",
-                "name": "Featured",
+                "title": "Featured",
                 "description": null,
                 "groups": [
                   {
@@ -66,9 +65,8 @@
                     "url": "/services#featured",
                     "items": [
                       {
-                        "id": 1,
                         "slug": "compute",
-                        "name": "Compute Cloud",
+                        "title": "Compute Cloud",
                         "tag": {
                           "text": "Preview",
                           "color": "blue"
@@ -86,7 +84,7 @@
                       {
                         "id": 4,
                         "slug": "storage",
-                        "name": "Object Storage",
+                        "title": "Object Storage",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/storage/",
@@ -100,7 +98,7 @@
                       {
                         "id": 3,
                         "slug": "managed-kubernetes",
-                        "name": "Managed Service for Kubernetes®",
+                        "title": "Managed Service for Kubernetes®",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/managed-kubernetes/",
@@ -114,7 +112,7 @@
                       {
                         "id": 20,
                         "slug": "managed-postgresql",
-                        "name": "Managed Service for PostgreSQL",
+                        "title": "Managed Service for PostgreSQL",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/managed-postgresql/",
@@ -128,7 +126,7 @@
                       {
                         "id": 17,
                         "slug": "managed-kafka",
-                        "name": "Managed Service for Apache Kafka®",
+                        "title": "Managed Service for Apache Kafka®",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/managed-kafka/",
@@ -148,38 +146,38 @@
                       {
                         "id": "eqg0ah5eq8mjck1a37dh",
                         "slug": "yc/h2o-llmstudio",
-                        "name": "H2O LLM Studio",
+                        "title": "H2O LLM Studio",
                         "url": "il/marketplace/products/yc/h2o-llmstudio",
                         "icon": "https://storage.il.nebius.cloud/products/eqg0ah5eq8mjck1a37dh.svg"
                       },
                       {
                         "id": "eqgct4p3uniqffn9q825",
                         "slug": "yc/ubuntu-22-04-lts-gpu-cuda12",
-                        "name": "Ubuntu 22.04 LTS for NVIDIA® GPUs (CUDA® 12)",
+                        "title": "Ubuntu 22.04 LTS for NVIDIA® GPUs (CUDA® 12)",
                         "icon": "https://storage.il.nebius.cloud/products/eqgct4p3uniqffn9q825.svg"
                       },
                       {
                         "id": "eqgftso26n5es83dapm2",
                         "slug": "hystax/hystax-acura-disaster-recovery",
-                        "name": "Hystax Acura Disaster Recovery to Nebius Israel",
+                        "title": "Hystax Acura Disaster Recovery to Nebius Israel",
                         "icon": "https://storage.il.nebius.cloud/products/eqgftso26n5es83dapm2.svg"
                       },
                       {
                         "id": "eqgr6d27equ47q0hhnum",
                         "slug": "yc/sql-server-2022-enterprise",
-                        "name": "Microsoft SQL Server 2022 Enterprise",
+                        "title": "Microsoft SQL Server 2022 Enterprise",
                         "icon": "https://storage.il.nebius.cloud/products/eqgr6d27equ47q0hhnum.svg"
                       },
                       {
                         "id": "eqglukefdqri17cdcl9n",
                         "slug": "yc/dsvm",
-                        "name": "Data Science Virtual Machine",
+                        "title": "Data Science Virtual Machine",
                         "icon": "https://storage.il.nebius.cloud/products/eqglukefdqri17cdcl9n.svg"
                       },
                       {
                         "id": "eqgm7n0mtusaqamf1p78",
                         "slug": "yc/ubuntu-20-04-lts-gpu-cuda11",
-                        "name": "Ubuntu 20.04 LTS for NVIDIA® GPUs (CUDA® 11)",
+                        "title": "Ubuntu 20.04 LTS for NVIDIA® GPUs (CUDA® 11)",
                         "icon": "https://storage.il.nebius.cloud/products/eqgm7n0mtusaqamf1p78.svg"
                       }
                     ]
@@ -189,7 +187,7 @@
               "infrastructure-network": {
                 "id": 2,
                 "slug": "infrastructure-network",
-                "name": "Infrastructure & Network",
+                "title": "Infrastructure & Network",
                 "description": "Managed cloud infrastructure services: virtual machines, networks, and data storage.",
                 "groups": [
                   {
@@ -199,7 +197,7 @@
                       {
                         "id": 1,
                         "slug": "compute",
-                        "name": "Compute Cloud",
+                        "title": "Compute Cloud",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/compute/",
@@ -213,7 +211,7 @@
                       {
                         "id": 4,
                         "slug": "storage",
-                        "name": "Object Storage",
+                        "title": "Object Storage",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/storage/",
@@ -227,7 +225,7 @@
                       {
                         "id": 9,
                         "slug": "dns",
-                        "name": "Cloud DNS",
+                        "title": "Cloud DNS",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/dns/",
@@ -236,12 +234,12 @@
                         "fullName": "Cloud DNS",
                         "iamFlag": null,
                         "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8.832 1H2a2 2 0 0 0-2 2v1.972h1.248c1.435 0 3.26 1.045 3.26 3.229 0 2.178-1.788 3.292-3.408 3.292H0V13a2 2 0 0 0 2 2h2.963V5.482a.75.75 0 0 1 1.342-.46l2.527 3.256V1Zm-2.37 14H14a2 2 0 0 0 2-2V5.994h-2.938c-.567 0-.728.296-.728.506 0 .164.057.273.28.403.266.154.635.25 1.07.353.619.147 1.123.39 1.473.767.366.394.492.858.492 1.292 0 1.018-.78 1.934-2.014 1.934h-2.8v-1.5h2.8c.22 0 .337-.072.4-.136a.42.42 0 0 0 .114-.298c0-.134-.032-.207-.092-.272-.076-.082-.266-.22-.72-.327l-.02-.005c-.392-.093-.974-.231-1.457-.511-.533-.31-1.026-.846-1.026-1.7 0-1.261 1.075-2.006 2.228-2.006H16V3a2 2 0 0 0-2-2h-3.668v9.468a.75.75 0 0 1-1.343.46L6.463 7.671V15ZM0 9.993h1.1c1.017 0 1.908-.651 1.908-1.792 0-1.136-.916-1.73-1.76-1.73H0v3.522Z\" fill=\"currentColor\"></path>\n</svg>",
-                        "description": "Domain name management"
+                        "description": "Domain title management"
                       },
                       {
                         "id": 5,
                         "slug": "vpc",
-                        "name": "Virtual Private Cloud",
+                        "title": "Virtual Private Cloud",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/vpc/",
@@ -255,7 +253,7 @@
                       {
                         "id": 6,
                         "slug": "network-load-balancer",
-                        "name": "Network Load Balancer",
+                        "title": "Network Load Balancer",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/network-load-balancer/",
@@ -269,7 +267,7 @@
                       {
                         "id": 7,
                         "slug": "application-load-balancer",
-                        "name": "Application Load Balancer",
+                        "title": "Application Load Balancer",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/application-load-balancer/",
@@ -283,7 +281,7 @@
                       {
                         "id": 21,
                         "slug": "monitoring",
-                        "name": "Monitoring",
+                        "title": "Monitoring",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/monitoring/",
@@ -297,7 +295,7 @@
                       {
                         "id": 62,
                         "slug": "logging",
-                        "name": "Cloud Logging",
+                        "title": "Cloud Logging",
                         "tag": "new",
                         "status": "public",
                         "docUrl": "/docs/logging/",
@@ -357,7 +355,7 @@
               "data-platform": {
                 "id": 7,
                 "slug": "data-platform",
-                "name": "Data Platform",
+                "title": "Data Platform",
                 "description": "The full data lifecycle: from ingestion and storage to&nbsp;analysis and visualization.",
                 "groups": [
                   {
@@ -367,7 +365,7 @@
                       {
                         "id": 20,
                         "slug": "managed-postgresql",
-                        "name": "Managed Service for PostgreSQL",
+                        "title": "Managed Service for PostgreSQL",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/managed-postgresql/",
@@ -381,7 +379,7 @@
                       {
                         "id": 19,
                         "slug": "managed-mysql",
-                        "name": "Managed Service for MySQL®",
+                        "title": "Managed Service for MySQL®",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/managed-mysql/",
@@ -395,7 +393,7 @@
                       {
                         "id": 18,
                         "slug": "managed-clickhouse",
-                        "name": "Managed Service for ClickHouse®",
+                        "title": "Managed Service for ClickHouse®",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/managed-clickhouse/",
@@ -409,7 +407,7 @@
                       {
                         "id": 17,
                         "slug": "managed-kafka",
-                        "name": "Managed Service for Apache Kafka®",
+                        "title": "Managed Service for Apache Kafka®",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/managed-kafka/",
@@ -423,7 +421,7 @@
                       {
                         "id": 11,
                         "slug": "data-transfer",
-                        "name": "Data Transfer",
+                        "title": "Data Transfer",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/data-transfer/",
@@ -437,7 +435,7 @@
                       {
                         "id": 4,
                         "slug": "storage",
-                        "name": "Object Storage",
+                        "title": "Object Storage",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/storage/",
@@ -451,7 +449,7 @@
                       {
                         "id": 21,
                         "slug": "monitoring",
-                        "name": "Monitoring",
+                        "title": "Monitoring",
                         "tag": null,
                         "status": "public",
                         "docUrl": "/docs/monitoring/",
@@ -465,7 +463,7 @@
                       {
                         "id": 26,
                         "slug": "datalens",
-                        "name": "DataLens",
+                        "title": "DataLens",
                         "tag": "preview",
                         "status": "public-preview",
                         "docUrl": "/docs/datalens/",
@@ -485,31 +483,31 @@
                       {
                         "id": "eqg7jg5hktkt36favi5s",
                         "slug": "yc/sql-server-2022-web",
-                        "name": "Microsoft SQL Server 2022 Web",
+                        "title": "Microsoft SQL Server 2022 Web",
                         "icon": "https://storage.il.nebius.cloud/products/eqg7jg5hktkt36favi5s.svg"
                       },
                       {
                         "id": "eqgr6d27equ47q0hhnum",
                         "slug": "yc/sql-server-2022-enterprise",
-                        "name": "Microsoft SQL Server 2022 Enterprise",
+                        "title": "Microsoft SQL Server 2022 Enterprise",
                         "icon": "https://storage.il.nebius.cloud/products/eqgr6d27equ47q0hhnum.svg"
                       },
                       {
                         "id": "eqg51mdjapa40is2r07a",
                         "slug": "yc/sql-server-2022-standard",
-                        "name": "Microsoft SQL Server 2022 Standard",
+                        "title": "Microsoft SQL Server 2022 Standard",
                         "icon": "https://storage.il.nebius.cloud/products/eqg51mdjapa40is2r07a.svg"
                       },
                       {
                         "id": "eqg66ohtg9e8ah1uajht",
                         "slug": "yc/sql-server-2019-enterprise",
-                        "name": "Microsoft SQL Server 2019 Enterprise",
+                        "title": "Microsoft SQL Server 2019 Enterprise",
                         "icon": "https://storage.il.nebius.cloud/products/eqg66ohtg9e8ah1uajht.svg"
                       },
                       {
                         "id": "eqg65qk0ujja8f4tmk06",
                         "slug": "yc/sql-server-2019-standard",
-                        "name": "Microsoft SQL Server 2019 Standard",
+                        "title": "Microsoft SQL Server 2019 Standard",
                         "icon": "https://storage.il.nebius.cloud/products/eqg65qk0ujja8f4tmk06.svg"
                       }
                     ]
@@ -540,7 +538,7 @@
               "industry": {
                 "id": 0,
                 "slug": "industry",
-                "name": "By industry",
+                "title": "By industry",
                 "groups": [
                   {
                     "title": "By industry",
@@ -549,7 +547,7 @@
                       {
                         "id": 5,
                         "description": "Cutting-edge technology for creating new customer experiences, digital processes, and sales analytics.",
-                        "name": "E‑Commerce and retail",
+                        "title": "E‑Commerce and retail",
                         "slug": "e-commerce-and-retail",
                         "url": "/solutions/e-commerce-and-retail",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/e-commerce.svg",
@@ -559,7 +557,7 @@
                       {
                         "id": 6,
                         "description": "A hybrid infrastructure and data analysis platform for the financial sector.",
-                        "name": "Finance and insurance",
+                        "title": "Finance and insurance",
                         "slug": "financial",
                         "url": "/solutions/financial",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/financial.svg",
@@ -569,7 +567,7 @@
                       {
                         "id": 7,
                         "description": "Cloud solutions for healthcare, medical research, and genetics.",
-                        "name": "Healthcare",
+                        "title": "Healthcare",
                         "slug": "healthcare",
                         "url": "/solutions/healthcare",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/healthcare.svg",
@@ -579,7 +577,7 @@
                       {
                         "id": 8,
                         "description": "Digitalization for the energy and heavy industry sectors.",
-                        "name": "Industrial",
+                        "title": "Industrial",
                         "slug": "industrial",
                         "url": "/solutions/industrial",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/industrial.svg",
@@ -589,7 +587,7 @@
                       {
                         "id": 9,
                         "description": "A cloud platform for online education and a productive research environment.",
-                        "name": "Education",
+                        "title": "Education",
                         "slug": "education",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/education.svg",
                         "type": "industry",
@@ -602,7 +600,7 @@
               "useCase": {
                 "id": 1,
                 "slug": "useCase",
-                "name": "By use case",
+                "title": "By use case",
                 "groups": [
                   {
                     "title": "By use case",
@@ -611,7 +609,7 @@
                       {
                         "id": 1,
                         "description": "Ensure scalability and fault tolerance for your website or web service by hosting in the cloud.",
-                        "name": "Web service",
+                        "title": "Web service",
                         "slug": "web-service",
                         "url": "/solutions/web-service",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/web-service.svg",
@@ -621,7 +619,7 @@
                       {
                         "id": 4,
                         "description": "Automate online sales and store management with scalable Nebius infrastructure.",
-                        "name": "E-commerce website",
+                        "title": "E-commerce website",
                         "slug": "ecommerce-website",
                         "url": "/solutions/ecommerce-website",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/online-shop.svg",
@@ -631,7 +629,7 @@
                       {
                         "id": 2,
                         "description": "Use popular Microsoft services to build infrastructure on the reliable Nebius platform.",
-                        "name": "Microsoft services in the cloud",
+                        "title": "Microsoft services in the cloud",
                         "slug": "microsoft",
                         "url": "/solutions/microsoft",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/Microsoft.svg",
@@ -641,7 +639,7 @@
                       {
                         "id": 23,
                         "description": "Unlock the Full Potential of Your Applications with Our High-Performance GPUs",
-                        "name": "GPU solutions",
+                        "title": "GPU solutions",
                         "slug": "gpu",
                         "url": "/solutions/gpu",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/gpu.svg",
@@ -651,7 +649,7 @@
                       {
                         "id": 19,
                         "description": "A ready-made solution for companies seeking compliance with data privacy law.",
-                        "name": "Data Residency",
+                        "title": "Data Residency",
                         "slug": "data-residency",
                         "url": "/solutions/data-residency",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/data-residency.svg",
@@ -661,7 +659,7 @@
                       {
                         "id": 20,
                         "description": "Move your infrastructure from any platform or provider to Nebius without data losses or service interruption.",
-                        "name": "Cloud migration",
+                        "title": "Cloud migration",
                         "slug": "migration",
                         "url": "/solutions/migration",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/migration.svg",
@@ -671,7 +669,7 @@
                       {
                         "id": 24,
                         "description": "Drive Innovation and Control Your Multi-Cloud Environments",
-                        "name": "Multi-Cloud Solutions",
+                        "title": "Multi-Cloud Solutions",
                         "slug": "multi-cloud",
                         "url": "/solutions/multi-cloud",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/multi-cloud.svg",
@@ -681,7 +679,7 @@
                       {
                         "id": 21,
                         "description": "Use both platforms, choose an appropriate architecture, and deploy projects within two clouds.",
-                        "name": "Nebius Solution Library for AWS",
+                        "title": "Nebius Solution Library for AWS",
                         "slug": "solution-library-for-aws",
                         "url": "/solutions/solution-library-for-aws",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/nebius-aws-icon.svg",
@@ -691,7 +689,7 @@
                       {
                         "id": 22,
                         "description": "Use both platforms, choose an appropriate architecture, and deploy projects within two clouds.",
-                        "name": "Nebius Solution Library for Azure",
+                        "title": "Nebius Solution Library for Azure",
                         "slug": "solution-library-for-azure",
                         "url": "/solutions/solution-library-for-azure",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/nebius-azure-icon.svg",
@@ -701,7 +699,7 @@
                       {
                         "id": 25,
                         "description": "Unlock the Full Potential of Your Applications with Our High-Performance GPUs",
-                        "name": "GPU solutions",
+                        "title": "GPU solutions",
                         "slug": "gpu-v1",
                         "url": "/solutions/gpu-v1",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/gpu.svg",
@@ -711,7 +709,7 @@
                       {
                         "id": 26,
                         "description": "Create a scalable and reliable corporate data warehouse. Visualize your data and business analytics for all your employees using Nebius’s proprietary BI tool DataLens.",
-                        "name": "Data warehouse and analytics",
+                        "title": "Data warehouse and analytics",
                         "slug": "data-warehouse-and-analytics",
                         "url": "/solutions/data-warehouse-and-analytics",
                         "image": "",
@@ -721,7 +719,7 @@
                       {
                         "id": 28,
                         "description": "The description for the All solutions page",
-                        "name": "The universal template for any use case solution page",
+                        "title": "The universal template for any use case solution page",
                         "slug": "use-case-solution-template",
                         "url": "/solutions/use-case-solution-template",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/web-service.svg",
@@ -731,7 +729,7 @@
                       {
                         "id": 29,
                         "description": "The description for the All solutions page",
-                        "name": "The universal template for any industry solution page",
+                        "title": "The universal template for any industry solution page",
                         "slug": "industry-solution-template",
                         "url": "/solutions/industry-solution-template",
                         "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/solutions/icons/web-service.svg",
@@ -765,19 +763,19 @@
                 "imageSize": "xm",
                 "items": [
                   {
-                    "name": "Security",
+                    "title": "Security",
                     "url": "/il/security",
                     "description": "Security standards and compliance of our platform",
                     "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/shield-check.svg"
                   },
                   {
-                    "name": "Multicloud",
+                    "title": "Multicloud",
                     "url": "/il/solutions/multi-cloud",
                     "description": "Effortless integration with AWS and Azure libraries",
                     "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/clouds.svg"
                   },
                   {
-                    "name": "Customer stories",
+                    "title": "Customer stories",
                     "url": "/il/customer-stories",
                     "description": "Explore firsthand experiences from our valued customers",
                     "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/seal-check.svg"
@@ -789,13 +787,13 @@
                 "imageSize": "xm",
                 "items": [
                   {
-                    "name": "Support",
+                    "title": "Support",
                     "url": "/il/support",
                     "description": "Dedicated support in Hebrew and English for timely assistance",
                     "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/comment.svg"
                   },
                   {
-                    "name": "Partners",
+                    "title": "Partners",
                     "url": "/il/partner-program",
                     "description": "Partners for enhanced solutions and cloud adoption",
                     "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/briefcase.svg"
@@ -815,19 +813,19 @@
                 "imageSize": "xm",
                 "items": [
                   {
-                    "name": "Pricing",
+                    "title": "Pricing",
                     "url": "/il/prices",
                     "description": "Transparent, tailored, and competitive pricing",
                     "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/pricing.svg"
                   },
                   {
-                    "name": "Grants and offers",
+                    "title": "Grants and offers",
                     "url": "/il/offers",
                     "description": "Grants and tailored offers to achieve more in the cloud",
                     "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/gift.svg"
                   },
                   {
-                    "name": "Pricing policy",
+                    "title": "Pricing policy",
                     "url": "/il/docs/billing",
                     "description": "Detailed documentation about billing, balance and payments",
                     "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/text-align-left.svg"
@@ -856,25 +854,25 @@
                 "imageSize": "xm",
                 "items": [
                   {
-                    "name": "Blog",
+                    "title": "Blog",
                     "url": "/il/blog",
                     "description": "Insightful articles, guides, and expert opinions on cloud technology",
                     "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/square-article.svg"
                   },
                   {
-                    "name": "White papers",
+                    "title": "White papers",
                     "url": "/il/white-papers",
                     "description": "Detailed research papers, analyses, and technical documents on our offerings",
                     "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/file-text.svg"
                   },
                   {
-                    "name": "Documentation",
+                    "title": "Documentation",
                     "description": "Comprehensive guides for smooth platform navigation",
                     "url": "/il/docs",
                     "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/files.svg"
                   },
                   {
-                    "name": "Events",
+                    "title": "Events",
                     "url": "/il/events",
                     "description": "Tech talks, workshops, and webinars for cloud insights and networking",
                     "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/calendar.svg"
@@ -894,25 +892,25 @@
                 "imageSize": "xm",
                 "items": [
                   {
-                    "name": "About",
+                    "title": "About",
                     "url": "/il/about",
                     "description": "Our company's mission, vision, team, and commitment to excellence",
                     "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/globe.svg"
                   },
                   {
-                    "name": "News",
+                    "title": "News",
                     "url": "/il/news",
                     "description": "Latest updates, announcements, and media coverage about our services",
                     "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/book-open.svg"
                   },
                   {
-                    "name": "Careers",
+                    "title": "Careers",
                     "url": "/il/careers",
                     "description": "Job opportunities, culture, and how to join our innovative team",
                     "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/persons.svg"
                   },
                   {
-                    "name": "Contacts",
+                    "title": "Contacts",
                     "url": "/il/contact",
                     "description": "Reach out for inquiries, support, or personalized service information",
                     "image": "https://storage.il.nebius.cloud/www-assets/Nebius%20Israel/nav/envelope.svg"

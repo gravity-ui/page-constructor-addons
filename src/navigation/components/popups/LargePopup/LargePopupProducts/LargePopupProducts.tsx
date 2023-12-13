@@ -27,13 +27,13 @@ export const LargePopupProducts: React.FC<CategoryGroupData> = ({items, title, u
             {titleProps && <Title className={b('title')} title={titleProps} />}
             <div>
                 <Row className={b('items')}>
-                    {Object.values(items).map(({name, icon, url: itemUrl}) => {
+                    {Object.values(items).map(({title: popupTitle, icon, url: itemUrl}) => {
                         return (
                             <NavigationPopupItem
-                                key={name}
+                                key={popupTitle}
                                 url={itemUrl}
                                 image={icon}
-                                name={name}
+                                title={popupTitle}
                                 description={null}
                                 tag={null}
                                 icon={null}

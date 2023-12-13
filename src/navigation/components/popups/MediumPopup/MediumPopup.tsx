@@ -21,7 +21,7 @@ export const MediumPopup: React.FC<MediumPopupProps> = ({data}) => (
                 dataItem.items.map((item) => (
                     <NavigationPopupItem
                         {...item}
-                        key={item.name}
+                        key={item.title}
                         hover
                         imageSize={dataItem.imageSize}
                         sizes={{

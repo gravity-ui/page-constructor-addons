@@ -19,14 +19,15 @@ const tooltipPrefixId = 'navigation-item-key';
 
 interface NavigationProps {
     data: NavigationSectionData[];
+    withBackground: boolean;
     handleOpenPopup: () => void;
     handleClosePopup: () => void;
     headerRef?: RefObject<HTMLDivElement>;
-    withBackground: boolean;
 }
 
 const getPopupContent = (sectionData: NavigationSectionData) => {
     const {type, data} = sectionData;
+
     switch (type) {
         case NavigationItemType.LargePopup:
             return <LargePopup {...(sectionData as LargePopupProps)} />;

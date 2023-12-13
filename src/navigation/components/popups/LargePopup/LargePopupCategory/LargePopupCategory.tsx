@@ -18,12 +18,12 @@ export const LargePopupCategory: React.FC<ExtraPopupCategoryProps> = ({
     onClick,
     isActive,
 }) => {
-    const {id, name} = data;
+    const {title} = data;
 
     return (
-        <li className={b()} key={id} aria-current={isActive || undefined}>
+        <li className={b()} key={title} aria-current={isActive || undefined}>
             <button className={b('button', {active: isActive})} onClick={() => onClick(data)}>
-                {name}
+                {title}
             </button>
         </li>
     );

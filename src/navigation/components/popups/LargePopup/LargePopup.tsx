@@ -68,14 +68,14 @@ export const LargePopup: React.FC<LargePopupProps> = (props) => {
         setCurrentCategory(value);
     }, []);
 
-    const {name, groups} = currentCategory;
+    const {title, groups} = currentCategory;
     const titleProps = useMemo(() => {
         return {
-            text: name,
+            text: title,
             textSize: 'xs' as TextSize,
             url: groups[0].url,
         };
-    }, [name, groups]);
+    }, [title, groups]);
 
     useEffect(() => {
         const maxHeight = window.innerHeight - getHeaderHeight(false) - LARGE_POPUP_INDENT;
