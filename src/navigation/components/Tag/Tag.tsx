@@ -1,23 +1,15 @@
 import React from 'react';
 
+import {ClassNameProps} from '@gravity-ui/page-constructor';
+
 import {block} from '../../../utils/cn';
+import {NavigationTagColor, NavigationTag as NavigationTagModel} from '../../models';
 
 import './Tag.scss';
 
 const b = block('navigation-tag');
 
-export enum NavigationTagColor {
-    Green = 'green',
-    Yellow = 'yellow',
-    Blue = 'blue',
-}
-
-export interface NavigationTagProps {
-    text: string;
-    color?: NavigationTagColor;
-    className?: string;
-    size?: 's' | 'm';
-}
+export interface NavigationTagProps extends NavigationTagModel, ClassNameProps {}
 
 export const NavigationTag: React.FC<NavigationTagProps> = ({
     text,

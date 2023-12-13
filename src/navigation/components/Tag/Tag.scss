@@ -10,15 +10,15 @@ $block: '.#{$ns}navigation-tag';
     text-transform: capitalize;
 
     &_color_yellow {
-        background-color: var(--www-color-promo-highlight-gold);
+        background-color: var(--pc-addons-navigation-color-tag-yellow);
     }
 
     &_color_green {
-        background-color: var(--www-color-promo-highlight-mint);
+        background-color: var(--pc-addons-navigation-color-tag-green);
     }
 
     &_color_blue {
-        background-color: var(--www-color-promo-highlight-sky);
+        background-color: var(--pc-addons-navigation-color-tag-blue);
     }
 
     &_size_s {

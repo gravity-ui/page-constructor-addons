@@ -9,8 +9,8 @@ import {block} from '../../../../utils/cn';
 import {DefaultCategorizedItemSizes} from '../../../constants';
 import {AnalyticsContext} from '../../../contexts/analytics';
 import {NavigationSectionContext} from '../../../contexts/navigation-section';
-import {AnalyticsEventType} from '../../../models';
-import {NavigationTag, NavigationTagProps} from '../../Tag/Tag';
+import {AnalyticsEventType, NavigationTag as NavigationTagModel} from '../../../models';
+import {NavigationTag} from '../../Tag/Tag';
 
 import './NavigationPopupItem.scss';
 
@@ -19,7 +19,7 @@ const b = block('navigation-popup-item');
 export interface NavigationPopupItemProps {
     name: string | null;
     description?: string | null;
-    tag?: Omit<NavigationTagProps, 'className'>;
+    tag?: NavigationTagModel;
     icon?: string | null;
     url: string;
     image?: string | null;

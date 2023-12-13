@@ -69,13 +69,17 @@
                         "id": 1,
                         "slug": "compute",
                         "name": "Compute Cloud",
-                        "tag": null,
+                        "tag": {
+                          "text": "Preview",
+                          "color": "blue"
+                        },
                         "status": "public",
                         "docUrl": "/docs/compute/",
                         "consoleUrl": "https://console.il.nebius.com/link/compute",
                         "pricesUrl": "/docs/compute/pricing",
                         "fullName": "Compute Cloud",
                         "iamFlag": null,
+                        "url": "/services/compute",
                         "icon": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <g clip-path=\"url(#clip0_165_5213)\">\n        <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5.518 3V.986a.986.986 0 0 1 1.97 0V3h-1.97Zm.001 0h-.521a2 2 0 0 0-2 2v.037H.986a.986.986 0 1 0 0 1.971h2.012v1.49H.986a.986.986 0 1 0 0 1.97h2.043a3.003 3.003 0 0 0 1.97 2.4v2.146a.986.986 0 0 0 1.972 0v-1.976h2v1.976a.986.986 0 0 0 1.97 0v-1.976H11a2 2 0 0 0 2-2v-.562H7.52a2 2 0 0 1-2-2V3Zm9.495 2.001h-1.996v1.971h1.996a.986.986 0 0 0 0-1.971Zm0 3.496H13v1.971h2.014a.986.986 0 1 0 0-1.97ZM9.025 3V.986a.986.986 0 0 1 1.972 0V3H9.025Z\" fill=\"currentColor\"></path>\n    </g>\n    <defs>\n        \n            <path fill=\"#fff\" d=\"M0 0h16v16H0z\"></path>\n        \n    </defs>\n</svg>",
                         "description": "Virtual machines and block storage"
                       },
@@ -145,6 +149,7 @@
                         "id": "eqg0ah5eq8mjck1a37dh",
                         "slug": "yc/h2o-llmstudio",
                         "name": "H2O LLM Studio",
+                        "url": "il/marketplace/products/yc/h2o-llmstudio",
                         "icon": "https://storage.il.nebius.cloud/products/eqg0ah5eq8mjck1a37dh.svg"
                       },
                       {

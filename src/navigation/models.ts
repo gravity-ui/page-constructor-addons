@@ -14,6 +14,12 @@ export enum NavigationItemType {
     Link = 'link',
 }
 
+export enum NavigationTagColor {
+    Green = 'green',
+    Yellow = 'yellow',
+    Blue = 'blue',
+}
+
 export interface LogoData {
     href?: string;
     src?: string;
@@ -39,6 +45,12 @@ export interface AnalyticsEvent extends PCAnalyticsEvent {
     params?: Partial<Record<string, string>>;
 }
 
+export interface NavigationTag {
+    text: string;
+    color?: NavigationTagColor;
+    size?: 's' | 'm';
+}
+
 export interface NavigationItem {
     id: number;
     name: string;
@@ -46,6 +58,7 @@ export interface NavigationItem {
     url: string;
     description: string;
     icon?: string;
+    tag?: NavigationTag;
 }
 
 export interface CategoryGroupData {
