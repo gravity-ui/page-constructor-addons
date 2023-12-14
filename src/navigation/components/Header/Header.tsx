@@ -9,14 +9,14 @@ import React, {
 } from 'react';
 
 import {ChevronLeft} from '@gravity-ui/icons';
-import {OverflowScroller} from '@gravity-ui/page-constructor';
+import {ClassNameProps, OverflowScroller} from '@gravity-ui/page-constructor';
 import {Button, Icon} from '@gravity-ui/uikit';
 
 import {block} from '../../../utils/cn';
 import {AnalyticsContext} from '../../contexts/analytics';
 import {MobileContext} from '../../contexts/mobile';
 import {ThemeContext} from '../../contexts/theme';
-import {Locale, NavigationData, SetupRouteChangeHandler} from '../../models';
+import {NavigationData, SetupRouteChangeHandler} from '../../models';
 import {ButtonsContainer} from '../ButtonsContainer/ButtonsContainer';
 import {LangSwitch} from '../LangSwitch/LangSwitch';
 import Logo from '../Logo/Logo';
@@ -34,9 +34,8 @@ export interface CustomElements {
     right?: ReactNode;
     actions?: ReactNode;
 }
-export interface HeaderProps {
+export interface HeaderProps extends ClassNameProps {
     data: NavigationData;
-    locales: Locale[];
     customElements?: CustomElements;
     // TODO: remove when search suggest will be opensourced
     renderSearch?: (props: {onActiveToggle: (isActive: boolean) => void}) => ReactNode;
@@ -45,11 +44,12 @@ export interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({
     data,
-    locales,
     customElements,
     setupRouteChangeHandler,
     renderSearch,
+    className,
 }) => {
+    const {logo, langSwitch, buttons: buttonConfigs, navigation, locales} = data;
     const headerRef = useRef<HTMLDivElement>(null);
     const [withBackground, setWithBackground] = useState(false);
     const [withShadow, setWithShadow] = useState(true);
@@ -59,7 +59,6 @@ export const Header: React.FC<HeaderProps> = ({
     const [pageHasScroll, setPageHasScroll] = useState(false);
     const locale = useMemo(() => locales.find(({active}) => active), [locales]);
     const {left, right, actions} = customElements || {};
-    const {logo, langSwitch, buttons: buttonConfigs, navigation} = data;
 
     const analytics = useContext(AnalyticsContext);
     const isMobile = useContext(MobileContext);
@@ -145,13 +144,16 @@ export const Header: React.FC<HeaderProps> = ({
 
     return (
         <header
-            className={b({
-                'with-background': withBackground,
-                'with-shadow': withShadow,
-                search: isSearchMode,
-                'open-popup': isPopupOpen,
-                'one-row': !navigation,
-            })}
+            className={b(
+                {
+                    'with-background': withBackground,
+                    'with-shadow': withShadow,
+                    search: isSearchMode,
+                    'open-popup': isPopupOpen,
+                    'one-row': !navigation,
+                },
+                className,
+            )}
             ref={headerRef}
         >
             <div className={b('container')}>

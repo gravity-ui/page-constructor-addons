@@ -17,19 +17,28 @@ export interface LogoProps extends LogoData, ClassNameProps {
     imageClassName?: string;
 }
 
-const Logo: React.FC<LogoProps> = ({href = '/', src, className, imageClassName}) => {
+const Logo: React.FC<LogoProps> = ({
+    href = '/',
+    src,
+    className,
+    imageClassName,
+    title,
+    alt,
+    width,
+}) => {
     const isMobile = useContext(MobileContext);
 
     return (
         <a
             href={href}
-            className={b('link', {mobile: isMobile}, className)}
-            title={i18n('link-title')}
+            className={b({mobile: isMobile}, className)}
+            title={title || i18n('link-title')}
+            style={width ? {width} : {}}
         >
             {src && (
                 <img
                     className={b('img', imageClassName)}
-                    alt={i18n('image-alt')}
+                    alt={alt || i18n('image-alt')}
                     style={{content: `url(${src})`}}
                 />
             )}

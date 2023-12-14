@@ -2,22 +2,6 @@
   "default": {
     "text": "This is a test",
     "theme": "Dark",
-    "locales": [
-      {
-        "id": "ru",
-        "lang": "Русский",
-        "region": "Россия",
-        "href": "/ru",
-        "active": true
-      },
-      {
-        "id": "en",
-        "lang": "Английский",
-        "region": "Англия",
-        "href": "/en",
-        "active": true
-      }
-    ],
     "isMobile": false,
     "locaiton": {
       "hostname": "ecample.com"
@@ -30,6 +14,56 @@
       "search": "Search",
       "hasActionButton": true,
       "reverseSolutionCategories": true,
+      "locales": [
+        {
+          "code": "en",
+          "name": "International (English)",
+          "lang": "en",
+          "langName": "English",
+          "region": "int",
+          "regionName": "International",
+          "currency": "USD",
+          "tld": "com",
+          "order": 1,
+          "default": true,
+          "local": true,
+          "pathPrefix": "en",
+          "keysetsRegion": "nebius.en",
+          "customAppTitle": "Nebius Global",
+          "href": "https://cloud-www.vladvlad.ui.yandex.com/",
+          "icon": {
+            "id": "flags/int",
+            "viewBox": "0 0 18 12",
+            "content": "<symbol fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 18 12\" id=\"flags/int\">\n    <path fill=\"#3D51AF\" d=\"M0 0h18v12H0z\" />\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z\" fill=\"#fff\" />\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M6.024 5.619c.098.037.227.077.39.118C7.038 5.893 7.953 6 9 6s1.962-.107 2.586-.263a3.69 3.69 0 0 0 .39-.118 3 3 0 0 0-5.952 0zm6.192-.117-.021.016a.101.101 0 0 1 .021-.016zm-6.41.016a.09.09 0 0 1-.022-.016s.009.005.021.016zM5 6a4 4 0 1 1 8 0c0 .552-1.79 1-4 1s-4-.448-4-1z\" fill=\"#fff\" />\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9.52 8.381C9.799 7.823 10 6.983 10 6c0-.983-.201-1.823-.48-2.381-.14-.279-.28-.45-.387-.541A.426.426 0 0 0 9.005 3h-.01a.426.426 0 0 0-.127.077c-.108.092-.248.263-.388.542C8.201 4.177 8 5.017 8 6c0 .983.201 1.823.48 2.381.14.279.28.45.387.541A.426.426 0 0 0 8.995 9h.01l.02-.007a.426.426 0 0 0 .108-.07c.107-.092.247-.263.387-.542zM9 10c1.105 0 2-1.79 2-4s-.895-4-2-4-2 1.79-2 4 .895 4 2 4z\" fill=\"#fff\" />\n</symbol>",
+            "node": {}
+          },
+          "active": false
+        },
+        {
+          "code": "en-IL",
+          "name": "Israel (English)",
+          "lang": "en",
+          "langName": "English",
+          "region": "il",
+          "regionName": "Israel",
+          "currency": "ILS",
+          "tld": "com",
+          "order": 2,
+          "default": false,
+          "pathPrefix": "il",
+          "keysetsRegion": "nebius.il",
+          "canonical": true,
+          "href": "https://cloud-www.vladvlad.ui.yandex.com/il/",
+          "icon": {
+            "id": "flags/int",
+            "viewBox": "0 0 18 12",
+            "content": "<symbol fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 18 12\" id=\"flags/int\">\n    <path fill=\"#3D51AF\" d=\"M0 0h18v12H0z\" />\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z\" fill=\"#fff\" />\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M6.024 5.619c.098.037.227.077.39.118C7.038 5.893 7.953 6 9 6s1.962-.107 2.586-.263a3.69 3.69 0 0 0 .39-.118 3 3 0 0 0-5.952 0zm6.192-.117-.021.016a.101.101 0 0 1 .021-.016zm-6.41.016a.09.09 0 0 1-.022-.016s.009.005.021.016zM5 6a4 4 0 1 1 8 0c0 .552-1.79 1-4 1s-4-.448-4-1z\" fill=\"#fff\" />\n    <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9.52 8.381C9.799 7.823 10 6.983 10 6c0-.983-.201-1.823-.48-2.381-.14-.279-.28-.45-.387-.541A.426.426 0 0 0 9.005 3h-.01a.426.426 0 0 0-.127.077c-.108.092-.248.263-.388.542C8.201 4.177 8 5.017 8 6c0 .983.201 1.823.48 2.381.14.279.28.45.387.541A.426.426 0 0 0 8.995 9h.01l.02-.007a.426.426 0 0 0 .108-.07c.107-.092.247-.263.387-.542zM9 10c1.105 0 2-1.79 2-4s-.895-4-2-4-2 1.79-2 4 .895 4 2 4z\" fill=\"#fff\" />\n</symbol>",
+            "node": {}
+          },
+          "active": true
+        }
+      ],
+      "langSwitch": true,
       "buttons": [
         {
           "text": "Contact us",

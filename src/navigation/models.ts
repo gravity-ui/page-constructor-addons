@@ -23,13 +23,16 @@ export enum NavigationTagColor {
 export interface LogoData {
     href?: string;
     src?: string;
-    height?: number;
+    width?: number;
+    title?: string;
+    alt?: string;
 }
 export interface NavigationData {
     search: string;
     navigation: NavigationSectionData[];
     logo: LogoData;
     buttons: ButtonProps[];
+    locales: Locale[];
     langSwitch?: boolean;
 }
 

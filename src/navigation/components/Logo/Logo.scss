@@ -1,10 +1,17 @@
 @import '../../../../styles/mixins.scss';
-
+@import '../../../../styles/variables.scss';
 
 $block: '.#{$ns}logo';
 
 #{$block} {
     width: 214px;
+
+    @include islands-focus();
+    @include focusable();
+
+    display: flex;
+    align-items: center;
+    border-radius: var(--g-focus-border-radius);
 
     &_mobile {
         width: 141px;
@@ -14,15 +21,6 @@ $block: '.#{$ns}logo';
         display: block;
         margin: 0;
         height: 32px;
-    }
-
-    &__link {
-        @include islands-focus();
-        @include focusable();
-
-        display: flex;
-        align-items: center;
-        border-radius: var(--g-focus-border-radius);
     }
 
     @media (max-width: 369px) {
