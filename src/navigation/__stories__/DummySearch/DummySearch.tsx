@@ -4,47 +4,31 @@ import {Magnifier} from '@gravity-ui/icons';
 import {OutsideClick} from '@gravity-ui/page-constructor';
 import {Button, Icon, useUniqId} from '@gravity-ui/uikit';
 
-// import SearchSuggest from '../../../components/SearchSuggest/SearchSuggest';
 import {block} from '../../../utils/cn';
 import {MobileContext} from '../../contexts/mobile';
 import {getIconSize} from '../../utils';
 
-import './Search.scss';
+import './DummySearch.scss';
 
-const b = block('cloud-search');
+const b = block('dummy-search');
 
-interface SearchProps {
-    isSearchMode: boolean;
-    closeSearch: () => void;
-    openSearch: () => void;
-    text?: string;
-    iconClassName?: string;
+interface DummySearchProps {
+    onActiveToggle?: (isActive: boolean) => void;
 }
 
-export const Search: React.FC<SearchProps> = ({
-    text,
-    isSearchMode,
-    closeSearch,
-    openSearch,
-    iconClassName,
-}) => {
+const PLACEHOLDER = 'Search';
+
+export const DummySearch: React.FC<DummySearchProps> = ({onActiveToggle}) => {
     const isMobile = useContext(MobileContext);
     const iconSize = getIconSize(isMobile);
+    const [isSearchMode, setIsSearchMode] = useState(false);
     const [query, setQuery] = useState('');
 
-    // const getQuery = useCallback((value: string) => {
-    //     setQuery(value);
-    // }, []);
-
     const handleClickOutside = useCallback(() => {
-        closeSearch();
+        onActiveToggle?.(false);
+        setIsSearchMode(false);
         setQuery('');
-    }, [closeSearch]);
-    // const onSuggestBlur = useCallback(() => {
-    //     if (!query) {
-    //         closeSearch();
-    //     }
-    // }, [query, closeSearch]);
+    }, [onActiveToggle]);
 
     const searchTextId = useUniqId();
 
@@ -55,35 +39,27 @@ export const Search: React.FC<SearchProps> = ({
             })}
             onOutsideClick={handleClickOutside}
         >
-            {/* <SearchSuggest
-                className={b('suggest')}
-                containerClass={b('container')}
-                query={isSearchMode ? undefined : ''}
-                focused={isSearchMode}
-                onFocus={openSearch}
-                onBlur={onSuggestBlur}
-                popupClass={b('suggest-popup')}
-                getValue={getQuery}
-                customClearIcon={Xmark}
-            /> */}
             <div className={b('dummy-suggest')} />
             <span
                 className={b('text', {'search-mode': isSearchMode, hidden: Boolean(query)})}
                 id={searchTextId}
             >
-                {text}
+                {PLACEHOLDER}
             </span>
             <Button
                 view="flat"
                 size="s"
                 className={b('button')}
-                onClick={openSearch}
+                onClick={() => {
+                    onActiveToggle?.(true);
+                    setIsSearchMode(true);
+                }}
                 disabled={isSearchMode}
                 extraProps={{
                     'aria-labelledby': searchTextId,
                 }}
             >
-                <Icon className={b('icon', iconClassName)} data={Magnifier} size={iconSize} />
+                <Icon className={b('icon')} data={Magnifier} size={iconSize} />
             </Button>
         </OutsideClick>
     );

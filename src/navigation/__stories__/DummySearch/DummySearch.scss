@@ -3,7 +3,7 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
-$block: '.#{$ns}cloud-search';
+$block: '.#{$ns}dummy-search';
 
 #{$block} {
     position: relative;
@@ -55,6 +55,11 @@ $block: '.#{$ns}cloud-search';
         @include resetHoverButton(#{$block}__button);
     }
 
+    &__icon {
+        color: var(--g-color-text-hint);
+        transition: color 0.2s;
+    }
+
     &__text {
         @include text-size(body-1);
 
@@ -68,19 +73,6 @@ $block: '.#{$ns}cloud-search';
             opacity: 0;
         }
     }
-
-    //TODO: fix installations layout
-    // &_israel {
-    //     width: 80px;
-
-    //     #{$block}__button {
-    //         right: 0px;
-    //     }
-    // }
-
-    // &_nemax {
-    //     width: 84px;
-    // }
 
     &_search-mode {
         background-color: var(--g-color-base-generic);

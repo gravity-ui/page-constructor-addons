@@ -4,6 +4,8 @@ import {Meta, StoryFn} from '@storybook/react';
 
 import {Header, HeaderProps} from '../components/Header/';
 
+import {DummySearch} from './DummySearch/DummySearch';
+
 import data from './data.json';
 
 export default {
@@ -11,11 +13,14 @@ export default {
     title: 'Components/Navigation',
 } as Meta;
 
+const renderDummySearch: HeaderProps['renderSearch'] = (props) => <DummySearch {...props} />;
+
 const DefaultTemplate: StoryFn<HeaderProps> = (args, context) => (
     <Header
         {...args}
         isMobile={context.globals.platform === 'mobile'}
         theme={context.globals.theme}
+        renderSearch={renderDummySearch}
     />
 );
 

@@ -22,7 +22,6 @@ import {LangSwitch} from '../LangSwitch/LangSwitch';
 import Logo from '../Logo/Logo';
 import {MobileNavigation} from '../MobileNavigation/MobileNavigation';
 import {Navigation} from '../Navigation/Navigation';
-import {Search} from '../Search/Search';
 
 import './Header.scss';
 
@@ -39,6 +38,8 @@ export interface HeaderProps {
     data: NavigationData;
     locales: Locale[];
     customElements?: CustomElements;
+    // TODO: remove when search suggest will be opensourced
+    renderSearch?: (props: {onActiveToggle: (isActive: boolean) => void}) => ReactNode;
     setupRouteChangeHandler?: SetupRouteChangeHandler;
 }
 
@@ -47,6 +48,7 @@ export const Header: React.FC<HeaderProps> = ({
     locales,
     customElements,
     setupRouteChangeHandler,
+    renderSearch,
 }) => {
     const headerRef = useRef<HTMLDivElement>(null);
     const [withBackground, setWithBackground] = useState(false);
@@ -57,7 +59,7 @@ export const Header: React.FC<HeaderProps> = ({
     const [pageHasScroll, setPageHasScroll] = useState(false);
     const locale = useMemo(() => locales.find(({active}) => active), [locales]);
     const {left, right, actions} = customElements || {};
-    const {logo, search, langSwitch, buttons: buttonConfigs, navigation} = data;
+    const {logo, langSwitch, buttons: buttonConfigs, navigation} = data;
 
     const analytics = useContext(AnalyticsContext);
     const isMobile = useContext(MobileContext);
@@ -78,13 +80,7 @@ export const Header: React.FC<HeaderProps> = ({
         ? !navigation && buttons && buttons.length === 1
         : Boolean(buttons);
 
-    const openSearch = useCallback(() => {
-        setIsSearchMode(true);
-    }, []);
-
-    const closeSearch = useCallback(() => {
-        setIsSearchMode(false);
-    }, []);
+    const toggleSearch = useCallback((isActive: boolean) => setIsSearchMode(isActive), []);
 
     const handleOpenPopup = useCallback(() => {
         setIsPopupOpen(true);
@@ -177,15 +173,7 @@ export const Header: React.FC<HeaderProps> = ({
                 </div>
                 <div className={b('right')}>
                     <div className={b('icons-container')}>
-                        {search && (
-                            <Search
-                                text={search}
-                                closeSearch={closeSearch}
-                                openSearch={openSearch}
-                                isSearchMode={isSearchMode}
-                                iconClassName={b('icon')}
-                            />
-                        )}
+                        {renderSearch && renderSearch({onActiveToggle: toggleSearch})}
                         {langSwitch && (
                             <LangSwitch
                                 text={locale?.region}
