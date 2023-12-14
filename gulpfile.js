@@ -74,6 +74,11 @@ task('styles-global', () => {
 
 task('styles-components', () => {
     return src([`src/**/*.scss`, `!src/**/__stories__/**/*.scss`, '!src/widget/**/*.scss'])
+        .pipe(
+            sass({
+                includePaths: ['node_modules'],
+            }),
+        )
         .pipe(sass().on('error', sass.logError))
         .pipe(dest(path.resolve(BUILD_CLIENT_DIR, ESM_DIR)))
         .pipe(dest(path.resolve(BUILD_CLIENT_DIR, CJS_DIR)));

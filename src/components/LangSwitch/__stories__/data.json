@@ -1,0 +1,39 @@
+{
+  "default": {
+    "text": "Ru",
+    "size": "s",
+    "iconSize": 16,
+    "showTextInMobileView": true,
+    "items": [
+      {
+        "url": "https://google.ru",
+        "text": "Ru",
+        "description": "Russian",
+        "active": true
+      },
+      {
+        "url": "https://google.com",
+        "text": "En",
+        "description": "English"
+      }
+    ]
+  },
+  "noTextInMobile": {
+    "text": "Ru",
+    "size": "s",
+    "iconSize": 16,
+    "items": [
+      {
+        "url": "https://google.ru",
+        "text": "Ru",
+        "description": "Russian",
+        "active": true
+      },
+      {
+        "url": "https://google.com",
+        "text": "En",
+        "description": "English"
+      }
+    ]
+  }
+}

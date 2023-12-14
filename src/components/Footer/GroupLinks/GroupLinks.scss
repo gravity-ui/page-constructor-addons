@@ -1,0 +1,55 @@
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
+@import '../variables.scss';
+
+$block: '.#{$ns}group-links';
+
+#{$block} {
+    display: flex;
+
+    &__group {
+        @include reset-list-style();
+
+        flex: 1;
+        width: 100%;
+
+        &:not(:first-child) {
+            margin-left: $gridGutter;
+        }
+    }
+
+    &__group-title {
+        @include text-size(body-2);
+        color: var(--g-color-text-primary);
+        margin-bottom: var(--footer-margin-s);
+    }
+
+    &__item-wrapper {
+        margin-bottom: var(--footer-margin-s);
+    }
+
+    &__item-wrapper:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &__item {
+        @include text-size(body-2);
+        @include focusable();
+
+        &_underline:not(:last-child) {
+            margin-right: var(--footer-margin-m);
+        }
+
+        &_social:not(:last-child) {
+            margin-right: 8px;
+        }
+    }
+
+    @media (max-width: map-get($gridBreakpoints, 'md')) {
+        &__item {
+            &_underline:not(:last-child) {
+                margin-bottom: var(--footer-margin-s);
+            }
+        }
+    }
+}
