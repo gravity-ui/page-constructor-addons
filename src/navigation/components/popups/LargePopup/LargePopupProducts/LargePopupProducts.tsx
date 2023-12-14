@@ -34,9 +34,6 @@ export const LargePopupProducts: React.FC<CategoryGroupData> = ({items, title, u
                                 url={itemUrl}
                                 image={icon}
                                 title={popupTitle}
-                                description={null}
-                                tag={null}
-                                icon={null}
                                 padding={'s'}
                                 imageSize={'s'}
                             />

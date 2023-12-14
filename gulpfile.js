@@ -73,7 +73,7 @@ task('styles-global', () => {
 });
 
 task('styles-components', () => {
-    return src([`src/**/*.scss`, `!src/**/__stories__/**/*.scss`, '!src/widget/**/*.scss'])
+    return src([`src/**/*.scss`, `!src/**/__stories__/**/*.scss`])
         .pipe(
             sass({
                 includePaths: ['node_modules'],
