@@ -28,7 +28,6 @@ export interface LogoData {
     alt?: string;
 }
 export interface NavigationData {
-    search: string;
     navigation: NavigationSectionData[];
     logo: LogoData;
     buttons: ButtonProps[];
