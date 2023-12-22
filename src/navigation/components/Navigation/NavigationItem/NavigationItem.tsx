@@ -1,5 +1,5 @@
 import type {FC, ReactNode} from 'react';
-import React, {useCallback, useContext} from 'react';
+import React, {useCallback, useContext, useEffect} from 'react';
 
 import {getLinkProps} from '@gravity-ui/page-constructor';
 
@@ -8,6 +8,7 @@ import {block} from '../../../../utils/cn';
 import {NO_MENU_TAB_SELECTED} from '../../../constants';
 import {AnalyticsContext} from '../../../contexts/analytics';
 import {LocationContext} from '../../../contexts/location';
+import {RouteChangeHandlerContext} from '../../../contexts/route-change';
 import {AnalyticsEventType, NavigationItemType, NavigationSectionData} from '../../../models';
 
 import './NavigationItem.scss';
@@ -36,6 +37,7 @@ export const NavigationItem: FC<NavigationItemOwnProps> = ({
     tooltipId,
 }) => {
     const {type, title, link, section} = item;
+    const setupRouteChangeHandler = useContext(RouteChangeHandlerContext);
     const {hostname} = useContext(LocationContext);
     const linkProps = link && getLinkProps(link?.url, hostname, link?.target);
     const isPopupExist =
@@ -69,6 +71,14 @@ export const NavigationItem: FC<NavigationItemOwnProps> = ({
     }, [link?.url, section, sendEvents]);
 
     const isCurrentPage = useIsCurrentPage(link?.url);
+
+    useEffect(
+        () =>
+            setupRouteChangeHandler?.(() => {
+                handleMouseLeave();
+            }),
+        [handleMouseLeave, setupRouteChangeHandler],
+    );
 
     return (
         <li

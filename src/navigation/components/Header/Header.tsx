@@ -15,6 +15,7 @@ import {Button, Icon} from '@gravity-ui/uikit';
 import {block} from '../../../utils/cn';
 import {AnalyticsContext} from '../../contexts/analytics';
 import {MobileContext} from '../../contexts/mobile';
+import {RouteChangeHandlerContext} from '../../contexts/route-change';
 import {ThemeContext} from '../../contexts/theme';
 import {NavigationData, SetupRouteChangeHandler} from '../../models';
 import {ButtonsContainer} from '../ButtonsContainer/ButtonsContainer';
@@ -143,82 +144,84 @@ export const Header: React.FC<HeaderProps> = ({
     );
 
     return (
-        <header
-            className={b(
-                {
-                    'with-background': withBackground,
-                    'with-shadow': withShadow,
-                    search: isSearchMode,
-                    'open-popup': isPopupOpen,
-                    'one-row': !navigation,
-                },
-                className,
-            )}
-            ref={headerRef}
-        >
-            <div className={b('container')}>
-                <div className={b('left')}>
-                    {logo && (
-                        <Logo
-                            {...logo}
-                            theme={theme}
-                            className={b('logo')}
-                            imageClassName={b('logo-img')}
-                        />
-                    )}
-                    {isMobile && (
-                        <Button view="flat" size="l" className={b('back')}>
-                            <Icon data={ChevronLeft} size={MOBILE_ICON_SIZE} />
-                        </Button>
-                    )}
-                    {left}
-                </div>
-                <div className={b('right')}>
-                    <div className={b('icons-container')}>
-                        {renderSearch && renderSearch({onActiveToggle: toggleSearch})}
-                        {langSwitch && (
-                            <LangSwitch
-                                text={locale?.region}
-                                iconClassName={b('icon')}
-                                isSearchMode={isSearchMode}
-                                locales={locales}
-                                showText={!isMobile}
+        <RouteChangeHandlerContext.Provider value={setupRouteChangeHandler}>
+            <header
+                className={b(
+                    {
+                        'with-background': withBackground,
+                        'with-shadow': withShadow,
+                        search: isSearchMode,
+                        'open-popup': isPopupOpen,
+                        'one-row': !navigation,
+                    },
+                    className,
+                )}
+                ref={headerRef}
+            >
+                <div className={b('container')}>
+                    <div className={b('left')}>
+                        {logo && (
+                            <Logo
+                                {...logo}
+                                theme={theme}
+                                className={b('logo')}
+                                imageClassName={b('logo-img')}
                             />
                         )}
+                        {isMobile && (
+                            <Button view="flat" size="l" className={b('back')}>
+                                <Icon data={ChevronLeft} size={MOBILE_ICON_SIZE} />
+                            </Button>
+                        )}
+                        {left}
                     </div>
-                    {showButtonsContainer && (
-                        <ButtonsContainer buttons={buttons} className={b('buttons')}>
-                            {actions}
-                        </ButtonsContainer>
-                    )}
-                    {right}
-                    {navigation ? (
-                        <MobileNavigation
-                            toogleOpen={toggleMobileNavigationPopup}
-                            isOpened={isMobileNavigationOpen}
-                            isSearchOpen={isSearchMode}
-                            data={navigation}
-                            buttons={buttons}
-                            onMenuScroll={onMenuScroll}
-                            popupClassName={b('user-popup')}
-                            customElements={customElements}
-                        />
-                    ) : null}
+                    <div className={b('right')}>
+                        <div className={b('icons-container')}>
+                            {renderSearch && renderSearch({onActiveToggle: toggleSearch})}
+                            {langSwitch && (
+                                <LangSwitch
+                                    text={locale?.region}
+                                    iconClassName={b('icon')}
+                                    isSearchMode={isSearchMode}
+                                    locales={locales}
+                                    showText={!isMobile}
+                                />
+                            )}
+                        </div>
+                        {showButtonsContainer && (
+                            <ButtonsContainer buttons={buttons} className={b('buttons')}>
+                                {actions}
+                            </ButtonsContainer>
+                        )}
+                        {right}
+                        {navigation ? (
+                            <MobileNavigation
+                                toogleOpen={toggleMobileNavigationPopup}
+                                isOpened={isMobileNavigationOpen}
+                                isSearchOpen={isSearchMode}
+                                data={navigation}
+                                buttons={buttons}
+                                onMenuScroll={onMenuScroll}
+                                popupClassName={b('user-popup')}
+                                customElements={customElements}
+                            />
+                        ) : null}
+                    </div>
                 </div>
-            </div>
-            {navigation ? (
-                <div className={b('scroller')}>
-                    <OverflowScroller arrowClassName={b('scroll-arrow')} arrowSize={14}>
-                        <Navigation
-                            data={navigation}
-                            headerRef={headerRef}
-                            handleOpenPopup={handleOpenPopup}
-                            handleClosePopup={handleClosePopup}
-                            withBackground={withBackground}
-                        />
-                    </OverflowScroller>
-                </div>
-            ) : null}
-        </header>
+                {navigation ? (
+                    <div className={b('scroller')}>
+                        <OverflowScroller arrowClassName={b('scroll-arrow')} arrowSize={14}>
+                            <Navigation
+                                data={navigation}
+                                headerRef={headerRef}
+                                handleOpenPopup={handleOpenPopup}
+                                handleClosePopup={handleClosePopup}
+                                withBackground={withBackground}
+                            />
+                        </OverflowScroller>
+                    </div>
+                ) : null}
+            </header>
+        </RouteChangeHandlerContext.Provider>
     );
 };
