@@ -7,11 +7,11 @@ import {block} from '../../../../../../utils/cn';
 import {CategoryGroupData} from '../../../../models';
 import {NavigationPopupItem} from '../../../Navigation/NavigationPopupItem/NavigationPopupItem';
 
-import './LargePopupProducts.scss';
+import './LargePopupSecondaryGroup.scss';
 
-const b = block('cloud-large-popup-products');
+const b = block('large-popup-secondary-group');
 
-export const LargePopupProducts: React.FC<CategoryGroupData> = ({items, title, url}) => {
+export const LargePopupSecondaryGroup: React.FC<CategoryGroupData> = ({items, title, url}) => {
     const titleProps = useMemo(() => {
         return title
             ? {

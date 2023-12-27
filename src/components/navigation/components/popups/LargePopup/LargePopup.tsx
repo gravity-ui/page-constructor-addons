@@ -16,7 +16,7 @@ import {NavigationItemsList} from '../../Navigation/NavigationItemsList/Navigati
 import {SearchResult} from '../../SearchResult/SearchResult';
 
 import {LargePopupCategory} from './LargePopupCategory/LargePopupCategory';
-import {LargePopupProducts} from './LargePopupProducts/LargePopupProducts';
+import {LargePopupSecondaryGroup} from './LargePopupSecondaryGroup/LargePopupSecondaryGroup';
 import Search from './Search/Search';
 
 import './LargePopup.scss';
@@ -164,7 +164,7 @@ export const LargePopup: React.FC<LargePopupProps> = (props) => {
                             <Fragment>
                                 {currentCategoryData.groups.map((group, index) => {
                                     return index ? (
-                                        <LargePopupProducts {...group} />
+                                        <LargePopupSecondaryGroup {...group} />
                                     ) : (
                                         <div>
                                             <Row>
