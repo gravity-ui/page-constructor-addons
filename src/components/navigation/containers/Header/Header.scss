@@ -90,7 +90,7 @@ $block: '.#{$ns}header';
     }
 
     &__back {
-        @include resetHoverButton($block);
+        @include reset-button-hover($block);
         display: none;
     }
 
@@ -101,7 +101,7 @@ $block: '.#{$ns}header';
     }
 
     &__popup {
-        @include popupStyles(var(--pc-addons-navigation-border-radius));
+        @include popup-styles(var(--pc-addons-navigation-border-radius));
 
         --yc-popover-max-width: #{calc($newContentWidth + ($indentM * 2))};
         --yc-popover-padding: #{$indentS};
@@ -123,7 +123,7 @@ $block: '.#{$ns}header';
     }
 
     &__user-popup {
-        @include popupStyles(var(--g-border-radius-m));
+        @include popup-styles(var(--g-border-radius-m));
     }
 
     @media (max-width: map-get($gridBreakpoints, 'lg')) {

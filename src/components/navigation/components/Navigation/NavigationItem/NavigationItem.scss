@@ -16,7 +16,7 @@ $block: '.#{$ns}navigation-item';
     }
 
     &__popup {
-        @include popupStyles(var(--pc-addons-navigation-border-radius));
+        @include popup-styles(var(--pc-addons-navigation-border-radius));
 
         --yc-popover-max-width: #{calc($newContentWidth + ($indentM * 2))};
         --yc-popover-padding: #{$indentS};

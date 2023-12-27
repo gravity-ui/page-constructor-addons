@@ -36,6 +36,7 @@ export function FocusTrap({
     const containersRef = React.useRef<Record<string, HTMLElement>>({});
     const updateContainerElements = React.useCallback(() => {
         focusTrapRef.current?.updateContainerElements([
+            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
             nodeRef.current!,
             ...Object.values(containersRef.current),
         ]);
@@ -84,9 +85,11 @@ export function FocusTrap({
     );
 
     const child = React.Children.only(children);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     if (!React.isValidElement<any>(child)) {
         throw new Error('Children must contain only one valid element');
     }
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const childRef = (child as any).ref;
 
     const ref = useForkRef(handleNodeRef, childRef);

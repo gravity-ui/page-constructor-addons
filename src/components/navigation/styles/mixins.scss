@@ -11,7 +11,7 @@
     color: var(--g-color-text-complementary);
 }
 
-@mixin popupStyles($borderRadius) {
+@mixin popup-styles($borderRadius) {
     --yc-popup-border-width: 0;
     --yc-popup-border-color: none;
 
@@ -19,7 +19,7 @@
     box-shadow: 0 3px 10px var(--g-color-base-generic-hover);
 }
 
-@mixin resetHoverButton($block) {
+@mixin reset-button-hover($block) {
     &:hover {
         &:before {
             background: none;

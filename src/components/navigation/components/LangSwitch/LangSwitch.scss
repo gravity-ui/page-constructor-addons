@@ -5,7 +5,7 @@
 $block: '.#{$ns}lang-switch';
 
 #{$block} {
-    @include resetHoverButton($block);
+    @include reset-button-hover($block);
 
     margin-left: 1px;
 
@@ -19,7 +19,7 @@ $block: '.#{$ns}lang-switch';
     }
 
     &__popup {
-        @include popupStyles(var(--g-border-radius-l));
+        @include popup-styles(var(--g-border-radius-l));
 
         padding: 0;
     }

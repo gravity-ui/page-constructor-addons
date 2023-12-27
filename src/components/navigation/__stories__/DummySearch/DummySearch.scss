@@ -38,7 +38,7 @@ $block: '.#{$ns}dummy-search';
         }
 
         &-popup {
-            @include popupStyles(var(--g-border-radius-l));
+            @include popup-styles(var(--g-border-radius-l));
         }
     }
 
@@ -52,7 +52,7 @@ $block: '.#{$ns}dummy-search';
         right: 4px;
         top: 5px;
 
-        @include resetHoverButton(#{$block}__button);
+        @include reset-button-hover(#{$block}__button);
     }
 
     &__icon {
