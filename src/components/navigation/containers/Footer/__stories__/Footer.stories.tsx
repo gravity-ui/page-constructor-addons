@@ -9,7 +9,7 @@ import data from './data.json';
 
 export default {
     component: Footer,
-    title: 'Components/Footer',
+    title: 'Navigation/Footer',
 } as Meta;
 
 const DefaultTemplate: StoryFn<FooterProps> = (args) => {

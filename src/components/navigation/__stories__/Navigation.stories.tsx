@@ -10,7 +10,7 @@ import data from './data.json';
 
 export default {
     component: Header,
-    title: 'Components/Navigation',
+    title: 'Navigation/Header',
 } as Meta;
 
 const renderDummySearch: HeaderProps['renderSearch'] = (props) => <DummySearch {...props} />;
