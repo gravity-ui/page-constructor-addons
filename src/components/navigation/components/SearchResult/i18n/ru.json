@@ -1,16 +1,16 @@
 {
-  "search-found-services": [
-    "{{count}} service found",
-    "{{count}} services found",
-    "{{count}} services found",
+  "search-found-section_1": [
+    "Найдено {{count}} элемента",
+    "Найдено {{count}} элемента",
+    "Найдено {{count}} элементов",
     "",
     "",
     ""
   ],
-  "search-found-solutions": [
-    "Найдено {{count}} решение",
-    "Найдено {{count}} решения",
-    "Найдено {{count}} решений",
+  "search-found-section_2": [
+    "Найдено {{count}} элемента",
+    "Найдено {{count}} элемента",
+    "Найдено {{count}} элементов",
     "",
     "",
     ""
