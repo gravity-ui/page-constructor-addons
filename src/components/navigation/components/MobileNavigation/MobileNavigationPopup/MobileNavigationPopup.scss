@@ -1,0 +1,63 @@
+@import '../../../../../../styles/mixins.scss';
+@import '../../../../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+$block: '.#{$ns}cloud-mobile-navigation-popup';
+
+#{$block} {
+    $block: &;
+    $transitionTime: 0.4s;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: var(--pc-addons-navigation-popup-z-index);
+    //TODO: remove $indentXS from padding-top after redesign header-block CLOUDFRONT-14848
+    padding: calc(var(--pc-addons-navigation-header-height) - $indentXS) 0 $indentM;
+    background-color: var(--g-color-base-background);
+    border-radius: 0 0 var(--pc-addons-navigation-border-radius)
+        var(--pc-addons-navigation-border-radius);
+    box-shadow: 0 3px 10px var(--g-color-base-generic);
+
+    &__transition-enter {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    &__transition-enter-active {
+        transform: translateY(0);
+        opacity: 1;
+        transition: transform $transitionTime, opacity $transitionTime;
+    }
+
+    &__transition-exit {
+        transform: translateY(0);
+        opacity: 1;
+
+        #{$block}__container {
+            opacity: 0;
+        }
+    }
+
+    &__transition-exit-active {
+        transform: translateY(-30px);
+        opacity: 0;
+        transition: transform $transitionTime, opacity $transitionTime;
+    }
+
+    &__no-scroll {
+        overflow: hidden;
+    }
+
+    &__container {
+        padding: calc($indentXXXS / 2) $indentL 0;
+        overflow: scroll;
+        height: 100%;
+    }
+
+    @media (max-width: map-get($gridBreakpoints, 'sm') - 1) {
+        &__container {
+            padding-left: $indentSM;
+            padding-right: $indentSM;
+        }
+    }
+}

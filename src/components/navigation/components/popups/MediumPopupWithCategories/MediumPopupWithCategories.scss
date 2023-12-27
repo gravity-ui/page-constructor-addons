@@ -1,0 +1,28 @@
+@import '../../../styles/mixins.scss';
+@import '../../../../../../styles/variables.scss';
+@import '../../../styles/variables.scss';
+
+$block: '.#{$ns}cloud-medium-popup-with-categories';
+
+#{$block} {
+    @include navigation-overflow-popup($indentXL);
+
+    display: flex;
+    padding: 0 $indentXXXS;
+
+    &__title {
+        margin-bottom: $indentXXXS;
+        padding: var(--pc-addons-navigation-popup-padding) $indentS;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: map-get($gridBreakpoints, 'lg') - 1) {
+        &__col:not(:first-child) {
+            padding-top: $indentXS;
+        }
+    }
+}

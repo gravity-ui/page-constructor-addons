@@ -1,0 +1,19 @@
+{
+  "search-found-services": [
+    "{{count}} service found",
+    "{{count}} services found",
+    "{{count}} services found",
+    "",
+    "",
+    ""
+  ],
+  "search-found-solutions": [
+    "Найдено {{count}} решение",
+    "Найдено {{count}} решения",
+    "Найдено {{count}} решений",
+    "",
+    "",
+    ""
+  ],
+  "search-not-found": "Пожалуйста, проверьте правильность написания или попробуйте другие ключевые слова."
+}

@@ -1,6 +1,6 @@
 import {useContext} from 'react';
 
-import {DeviceContext} from '../navigation/contexts/device';
+import {DeviceContext} from '../components/Navigation/contexts/device';
 
 export function useIsIPhone() {
     const device = useContext(DeviceContext);

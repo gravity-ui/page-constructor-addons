@@ -1,0 +1,71 @@
+@import '../../../../../../styles/mixins.scss';
+@import '../../../../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+$block: '.#{$ns}cloud-mobile-navigation-item';
+
+#{$block} {
+    $arrowSize: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: $indentXXS 0;
+
+    &_type_link {
+        @include reset-link-style();
+
+        display: block;
+        color: var(--g-color-text-primary);
+    }
+
+    &__arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $arrowSize;
+        height: $arrowSize;
+        min-width: $arrowSize;
+    }
+
+    &__text {
+        padding-right: $indentS;
+    }
+
+    &__list {
+        padding: calc($indentS / 2) $indentS;
+        background-color: var(--g-color-base-generic);
+        border-radius: var(--g-border-radius-l);
+
+        &:not(:first-child) {
+            margin-top: $indentXXS;
+        }
+
+        &-items {
+            @include reset-list-style();
+        }
+
+        &-title {
+            @include text-size(body-2);
+
+            margin: 0;
+            padding: calc($indentS / 2) 0;
+        }
+
+        &-item {
+            @include reset-link-style();
+            @include reset-link-hover();
+
+            display: block;
+            color: var(--g-color-text-primary);
+            padding: calc($indentS / 2) 0;
+        }
+
+        &-link {
+            @include navigation-link();
+
+            display: block;
+            padding: calc($indentS / 2) 0;
+        }
+    }
+}

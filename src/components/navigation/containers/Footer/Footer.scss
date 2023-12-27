@@ -1,0 +1,107 @@
+@import '../../../../../styles/mixins.scss';
+@import '../../../../../styles/variables.scss';
+@import './variables.scss';
+
+$block: '.#{$ns}footer';
+
+#{$block} {
+    @include text-size(body-2);
+
+    &_type_default &__container-fluid {
+        padding-top: var(--footer-margin-xl);
+    }
+
+    &_type_simple {
+        margin: 0 40px;
+    }
+
+    &__group-wrapper + &__group-wrapper {
+        margin-top: var(--footer-margin-xl);
+    }
+
+    &__underline {
+        border-top: 1px solid var(--g-color-line-generic);
+
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: var(--footer-margin-l) 0;
+    }
+
+    &__column_underline:not(:only-child) {
+        margin-top: var(--footer-margin-xl);
+    }
+
+    &__underline-links {
+        display: flex;
+        color: var(--g-color-text-primary);
+    }
+
+    &__item {
+        @include focusable();
+
+        &_underline:not(:last-child) {
+            margin-right: var(--footer-margin-m);
+        }
+    }
+
+    &__item_lang-switch {
+        top: -3px;
+    }
+
+    &__copyright {
+        @include text-size(body-2);
+
+        color: var(--g-color-text-primary);
+    }
+
+    .mobile & {
+        &_type_simple {
+            margin: 0 20px;
+        }
+    }
+
+    @media (max-width: map-get($gridBreakpoints, 'lg')) {
+        &__underline {
+            flex-direction: column;
+        }
+
+        &__underline-links:not(:last-child) {
+            margin-bottom: var(--footer-margin-s);
+        }
+
+        &__project {
+            margin: 0 var(--footer-margin-m) 0 0;
+        }
+    }
+
+    @media (max-width: map-get($gridBreakpoints, 'md')) {
+        &__underline-links {
+            flex-direction: column;
+        }
+
+        &__item {
+            &_underline:not(:last-child) {
+                margin-bottom: var(--footer-margin-s);
+            }
+        }
+
+        &__project {
+            margin: 0 0 var(--footer-margin-s) 0;
+        }
+
+        &__column {
+            margin-top: var(--footer-margin-xl);
+        }
+
+        &_type_simple {
+            margin: 0 20px;
+        }
+    }
+
+    @media (min-width: map-get($gridBreakpoints, 'sm')) and (max-width: map-get($gridBreakpoints, 'md')) {
+        &__column_underline {
+            padding: 0 8px;
+        }
+    }
+}

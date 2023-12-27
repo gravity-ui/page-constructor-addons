@@ -1,0 +1,175 @@
+@import '../../../../../styles/mixins.scss';
+@import '../../../../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+$desktopContainerHeight: 36px;
+$mobileContainerHeight: 36px;
+$logoImageHeight: 30px;
+$arrowSize: 20px;
+
+$block: '.#{$ns}cloud-header';
+
+#{$block} {
+    --g-scrollbar-width: 8px;
+    --g-color-scroll-handle: var(--g-color-base-generic);
+    --g-color-scroll-handle-hover: var(--g-color-line-generic);
+
+    position: relative;
+    width: 100%;
+    max-width: min(calc(100% - ($indentXS * 2)), calc($newContentWidth + ($indentM * 2)));
+    margin: 0 auto;
+    padding: $indentXXS $indentM 0 $indentM;
+    background: var(--pc-transparent);
+    border-radius: var(--pc-addons-navigation-border-radius);
+
+    z-index: calc(var(--pc-addons-navigation-popup-z-index) + 1);
+
+    &_with-background {
+        background: var(--g-color-base-background);
+
+        &#{$block}_with-shadow {
+            box-shadow: 0 4px 24px var(--g-color-base-generic);
+        }
+    }
+
+    &_one-row {
+        padding-bottom: $indentXXS;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        height: $desktopContainerHeight;
+    }
+
+    &__left,
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__left {
+        margin-right: $indentM;
+    }
+
+    &__right {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    &__icons-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__buttons {
+        display: flex;
+        margin-left: $indentXXXS;
+    }
+
+    &__icon {
+        color: var(--g-color-text-hint);
+        transition: color 0.2s;
+    }
+
+    &__user {
+        @include desktop-only();
+
+        margin-left: $indentXXS;
+    }
+
+    &__back {
+        position: relative;
+        left: 2px;
+
+        &-icon {
+            color: var(--g-color-text-hint);
+        }
+    }
+
+    &__back {
+        @include resetHoverButton($block);
+        display: none;
+    }
+
+    &__scroller {
+        @include desktop-only();
+
+        margin-top: $indentXXS;
+    }
+
+    &__popup {
+        @include popupStyles(var(--pc-addons-navigation-border-radius));
+
+        --yc-popover-max-width: #{calc($newContentWidth + ($indentM * 2))};
+        --yc-popover-padding: #{$indentS};
+
+        width: var(--yc-popover-max-width);
+        left: 0;
+        box-shadow: 0 4px 24px var(--g-color-base-generic-hover),
+            0 2px 8px var(--g-color-base-generic-hover);
+
+        &_with-background {
+            border-radius: 0 0 var(--pc-addons-navigation-border-radius)
+                var(--pc-addons-navigation-border-radius);
+        }
+    }
+
+    &__scroll-arrow {
+        height: $arrowSize;
+        color: var(--g-color-text-hint);
+    }
+
+    &__user-popup {
+        @include popupStyles(var(--g-border-radius-m));
+    }
+
+    @media (max-width: map-get($gridBreakpoints, 'lg')) {
+        &__left {
+            margin-right: 0;
+        }
+    }
+
+    @media (min-width: map-get($gridBreakpoints, 'md')) {
+        &__logo-img {
+            height: $logoImageHeight;
+        }
+    }
+
+    @media (max-width: map-get($gridBreakpoints, 'md') - 1) {
+        max-width: 100%;
+        padding: $indentXS calc($indentL - $indentXXXS) $indentXS $indentL;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        &__left {
+            margin-right: $indentXXS;
+        }
+
+        &__icons-container {
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+        }
+
+        &_search {
+            #{$block}__logo {
+                display: none;
+            }
+
+            #{$block}__back {
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: map-get($gridBreakpoints, 'sm') - 1) {
+        padding-left: $indentSM;
+        padding-right: $indentXS;
+
+        &__container {
+            height: $mobileContainerHeight;
+        }
+    }
+}
