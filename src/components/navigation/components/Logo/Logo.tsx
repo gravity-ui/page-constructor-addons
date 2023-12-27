@@ -23,6 +23,7 @@ const Logo: React.FC<LogoProps> = ({
     className,
     imageClassName,
     title,
+    text,
     alt,
     width,
 }) => {
@@ -42,6 +43,7 @@ const Logo: React.FC<LogoProps> = ({
                     style={{content: `url(${src})`}}
                 />
             )}
+            {text && <span className={b('text')}>{text}</span>}
         </a>
     );
 };

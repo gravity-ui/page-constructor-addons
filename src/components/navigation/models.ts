@@ -25,6 +25,7 @@ export interface LogoData {
     src?: string;
     width?: number;
     title?: string;
+    text?: string;
     alt?: string;
 }
 
@@ -87,7 +88,7 @@ export interface PopupData {
 
 export interface NavigationSectionData {
     title: string;
-    data: PopupData | CategorizedPopupData;
+    data?: PopupData | CategorizedPopupData;
     type: NavigationItemType;
     section?: string;
     link?: LinkProps;

@@ -26,5 +26,4 @@ const DefaultTemplate: StoryFn<HeaderProps> = (args, context) => (
 
 export const Default = DefaultTemplate.bind({});
 
-//@ts-ignore
 Default.args = data.default as HeaderProps;

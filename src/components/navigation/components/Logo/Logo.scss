@@ -7,6 +7,7 @@ $block: '.#{$ns}logo';
     width: 214px;
 
     @include islands-focus();
+    @include reset-link-style();
     @include focusable();
 
     display: flex;
@@ -21,6 +22,13 @@ $block: '.#{$ns}logo';
         display: block;
         margin: 0;
         height: 32px;
+    }
+
+    &__text {
+        @include heading4();
+
+        margin-left: $indentXXS;
+        white-space: nowrap;
     }
 
     @media (max-width: 369px) {
