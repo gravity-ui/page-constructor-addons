@@ -17,11 +17,6 @@ import './NavigationPopupItem.scss';
 const b = block('navigation-popup-item');
 
 export interface NavigationPopupItemProps extends Partial<NavigationItem> {
-    // title: string | null;
-    // description?: string | null;
-    // tag?: NavigationTagModel;
-    // icon?: string | null;
-    // url: string;
     image?: string | null;
     hover?: boolean;
     sizes?: GridColumnSizesType;

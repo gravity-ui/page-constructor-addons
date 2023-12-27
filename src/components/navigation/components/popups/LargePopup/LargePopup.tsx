@@ -1,8 +1,8 @@
 import React, {Fragment, useCallback, useEffect, useMemo, useRef, useState} from 'react';
 
 import {Magnifier} from '@gravity-ui/icons';
-import type {LinkProps, TextSize} from '@gravity-ui/page-constructor';
-import {Col, GridColumnSize, Link, Row, Title} from '@gravity-ui/page-constructor';
+import type {LinkProps} from '@gravity-ui/page-constructor';
+import {Col, GridColumnSize, Link, Row} from '@gravity-ui/page-constructor';
 
 import {block} from '../../../../../utils/cn';
 import {
@@ -12,10 +12,10 @@ import {
     NavigationSectionData,
 } from '../../../models';
 import {getFlatList, getHeaderHeight} from '../../../utils';
-import {NavigationItemsList} from '../../Navigation/NavigationItemsList/NavigationItemsList';
 import {SearchResult} from '../../SearchResult/SearchResult';
 
 import {LargePopupCategory} from './LargePopupCategory/LargePopupCategory';
+import {LargePopupGroup} from './LargePopupGroup/LargePopupGroup';
 import {LargePopupSecondaryGroup} from './LargePopupSecondaryGroup/LargePopupSecondaryGroup';
 import Search from './Search/Search';
 
@@ -67,15 +67,6 @@ export const LargePopup: React.FC<LargePopupProps> = (props) => {
         }
         setCurrentCategory(value);
     }, []);
-
-    const {title, groups} = currentCategory;
-    const titleProps = useMemo(() => {
-        return {
-            text: title,
-            textSize: 'xs' as TextSize,
-            url: groups[0].url,
-        };
-    }, [title, groups]);
 
     useEffect(() => {
         const maxHeight = window.innerHeight - getHeaderHeight(false) - LARGE_POPUP_INDENT;
@@ -166,21 +157,7 @@ export const LargePopup: React.FC<LargePopupProps> = (props) => {
                                     return index ? (
                                         <LargePopupSecondaryGroup {...group} />
                                     ) : (
-                                        <div>
-                                            <Row>
-                                                <Col className={b('title')}>
-                                                    <Title title={titleProps} />
-                                                </Col>
-                                            </Row>
-                                            <div>
-                                                <NavigationItemsList
-                                                    items={group.items}
-                                                    section={section}
-                                                    itemClassName={b('item')}
-                                                    className={b('items')}
-                                                />
-                                            </div>
-                                        </div>
+                                        <LargePopupGroup {...group} section={section} />
                                     );
                                 })}
                             </Fragment>
