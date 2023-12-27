@@ -11,7 +11,7 @@ $block: '.#{$ns}mobile-navigation-popup';
     position: fixed;
     top: 0;
     z-index: var(--pc-addons-navigation-popup-z-index);
-    //TODO: remove $indentXS from padding-top after redesign header-block CLOUDFRONT-14848
+    //TODO: remove $indentXS from padding-top after redesign header-block
     padding: calc(var(--pc-addons-navigation-header-height) - $indentXS) 0 $indentM;
     background-color: var(--g-color-base-background);
     border-radius: 0 0 var(--pc-addons-navigation-border-radius)

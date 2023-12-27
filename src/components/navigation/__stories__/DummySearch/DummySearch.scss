@@ -15,7 +15,7 @@ $block: '.#{$ns}dummy-search';
     &:hover {
         &:not(#{$block}_search-mode) {
             #{$block}__icon {
-                @include cloudNavigationIconHover;
+                @include navigation-hover;
             }
         }
     }
