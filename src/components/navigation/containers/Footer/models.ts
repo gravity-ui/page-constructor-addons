@@ -1,7 +1,7 @@
 import type {ClassNameProps} from '@gravity-ui/page-constructor';
 
 import type {EnrichedLinkProps} from '../../../EnrichedLink/EnrichedLink';
-import {LangSwitchProps} from '../../components/LangSwitch/LangSwitch';
+import {LangSwitchProps} from '../../components/LangSwitch';
 
 import type {GroupLinkColumn} from './GroupLinks/GroupLinks';
 

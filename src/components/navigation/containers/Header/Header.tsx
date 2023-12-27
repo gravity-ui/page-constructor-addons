@@ -14,7 +14,7 @@ import {Button, Icon} from '@gravity-ui/uikit';
 
 import {block} from '../../../../utils/cn';
 import {ButtonsContainer} from '../../components/ButtonsContainer/ButtonsContainer';
-import {LangSwitch} from '../../components/LangSwitch/LangSwitch';
+import {LangSwitch} from '../../components/LangSwitch';
 import Logo from '../../components/Logo/Logo';
 import {MobileNavigation} from '../../components/MobileNavigation/MobileNavigation';
 import {Navigation} from '../../components/Navigation/Navigation';

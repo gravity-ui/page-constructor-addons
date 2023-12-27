@@ -5,7 +5,7 @@ import {useMobile} from '@gravity-ui/uikit';
 
 import {block} from '../../../../utils/cn';
 import {EnrichedLink} from '../../../EnrichedLink/EnrichedLink';
-import {LangSwitch} from '../../components/LangSwitch/LangSwitch';
+import {LangSwitch} from '../../components/LangSwitch';
 
 import GroupLinks from './GroupLinks/GroupLinks';
 import type {GroupLinkColumn} from './GroupLinks/GroupLinks';

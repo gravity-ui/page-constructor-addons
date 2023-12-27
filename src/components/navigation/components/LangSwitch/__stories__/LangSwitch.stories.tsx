@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Meta, StoryFn} from '@storybook/react';
 
-import {LangSwitch, LangSwitchProps} from '../LangSwitch';
+import {LangSwitch, LangSwitchProps} from '..';
 
 import data from './data.json';
 
