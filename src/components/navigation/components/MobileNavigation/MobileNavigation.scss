@@ -2,7 +2,7 @@
 @import '../../../../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
-$block: '.#{$ns}cloud-mobile-navigation';
+$block: '.#{$ns}mobile-navigation';
 
 #{$block} {
     @include reset-list-style();

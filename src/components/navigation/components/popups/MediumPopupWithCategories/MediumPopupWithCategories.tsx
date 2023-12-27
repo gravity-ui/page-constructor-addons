@@ -18,7 +18,7 @@ import {
 
 import './MediumPopupWithCategories.scss';
 
-const b = block('cloud-medium-popup-with-categories');
+const b = block('medium-popup-with-categories');
 
 interface MediumPopupWithCategoriesProps {
     data: PopupData;

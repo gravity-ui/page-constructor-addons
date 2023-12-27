@@ -3,7 +3,7 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/variables.scss';
 
-$block: '.#{$ns}cloud-large-popup';
+$block: '.#{$ns}large-popup';
 
 #{$block} {
     &__categories {

@@ -20,7 +20,7 @@ interface ButtonsContainerProps extends PropsWithChildren {
     direction?: ButtonsContainerDirection;
 }
 
-const b = block('cloud-buttons-container');
+const b = block('buttons-container');
 
 export const ButtonsContainer: React.FC<ButtonsContainerProps> = ({
     buttons,

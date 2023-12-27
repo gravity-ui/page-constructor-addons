@@ -9,7 +9,7 @@ import {block} from '../../../../../utils/cn';
 
 import './MobileNavigationPopup.scss';
 
-const b = block('cloud-mobile-navigation-popup');
+const b = block('mobile-navigation-popup');
 
 const TRANSITION_TIME = 400;
 const POPUP_MARGIN = 80;

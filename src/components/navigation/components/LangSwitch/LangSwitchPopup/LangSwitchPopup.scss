@@ -1,7 +1,7 @@
 @import '../../../../../../styles/mixins';
 @import '../../../../../../styles/variables';
 
-$block: '.#{$ns}cloud-lang-switch-popup';
+$block: '.#{$ns}lang-switch-popup';
 
 #{$block} {
     overflow: hidden;

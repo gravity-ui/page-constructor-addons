@@ -14,7 +14,7 @@ import {
 
 import './MobileNavigationItem.scss';
 
-const b = block('cloud-mobile-navigation-item');
+const b = block('mobile-navigation-item');
 
 interface MobileNavigationProps {
     data: NavigationSectionData;

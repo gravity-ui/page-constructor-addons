@@ -1,7 +1,7 @@
 @import '../../../../../../styles/variables.scss';
 @import '../../../styles/mixins.scss';
 
-$block: '.#{$ns}cloud-medium-popup';
+$block: '.#{$ns}medium-popup';
 
 #{$block} {
     @include navigation-overflow-popup($indentXL);

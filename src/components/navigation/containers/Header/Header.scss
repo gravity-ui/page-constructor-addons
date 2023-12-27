@@ -7,7 +7,7 @@ $mobileContainerHeight: 36px;
 $logoImageHeight: 30px;
 $arrowSize: 20px;
 
-$block: '.#{$ns}cloud-header';
+$block: '.#{$ns}header';
 
 #{$block} {
     --g-scrollbar-width: 8px;

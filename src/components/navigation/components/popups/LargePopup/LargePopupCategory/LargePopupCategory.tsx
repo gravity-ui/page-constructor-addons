@@ -5,7 +5,7 @@ import {CategoryData} from '../../../../models';
 
 import './LargePopupCategory.scss';
 
-const b = block('cloud-large-popup-category');
+const b = block('large-popup-category');
 
 interface ExtraPopupCategoryProps {
     data: CategoryData;

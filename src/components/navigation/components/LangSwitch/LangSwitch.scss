@@ -2,7 +2,7 @@
 @import '../../../../../styles/variables';
 @import '../../styles/mixins.scss';
 
-$block: '.#{$ns}cloud-lang-switch';
+$block: '.#{$ns}lang-switch';
 
 #{$block} {
     @include resetHoverButton($block);

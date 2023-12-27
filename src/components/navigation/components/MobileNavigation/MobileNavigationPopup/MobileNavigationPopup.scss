@@ -2,7 +2,7 @@
 @import '../../../../../../styles/variables.scss';
 @import '../../../styles/mixins.scss';
 
-$block: '.#{$ns}cloud-mobile-navigation-popup';
+$block: '.#{$ns}mobile-navigation-popup';
 
 #{$block} {
     $block: &;

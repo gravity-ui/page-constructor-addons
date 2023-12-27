@@ -14,7 +14,7 @@ import {MobileNavigationPopup} from './MobileNavigationPopup/MobileNavigationPop
 
 import './MobileNavigation.scss';
 
-const b = block('cloud-mobile-navigation');
+const b = block('mobile-navigation');
 
 interface MobileNavigationProps {
     isOpened: boolean;

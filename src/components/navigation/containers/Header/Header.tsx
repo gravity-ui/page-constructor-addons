@@ -26,7 +26,7 @@ import {NavigationData, SetupRouteChangeHandler} from '../../models';
 
 import './Header.scss';
 
-const b = block('cloud-header');
+const b = block('header');
 
 export const MOBILE_ICON_SIZE = 24;
 

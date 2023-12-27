@@ -12,7 +12,7 @@ import {LangSwitchPopup} from './LangSwitchPopup/LangSwitchPopup';
 
 import './LangSwitch.scss';
 
-const b = block('cloud-lang-switch');
+const b = block('lang-switch');
 const langSwitchTooltipId = 'lang-switch-tooltip-id';
 
 export interface LangSwitchProps {

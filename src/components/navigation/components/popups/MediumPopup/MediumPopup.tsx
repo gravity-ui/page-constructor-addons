@@ -8,7 +8,7 @@ import {NavigationPopupItem} from '../../Navigation/NavigationPopupItem/Navigati
 
 import './MediumPopup.scss';
 
-const b = block('cloud-medium-popup');
+const b = block('medium-popup');
 
 interface MediumPopupProps {
     data: PopupData;

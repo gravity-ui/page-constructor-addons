@@ -12,7 +12,7 @@ import i18n from './i18n';
 
 import './SearchResult.scss';
 
-const b = block('cloud-search-result');
+const b = block('search-result');
 
 interface SearchResultProps {
     value: string;

@@ -21,7 +21,7 @@ import Search from './Search/Search';
 
 import './LargePopup.scss';
 
-const b = block('cloud-large-popup');
+const b = block('large-popup');
 const LARGE_POPUP_INDENT = 240;
 
 type GroupItemsMap = Record<string, NavigationItem[]>;

@@ -8,7 +8,7 @@ import {LangSwitchItem} from '../../../models';
 
 import './LangSwitchPopup.scss';
 
-const b = block('cloud-lang-switch-popup');
+const b = block('lang-switch-popup');
 
 interface LangSwitchPopupProps {
     items: LangSwitchItem[];
