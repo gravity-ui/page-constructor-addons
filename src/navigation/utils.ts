@@ -1,6 +1,6 @@
 import {NavigationItem} from '../navigation/models';
 
-export const getIconSize = (isMobile: boolean) => {
+export const getIconSize = (isMobile?: boolean) => {
     return isMobile ? 24 : 16;
 };
 

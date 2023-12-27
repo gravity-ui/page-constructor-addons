@@ -27,20 +27,20 @@ export interface LogoData {
     title?: string;
     alt?: string;
 }
+
+export interface LangSwitchItem {
+    title: string;
+    description: string;
+    url: string;
+    active?: boolean;
+    icon?: SVGIconData;
+}
+
 export interface NavigationData {
     navigation: NavigationSectionData[];
     logo: LogoData;
     buttons: ButtonProps[];
-    locales: Locale[];
-    langSwitch?: boolean;
-}
-
-export interface Locale {
-    lang: string;
-    region: string;
-    href: string;
-    active?: boolean;
-    icon?: SVGIconData;
+    langSwitchItems?: LangSwitchItem[];
 }
 
 export interface AnalyticsEvent extends PCAnalyticsEvent {

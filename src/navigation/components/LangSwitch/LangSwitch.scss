@@ -9,6 +9,10 @@ $block: '.#{$ns}cloud-lang-switch';
 
     margin-left: 1px;
 
+    &_size_m {
+        @include text-size(body-2);
+    }
+
     &__icon {
         position: relative;
         top: -1px;

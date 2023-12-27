@@ -4,30 +4,30 @@ import Check from '@gravity-ui/icons/Check';
 import {Icon} from '@gravity-ui/uikit';
 
 import {block} from '../../../../utils/cn';
-import {Locale} from '../../../models';
+import {LangSwitchItem} from '../../../models';
 
 import './LangSwitchPopup.scss';
 
 const b = block('cloud-lang-switch-popup');
 
 interface LangSwitchPopupProps {
-    locales: Locale[];
+    items: LangSwitchItem[];
 }
 
-export const LangSwitchPopup: React.FC<LangSwitchPopupProps> = ({locales}) => {
+export const LangSwitchPopup: React.FC<LangSwitchPopupProps> = ({items}) => {
     return (
         <div className={b()}>
-            {locales.map(({region, lang, active, href, icon}) => {
+            {items.map(({title, description, active, url, icon}) => {
                 return (
                     // eslint-disable-next-line jsx-a11y/anchor-is-valid
-                    <a className={b('item')} key={region} href={active ? undefined : href}>
+                    <a className={b('item')} key={description} href={active ? undefined : url}>
                         <div className={b('row')}>
                             {icon && (
                                 <Icon className={b('icon')} data={icon} width={18} height={12} />
                             )}
                             <div className={b('text')}>
-                                <span className={b('name')}>{region}</span>
-                                <span className={b('lang')}>{lang}</span>
+                                <span className={b('name')}>{title}</span>
+                                <span className={b('lang')}>{description}</span>
                             </div>
                             {active && (
                                 <Icon

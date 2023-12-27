@@ -72,17 +72,17 @@
       ],
       "langSwitch": {
         "text": "Russian",
-        "showTextInMobileView": true,
+        "showText": true,
         "items": [
           {
             "url": "https://google.ru",
-            "text": "Ru",
+            "title": "Ru",
             "description": "Russian",
             "active": true
           },
           {
             "url": "https://google.com",
-            "text": "En",
+            "title": "En",
             "description": "English"
           }
         ]

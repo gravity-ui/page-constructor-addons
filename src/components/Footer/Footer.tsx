@@ -1,10 +1,11 @@
 import React, {useMemo} from 'react';
 
 import {Col, Grid, Row} from '@gravity-ui/page-constructor';
+import {useMobile} from '@gravity-ui/uikit';
 
+import {LangSwitch} from '../../navigation/components/LangSwitch/LangSwitch';
 import {block} from '../../utils/cn';
 import {EnrichedLink} from '../EnrichedLink/EnrichedLink';
-import {LangSwitch} from '../LangSwitch/LangSwitch';
 
 import GroupLinks from './GroupLinks/GroupLinks';
 import type {GroupLinkColumn} from './GroupLinks/GroupLinks';
@@ -22,6 +23,7 @@ const columnSize = {
 
 export const Footer: React.FC<FooterProps> = (props) => {
     const {type = 'default', underline, columns, media, customItems} = props;
+    const [isMobile] = useMobile();
 
     const mediaContent = useMemo(() => {
         if (!media) {
@@ -69,8 +71,9 @@ export const Footer: React.FC<FooterProps> = (props) => {
                             {...underline.langSwitch}
                             className={b('item', {underline: true, 'lang-switch': true})}
                             direction={['top-start', 'top', 'top-end']}
-                            size="s"
+                            size="m"
                             iconSize={16}
+                            isMobile={isMobile}
                         />
                     )}
                     {!isSimple &&
@@ -88,7 +91,7 @@ export const Footer: React.FC<FooterProps> = (props) => {
                 </div>
             </div>
         );
-    }, [underline, isSimple]);
+    }, [underline, isSimple, isMobile]);
     const isRightMedia = media?.position === 'right';
 
     return (

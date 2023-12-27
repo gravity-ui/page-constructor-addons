@@ -50,7 +50,7 @@ export const Header: React.FC<HeaderProps> = ({
     renderSearch,
     className,
 }) => {
-    const {logo, langSwitch, buttons: buttonConfigs, navigation, locales} = data;
+    const {logo, langSwitchItems, buttons: buttonConfigs, navigation} = data;
     const headerRef = useRef<HTMLDivElement>(null);
     const [withBackground, setWithBackground] = useState(false);
     const [withShadow, setWithShadow] = useState(true);
@@ -58,7 +58,10 @@ export const Header: React.FC<HeaderProps> = ({
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [isMobileNavigationOpen, setIsMobileNavigationOpen] = useState(false);
     const [pageHasScroll, setPageHasScroll] = useState(false);
-    const locale = useMemo(() => locales.find(({active}) => active), [locales]);
+    const langSwitchActiveItem = useMemo(
+        () => langSwitchItems?.find(({active}) => active),
+        [langSwitchItems],
+    );
     const {left, right, actions} = customElements || {};
 
     const analytics = useContext(AnalyticsContext);
@@ -178,13 +181,14 @@ export const Header: React.FC<HeaderProps> = ({
                     <div className={b('right')}>
                         <div className={b('icons-container')}>
                             {renderSearch && renderSearch({onActiveToggle: toggleSearch})}
-                            {langSwitch && (
+                            {langSwitchItems && (
                                 <LangSwitch
-                                    text={locale?.region}
+                                    text={langSwitchActiveItem?.title}
                                     iconClassName={b('icon')}
                                     isSearchMode={isSearchMode}
-                                    locales={locales}
+                                    items={langSwitchItems}
                                     showText={!isMobile}
+                                    isMobile={isMobile}
                                 />
                             )}
                         </div>

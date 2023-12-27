@@ -1,7 +1,7 @@
 import type {ClassNameProps} from '@gravity-ui/page-constructor';
 
+import {LangSwitchProps} from '../../navigation/components/LangSwitch/LangSwitch';
 import type {EnrichedLinkProps} from '../EnrichedLink/EnrichedLink';
-import type {LangSwitchProps} from '../LangSwitch/LangSwitch';
 
 import type {GroupLinkColumn} from './GroupLinks/GroupLinks';
 
@@ -20,7 +20,7 @@ export interface FooterProps extends ClassNameProps {
         leftItems?: EnrichedLinkProps[];
         rightItems?: EnrichedLinkProps[];
         copyright?: string;
-        langSwitch?: Pick<LangSwitchProps, 'text' | 'showTextInMobileView' | 'items'>;
+        langSwitch?: Pick<LangSwitchProps, 'text' | 'showText' | 'items'>;
     };
     columns?: GroupLinkColumn[][];
     // Custom items, they will be shown between underline part and columns
