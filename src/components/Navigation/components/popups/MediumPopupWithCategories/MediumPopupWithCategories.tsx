@@ -24,7 +24,7 @@ interface MediumPopupWithCategoriesProps {
     data: PopupData;
 }
 
-export const MediumPopupWithCategories: React.FC<MediumPopupWithCategoriesProps> = ({data}) => {
+export const MediumPopupWithCategories = ({data}: MediumPopupWithCategoriesProps) => {
     const breakpoint = useWindowBreakpoint();
 
     const itemsArrays = data.groups.map((dataItem) =>

@@ -2,13 +2,12 @@ import React, {useCallback, useEffect, useRef, useState} from 'react';
 
 import {Magnifier, Xmark} from '@gravity-ui/icons';
 import type {IconData} from '@gravity-ui/uikit';
-import {TextInput} from '@gravity-ui/uikit';
+import {Button, Icon, TextInput} from '@gravity-ui/uikit';
 import debounce from 'lodash/debounce';
 
 import {useIsIPhone} from '../../../../../../hooks/useIsIPhone';
 import {ClassNameProps} from '../../../../../../models';
 import {block} from '../../../../../../utils/cn';
-import ButtonWithIcon from '../../../../../ButtonWithIcon/ButtonWithIcon';
 
 import i18n from './i18n';
 
@@ -30,7 +29,7 @@ interface SearchProps extends ClassNameProps {
     customSearchIcon?: IconData;
 }
 
-const Search: React.FC<SearchProps> = (props) => {
+const Search = (props: SearchProps) => {
     const {
         className,
         initialValue,
@@ -76,27 +75,34 @@ const Search: React.FC<SearchProps> = (props) => {
                 />
             </div>
             {value ? (
-                <ButtonWithIcon
+                <Button
                     className={b('close-button')}
-                    icon={Xmark}
-                    iconSize={12}
                     size="xs"
                     onClick={() => {
                         onChangeDebounce.cancel();
                         setValue('');
                         onSubmit('');
                     }}
-                    ariaLabel={i18n('clear-button-label')}
-                />
+                    view="flat"
+                    extraProps={{'aria-label': i18n('clear-button-label')}}
+                >
+                    <Icon data={Xmark} size={18} />
+                </Button>
             ) : (
-                <ButtonWithIcon
+                <Button
                     className={b('search-button')}
-                    icon={customSearchIcon || Magnifier}
-                    iconSize={16}
                     size="xs"
                     disabled={true}
-                    ariaLabel={i18n('search-button-label')}
-                />
+                    onClick={() => {
+                        onChangeDebounce.cancel();
+                        setValue('');
+                        onSubmit('');
+                    }}
+                    view="flat"
+                    extraProps={{'aria-label': i18n('search-button-label')}}
+                >
+                    <Icon data={customSearchIcon || Magnifier} size={16} />
+                </Button>
             )}
         </div>
     );

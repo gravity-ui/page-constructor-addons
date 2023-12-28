@@ -11,7 +11,7 @@ import './LargePopupSecondaryGroup.scss';
 
 const b = block('large-popup-secondary-group');
 
-export const LargePopupSecondaryGroup: React.FC<CategoryGroupData> = (props) => (
+export const LargePopupSecondaryGroup = (props: CategoryGroupData) => (
     <div className={b()}>
         <LargeGroupPopupTitle {...props} className={b('title')} />
         <div>

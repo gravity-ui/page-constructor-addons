@@ -16,7 +16,7 @@ interface SearchNotFoundProps {
     size?: TextSize;
 }
 
-export const SearchNotFound: React.FC<SearchNotFoundProps> = (props) => {
+export const SearchNotFound = (props: SearchNotFoundProps) => {
     const {notFoundDescription, size = 's'} = props;
     const title = {
         text: i18n('search-not-found-title'),

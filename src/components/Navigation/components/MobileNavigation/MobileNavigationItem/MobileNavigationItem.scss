@@ -5,7 +5,7 @@
 $block: '.#{$ns}mobile-navigation-item';
 
 #{$block} {
-    $arrowSize: 20px;
+    $itemTopPadding: calc($indentS / 2);
 
     display: flex;
     justify-content: space-between;
@@ -23,9 +23,9 @@ $block: '.#{$ns}mobile-navigation-item';
         display: flex;
         justify-content: center;
         align-items: center;
-        width: $arrowSize;
-        height: $arrowSize;
-        min-width: $arrowSize;
+        width: var(--pc-addons-arrow-size);
+        height: var(--pc-addons-arrow-size);
+        min-width: var(--pc-addons-arrow-size);
     }
 
     &__text {
@@ -33,7 +33,7 @@ $block: '.#{$ns}mobile-navigation-item';
     }
 
     &__list {
-        padding: calc($indentS / 2) $indentS;
+        padding: $itemTopPadding $indentS;
         background-color: var(--g-color-base-generic);
         border-radius: var(--g-border-radius-l);
 
@@ -49,7 +49,7 @@ $block: '.#{$ns}mobile-navigation-item';
             @include text-size(body-2);
 
             margin: 0;
-            padding: calc($indentS / 2) 0;
+            padding: $itemTopPadding 0;
         }
 
         &-item {
@@ -58,14 +58,14 @@ $block: '.#{$ns}mobile-navigation-item';
 
             display: block;
             color: var(--g-color-text-primary);
-            padding: calc($indentS / 2) 0;
+            padding: $itemTopPadding 0;
         }
 
         &-link {
             @include navigation-link();
 
             display: block;
-            padding: calc($indentS / 2) 0;
+            padding: $itemTopPadding 0;
         }
     }
 }

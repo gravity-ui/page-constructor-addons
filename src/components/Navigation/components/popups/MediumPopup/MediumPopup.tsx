@@ -14,7 +14,7 @@ interface MediumPopupProps {
     data: PopupData;
 }
 
-export const MediumPopup: React.FC<MediumPopupProps> = ({data}) => (
+export const MediumPopup = ({data}: MediumPopupProps) => (
     <Row>
         <Col className={b()}>
             {data.groups.map((dataItem) =>

@@ -40,7 +40,7 @@ const Logo: React.FC<LogoProps> = ({
                 <img
                     className={b('img', imageClassName)}
                     alt={alt || i18n('image-alt')}
-                    style={{content: `url(${src})`}}
+                    src={src}
                 />
             )}
             {text && <span className={b('text')}>{text}</span>}

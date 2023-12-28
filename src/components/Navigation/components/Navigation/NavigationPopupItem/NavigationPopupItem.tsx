@@ -25,7 +25,7 @@ export interface NavigationPopupItemProps extends Partial<NavigationItem> {
     imageSize?: 's' | 'xm' | 'm';
 }
 
-export const NavigationPopupItem: React.FC<NavigationPopupItemProps> = (props) => {
+export const NavigationPopupItem = (props: NavigationPopupItemProps) => {
     const {
         icon,
         url,

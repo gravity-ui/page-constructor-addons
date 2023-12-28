@@ -13,11 +13,7 @@ interface ExtraPopupCategoryProps {
     isActive: boolean;
 }
 
-export const LargePopupCategory: React.FC<ExtraPopupCategoryProps> = ({
-    data,
-    onClick,
-    isActive,
-}) => {
+export const LargePopupCategory = ({data, onClick, isActive}: ExtraPopupCategoryProps) => {
     const {title} = data;
 
     return (

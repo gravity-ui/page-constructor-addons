@@ -11,10 +11,7 @@ import './LargePopupGroup.scss';
 
 const b = block('large-popup-group');
 
-export const LargePopupGroup: React.FC<CategoryGroupData & {section?: string}> = ({
-    section,
-    ...group
-}) => (
+export const LargePopupGroup = ({section, ...group}: CategoryGroupData & {section?: string}) => (
     <div className={b()}>
         <Row>
             <Col className={b('title')}>

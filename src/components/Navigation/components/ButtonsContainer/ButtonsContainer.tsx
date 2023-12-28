@@ -22,13 +22,13 @@ interface ButtonsContainerProps extends PropsWithChildren {
 
 const b = block('buttons-container');
 
-export const ButtonsContainer: React.FC<ButtonsContainerProps> = ({
+export const ButtonsContainer = ({
     buttons,
     className,
     width,
     direction = ButtonsContainerDirection.Row,
     children,
-}) => (
+}: ButtonsContainerProps) => (
     <div className={b({direction}, className)}>
         {buttons?.map((button: ButtonProps) => (
             <PCButton {...button} size="l" className={b('item')} key={button.text} width={width} />

@@ -43,13 +43,13 @@ export interface HeaderProps extends ClassNameProps {
     setupRouteChangeHandler?: SetupRouteChangeHandler;
 }
 
-export const Header: React.FC<HeaderProps> = ({
+export const Header = ({
     data,
     customElements,
     setupRouteChangeHandler,
     renderSearch,
     className,
-}) => {
+}: HeaderProps) => {
     const {logo, langSwitchItems, buttons: buttonConfigs, navigation} = data;
     const headerRef = useRef<HTMLDivElement>(null);
     const [withBackground, setWithBackground] = useState(false);

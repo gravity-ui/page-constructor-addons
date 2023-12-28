@@ -18,7 +18,7 @@ interface DummySearchProps {
 
 const PLACEHOLDER = 'Search';
 
-export const DummySearch: React.FC<DummySearchProps> = ({onActiveToggle}) => {
+export const DummySearch = ({onActiveToggle}: DummySearchProps) => {
     const isMobile = useContext(MobileContext);
     const iconSize = getIconSize(isMobile);
     const [isSearchMode, setIsSearchMode] = useState(false);

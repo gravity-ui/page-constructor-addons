@@ -14,7 +14,7 @@ interface LangSwitchPopupProps {
     items: LangSwitchItem[];
 }
 
-export const LangSwitchPopup: React.FC<LangSwitchPopupProps> = ({items}) => {
+export const LangSwitchPopup = ({items}: LangSwitchPopupProps) => {
     return (
         <div className={b()}>
             {items.map(({title, description, active, url, icon}) => {

@@ -5,7 +5,6 @@
 $desktopContainerHeight: 36px;
 $mobileContainerHeight: 36px;
 $logoImageHeight: 30px;
-$arrowSize: 20px;
 
 $block: '.#{$ns}header';
 
@@ -118,7 +117,7 @@ $block: '.#{$ns}header';
     }
 
     &__scroll-arrow {
-        height: $arrowSize;
+        height: var(--pc-addons-arrow-size);
         color: var(--g-color-text-hint);
     }
 

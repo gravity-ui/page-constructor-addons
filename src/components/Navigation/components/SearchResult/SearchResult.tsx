@@ -21,7 +21,7 @@ interface SearchResultProps {
     className?: string;
 }
 
-export const SearchResult: React.FC<SearchResultProps> = ({value, data, section, className}) => {
+export const SearchResult = ({value, data, section, className}: SearchResultProps) => {
     const result = applySearch(value, data);
 
     const title = {

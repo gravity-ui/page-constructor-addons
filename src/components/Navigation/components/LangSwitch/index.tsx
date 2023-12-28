@@ -29,7 +29,7 @@ export interface LangSwitchProps {
     items: LangSwitchItem[];
 }
 
-export const LangSwitch: React.FC<LangSwitchProps> = ({
+export const LangSwitch = ({
     text,
     iconClassName,
     isSearchMode,
@@ -40,7 +40,7 @@ export const LangSwitch: React.FC<LangSwitchProps> = ({
     items,
     showText,
     isMobile,
-}) => {
+}: LangSwitchProps) => {
     const tooltipRef = useRef<PopoverInstanceProps>(null);
     const buttonRef = useRef(null);
     const tooltipOffset: [number, number] = isMobile ? [0, 12] : [0, 14];

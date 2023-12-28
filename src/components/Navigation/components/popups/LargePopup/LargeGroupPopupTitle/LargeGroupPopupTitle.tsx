@@ -5,11 +5,11 @@ import {Title} from '@gravity-ui/page-constructor';
 
 import {CategoryGroupData} from '../../../../models';
 
-export const LargeGroupPopupTitle: React.FC<CategoryGroupData & ClassNameProps> = ({
+export const LargeGroupPopupTitle = ({
     title,
     url,
     className,
-}) => {
+}: CategoryGroupData & ClassNameProps) => {
     const titleProps = useMemo(() => {
         return title
             ? {

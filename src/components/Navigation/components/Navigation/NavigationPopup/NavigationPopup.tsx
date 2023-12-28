@@ -19,13 +19,13 @@ interface NavigationPopupProps {
     id?: string;
 }
 
-export const NavigationPopup: React.FC<NavigationPopupProps> = ({
+export const NavigationPopup = ({
     withBackground,
     headerRef,
     children,
     className,
     id,
-}) => {
+}: NavigationPopupProps) => {
     return headerRef?.current
         ? ReactDOM.createPortal(
               <FocusTrap enabled>

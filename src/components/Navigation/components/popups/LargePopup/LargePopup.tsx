@@ -30,7 +30,7 @@ export interface LargePopupProps extends Omit<NavigationSectionData, 'data'> {
     data: CategorizedPopupData;
 }
 
-export const LargePopup: React.FC<LargePopupProps> = (props) => {
+export const LargePopup = (props: LargePopupProps) => {
     const {data, section, placeholder, links} = props;
     const {categories} = data;
 

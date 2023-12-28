@@ -11,11 +11,9 @@ const b = block('navigation-tag');
 
 export interface NavigationTagProps extends NavigationTagModel, ClassNameProps {}
 
-export const NavigationTag: React.FC<NavigationTagProps> = ({
+export const NavigationTag = ({
     text,
     color = NavigationTagColor.Yellow,
     className,
     size = 'm',
-}) => {
-    return <div className={b({size, color}, className)}>{text}</div>;
-};
+}: NavigationTagProps) => <div className={b({size, color}, className)}>{text}</div>;

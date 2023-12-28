@@ -27,7 +27,7 @@ interface MobileNavigationProps {
     customElements?: CustomElements;
 }
 
-export const MobileNavigation: React.FC<MobileNavigationProps> = ({
+export const MobileNavigation = ({
     isOpened,
     toogleOpen,
     isSearchOpen,
@@ -35,48 +35,44 @@ export const MobileNavigation: React.FC<MobileNavigationProps> = ({
     buttons,
     onMenuScroll,
     customElements: {actions, right} = {},
-}) => {
-    const icon = isOpened ? Xmark : Bars;
-
-    return (
-        <div className={b()}>
-            <Button
-                view="flat"
-                size="l"
-                className={b('icon', {hidden: isSearchOpen})}
-                onClick={(e: React.MouseEvent) => {
-                    e.stopPropagation();
-                    toogleOpen(!isOpened);
-                }}
-            >
-                <Icon data={icon} size={MOBILE_ICON_SIZE} />
-            </Button>
-            <MobileNavigationPopup
-                isOpened={isOpened}
-                onClose={() => toogleOpen(false)}
-                onMenuScroll={onMenuScroll}
-            >
-                <nav>
-                    <ul className={b()}>
-                        {data.map((item) => (
-                            <li className={b()} key={item.title}>
-                                <MobileNavigationItem data={item} />
-                            </li>
-                        ))}
-                    </ul>
-                    {buttons && (
-                        <ButtonsContainer
-                            buttons={buttons}
-                            className={b('buttons')}
-                            width="max"
-                            direction={ButtonsContainerDirection.Column}
-                        >
-                            {actions}
-                        </ButtonsContainer>
-                    )}
-                    {right}
-                </nav>
-            </MobileNavigationPopup>
-        </div>
-    );
-};
+}: MobileNavigationProps) => (
+    <div className={b()}>
+        <Button
+            view="flat"
+            size="l"
+            className={b('icon', {hidden: isSearchOpen})}
+            onClick={(e: React.MouseEvent) => {
+                e.stopPropagation();
+                toogleOpen(!isOpened);
+            }}
+        >
+            <Icon data={isOpened ? Xmark : Bars} size={MOBILE_ICON_SIZE} />
+        </Button>
+        <MobileNavigationPopup
+            isOpened={isOpened}
+            onClose={() => toogleOpen(false)}
+            onMenuScroll={onMenuScroll}
+        >
+            <nav>
+                <ul className={b()}>
+                    {data.map((item) => (
+                        <li className={b()} key={item.title}>
+                            <MobileNavigationItem data={item} />
+                        </li>
+                    ))}
+                </ul>
+                {buttons && (
+                    <ButtonsContainer
+                        buttons={buttons}
+                        className={b('buttons')}
+                        width="max"
+                        direction={ButtonsContainerDirection.Column}
+                    >
+                        {actions}
+                    </ButtonsContainer>
+                )}
+                {right}
+            </nav>
+        </MobileNavigationPopup>
+    </div>
+);

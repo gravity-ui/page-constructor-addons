@@ -20,7 +20,7 @@ interface MobileNavigationProps {
     data: NavigationSectionData;
 }
 
-export const MobileNavigationItem: React.FC<MobileNavigationProps> = ({data}) => {
+export const MobileNavigationItem = ({data}: MobileNavigationProps) => {
     const {hostname} = useContext(LocationContext) || {};
     const {type, link, title, links} = data;
     const linkProps = link && getLinkProps(link?.url, hostname, link?.target);

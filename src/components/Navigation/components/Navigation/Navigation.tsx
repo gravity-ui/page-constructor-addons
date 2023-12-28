@@ -46,14 +46,14 @@ const getPopupContent = (sectionData: NavigationSectionData) => {
     }
 };
 
-export const Navigation: React.FC<NavigationProps> = ({
+export const Navigation = ({
     data,
     headerRef,
     handleOpenPopup,
     handleClosePopup,
     withBackground,
     setupRouteChangeHandler,
-}) => {
+}: NavigationProps) => {
     const [activeTab, setActiveTab] = useState(NO_MENU_TAB_SELECTED);
     const [pretendentActiveTab, setPretendentAciveTab] = useState(NO_MENU_TAB_SELECTED);
     const [previouslyFocusedElement, setPreviouslyFocusedElement] = useState<HTMLElement | null>(

@@ -21,7 +21,7 @@ const columnSize = {
     md: 2,
 };
 
-export const Footer: React.FC<FooterProps> = (props) => {
+export const Footer = (props: FooterProps) => {
     const {type = 'default', underline, columns, media, customItems} = props;
     const [isMobile] = useMobile();
 

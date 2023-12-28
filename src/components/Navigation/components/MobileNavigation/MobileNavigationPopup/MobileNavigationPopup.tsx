@@ -22,12 +22,12 @@ interface MobileNavigationPopupProps {
     onMenuScroll: (scrollTop: number) => void;
 }
 
-export const MobileNavigationPopup: React.FC<MobileNavigationPopupProps> = ({
+export const MobileNavigationPopup = ({
     isOpened,
     onClose,
     children,
     onMenuScroll,
-}) => {
+}: MobileNavigationPopupProps) => {
     const [body, setBody] = useState<HTMLElement>();
     const ref = useRef<HTMLDivElement>(null);
     const [containerHeight, setContainerHeight] = useState(0);

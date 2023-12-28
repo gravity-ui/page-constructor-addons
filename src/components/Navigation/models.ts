@@ -31,8 +31,8 @@ export interface LogoData {
 
 export interface LangSwitchItem {
     title: string;
-    description: string;
-    url: string;
+    description?: string;
+    url?: string;
     active?: boolean;
     icon?: SVGIconData;
 }
@@ -66,16 +66,16 @@ export interface NavigationItem {
 }
 
 export interface CategoryGroupData {
-    title: string;
-    url: string;
+    title?: string;
     items: NavigationItem[];
     imageSize?: 's' | 'xm' | 'm';
+    url?: string;
 }
 
 export interface CategoryData {
     slug: string;
     title: string;
-    description: string;
+    description?: string;
     groups: CategoryGroupData[];
 }
 export interface CategorizedPopupData {
