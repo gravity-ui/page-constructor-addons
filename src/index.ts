@@ -1,3 +1,1 @@
-export * from './components/Navigation/containers/Footer';
-export * from './components/EnrichedLink/EnrichedLink';
-export * from './components/Navigation';
+export * from './components';
