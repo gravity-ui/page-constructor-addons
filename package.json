@@ -1,6 +1,6 @@
 {
   "name": "@gravity-ui/page-constructor-addons",
-  "version": "4.40.2",
+  "version": "0.0.1",
   "description": "Components and plugins for @gravity-ui/page-constructor",
   "license": "MIT",
   "repository": {
@@ -61,17 +61,19 @@
     "build": "gulp",
     "prepublishOnly": "npm run lint && npm run build",
     "prepare": "husky install",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watchAll"
   },
   "dependencies": {
     "@bem-react/classname": "^1.6.0",
-    "@gravity-ui/icons": "^2.8.1"
+    "@gravity-ui/icons": "^2.8.1",
+    "lodash": "^4.17.21",
+    "react-transition-group": "^4.4.5"
   },
   "peerDependencies": {
     "@gravity-ui/page-constructor": "^4.40.0",
-    "@gravity-ui/uikit": "^5.12.0",
+    "@gravity-ui/uikit": "^5.19.0",
     "react": "^16.0.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
@@ -84,7 +86,7 @@
     "@gravity-ui/prettier-config": "^1.0.1",
     "@gravity-ui/stylelint-config": "^1.0.0",
     "@gravity-ui/tsconfig": "^1.0.0",
-    "@gravity-ui/uikit": "^5.12.2",
+    "@gravity-ui/uikit": "^5.23.0",
     "@storybook/addon-actions": "^7.1.0",
     "@storybook/addon-essentials": "^7.1.0",
     "@storybook/addon-knobs": "^7.0.2",

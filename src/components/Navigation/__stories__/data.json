@@ -1,0 +1,274 @@
+{
+  "default": {
+    "isMobile": false,
+    "locaiton": {
+      "hostname": "example.com"
+    },
+    "data": {
+      "logo": {
+        "href": "https://example.com",
+        "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy44MDUyIDUuNTY0MTdDOC43MjUzOCAxMC40NDk5IDIuNDUxNTQgMTkuODc2OSAyLjAyMzUxIDMwLjgwNTJIMTcuODA1MlY1LjU2NDE3Wk0yLjAxMDc0IDMyLjgwNTJDMi4zMDMwNCA0My44OTg4IDguNjE3NjQgNTMuNDkyMSAxNy44MDUyIDU4LjQzNThWMzIuODA1MkgyLjAxMDc0Wk0xOS44MDUyIDU5LjQxNzdDMjMuNTMxMiA2MS4wNzc1IDI3LjY1NzkgNjIgMzIuMDAwMSA2MkM0OC4yOTk1IDYyIDYxLjU2MjggNDkuMDAxNSA2MS45ODk1IDMyLjgwNTJIMTkuODA1MlY1OS40MTc3Wk02MS45NzY4IDMwLjgwNTJDNjEuMzQ5NSAxNC43OTA1IDQ4LjE2ODUgMiAzMi4wMDAxIDJDMjcuNjU3OSAyIDIzLjUzMTIgMi45MjI1MyAxOS44MDUyIDQuNTgyMjhWMzAuODA1Mkg2MS45NzY4WiIgZmlsbD0iIzg0ODg5NCIvPgo8L3N2Zz4K",
+        "text": "Logo"
+      },
+      "langSwitchItems": [
+        {
+          "title": "International",
+          "description": "English",
+          "url": "#int-en",
+          "active": false
+        },
+        {
+          "title": "England",
+          "description": "English",
+          "url": "#en-en",
+          "active": true
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Button",
+          "url": "#button-target",
+          "theme": "outlined"
+        }
+      ],
+      "navigation": [
+        {
+          "title": "Section 1",
+          "type": "large-popup",
+          "section": "section_1",
+          "links": [
+            {
+              "text": "Link 1",
+              "url": "#"
+            },
+            {
+              "text": "Link 2",
+              "url": "https://example.com"
+            }
+          ],
+          "data": {
+            "categories": {
+              "category_1": {
+                "slug": "category_1",
+                "title": "Category 1",
+                "description": null,
+                "groups": [
+                  {
+                    "title": "Group 1",
+                    "url": "#group_1",
+                    "items": [
+                      {
+                        "slug": "item_1",
+                        "title": "Group 1 Item 1",
+                        "tag": {
+                          "text": "Tag",
+                          "color": "blue"
+                        },
+                        "url": "#group_1_item_1",
+                        "icon": "<svg xmlns='http://www.w3.org/2000/svg' width={16} height={16} fill='none' viewBox='0 0 16 16'><g clipPath='url(#a)'><path fill='currentColor' fillRule='evenodd' d='M5.865.031a.75.75 0 0 1 .918.53l.531 1.981a5.554 5.554 0 0 1 2.384.225 2.5 2.5 0 1 1 3.535 3.535 5.496 5.496 0 0 1 .225 2.384l1.98.53a.75.75 0 0 1-.388 1.45l-1.98-.53a5.49 5.49 0 0 1-.687 1.187l1.45 1.45a.75.75 0 0 1-1.06 1.06l-1.45-1.45a5.493 5.493 0 0 1-1.188.687l.53 1.98a.75.75 0 1 1-1.448.388l-.531-1.98a5.5 5.5 0 0 1-6.144-6.143l-1.98-.532A.75.75 0 0 1 .95 5.334l1.98.531c.18-.426.411-.824.687-1.188l-1.45-1.45a.75.75 0 1 1 1.06-1.06l1.45 1.45a5.494 5.494 0 0 1 1.188-.687L5.335.95a.75.75 0 0 1 .53-.919ZM8 12a4 4 0 1 0-3.309-1.752L8.42 6.52a.75.75 0 0 1 1.06 1.06l-3.728 3.73c.64.435 1.414.69 2.248.69Z' clipRule='evenodd'/></g><defs><clipPath id='a'><path fill='currentColor' d='M0 0h16v16H0z' /></clipPath></defs></svg>",
+                        "description": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+                      },
+                      {
+                        "slug": "item_2",
+                        "title": "Group 1 Item 2",
+                        "url": "#group_1_item_2",
+                        "icon": "<svg xmlns='http://www.w3.org/2000/svg' width={16} height={16} fill='none' viewBox='0 0 16 16'><g clipPath='url(#a)'><path fill='currentColor' fillRule='evenodd' d='M5.865.031a.75.75 0 0 1 .918.53l.531 1.981a5.554 5.554 0 0 1 2.384.225 2.5 2.5 0 1 1 3.535 3.535 5.496 5.496 0 0 1 .225 2.384l1.98.53a.75.75 0 0 1-.388 1.45l-1.98-.53a5.49 5.49 0 0 1-.687 1.187l1.45 1.45a.75.75 0 0 1-1.06 1.06l-1.45-1.45a5.493 5.493 0 0 1-1.188.687l.53 1.98a.75.75 0 1 1-1.448.388l-.531-1.98a5.5 5.5 0 0 1-6.144-6.143l-1.98-.532A.75.75 0 0 1 .95 5.334l1.98.531c.18-.426.411-.824.687-1.188l-1.45-1.45a.75.75 0 1 1 1.06-1.06l1.45 1.45a5.494 5.494 0 0 1 1.188-.687L5.335.95a.75.75 0 0 1 .53-.919ZM8 12a4 4 0 1 0-3.309-1.752L8.42 6.52a.75.75 0 0 1 1.06 1.06l-3.728 3.73c.64.435 1.414.69 2.248.69Z' clipRule='evenodd'/></g><defs><clipPath id='a'><path fill='currentColor' d='M0 0h16v16H0z' /></clipPath></defs></svg>",
+                        "description": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+                      },
+                      {
+                        "slug": "item_3",
+                        "title": "Group 1 Item 3",
+                        "url": "#group_1_item_3",
+                        "icon": "<svg xmlns='http://www.w3.org/2000/svg' width={16} height={16} fill='none' viewBox='0 0 16 16'><g clipPath='url(#a)'><path fill='currentColor' fillRule='evenodd' d='M5.865.031a.75.75 0 0 1 .918.53l.531 1.981a5.554 5.554 0 0 1 2.384.225 2.5 2.5 0 1 1 3.535 3.535 5.496 5.496 0 0 1 .225 2.384l1.98.53a.75.75 0 0 1-.388 1.45l-1.98-.53a5.49 5.49 0 0 1-.687 1.187l1.45 1.45a.75.75 0 0 1-1.06 1.06l-1.45-1.45a5.493 5.493 0 0 1-1.188.687l.53 1.98a.75.75 0 1 1-1.448.388l-.531-1.98a5.5 5.5 0 0 1-6.144-6.143l-1.98-.532A.75.75 0 0 1 .95 5.334l1.98.531c.18-.426.411-.824.687-1.188l-1.45-1.45a.75.75 0 1 1 1.06-1.06l1.45 1.45a5.494 5.494 0 0 1 1.188-.687L5.335.95a.75.75 0 0 1 .53-.919ZM8 12a4 4 0 1 0-3.309-1.752L8.42 6.52a.75.75 0 0 1 1.06 1.06l-3.728 3.73c.64.435 1.414.69 2.248.69Z' clipRule='evenodd'/></g><defs><clipPath id='a'><path fill='currentColor' d='M0 0h16v16H0z' /></clipPath></defs></svg>",
+                        "description": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+                      },
+                      {
+                        "slug": "item_4",
+                        "title": "Group 1 Item 4",
+                        "url": "#group_1_item_4",
+                        "icon": "<svg xmlns='http://www.w3.org/2000/svg' width={16} height={16} fill='none' viewBox='0 0 16 16'><g clipPath='url(#a)'><path fill='currentColor' fillRule='evenodd' d='M5.865.031a.75.75 0 0 1 .918.53l.531 1.981a5.554 5.554 0 0 1 2.384.225 2.5 2.5 0 1 1 3.535 3.535 5.496 5.496 0 0 1 .225 2.384l1.98.53a.75.75 0 0 1-.388 1.45l-1.98-.53a5.49 5.49 0 0 1-.687 1.187l1.45 1.45a.75.75 0 0 1-1.06 1.06l-1.45-1.45a5.493 5.493 0 0 1-1.188.687l.53 1.98a.75.75 0 1 1-1.448.388l-.531-1.98a5.5 5.5 0 0 1-6.144-6.143l-1.98-.532A.75.75 0 0 1 .95 5.334l1.98.531c.18-.426.411-.824.687-1.188l-1.45-1.45a.75.75 0 1 1 1.06-1.06l1.45 1.45a5.494 5.494 0 0 1 1.188-.687L5.335.95a.75.75 0 0 1 .53-.919ZM8 12a4 4 0 1 0-3.309-1.752L8.42 6.52a.75.75 0 0 1 1.06 1.06l-3.728 3.73c.64.435 1.414.69 2.248.69Z' clipRule='evenodd'/></g><defs><clipPath id='a'><path fill='currentColor' d='M0 0h16v16H0z' /></clipPath></defs></svg>",
+                        "description": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+                      },
+                      {
+                        "slug": "item_5",
+                        "title": "Group 1 Item 5",
+                        "tag": {
+                          "text": "Tag",
+                          "color": "blue"
+                        },
+                        "url": "#group_1_item_5",
+                        "icon": "<svg xmlns='http://www.w3.org/2000/svg' width={16} height={16} fill='none' viewBox='0 0 16 16'><g clipPath='url(#a)'><path fill='currentColor' fillRule='evenodd' d='M5.865.031a.75.75 0 0 1 .918.53l.531 1.981a5.554 5.554 0 0 1 2.384.225 2.5 2.5 0 1 1 3.535 3.535 5.496 5.496 0 0 1 .225 2.384l1.98.53a.75.75 0 0 1-.388 1.45l-1.98-.53a5.49 5.49 0 0 1-.687 1.187l1.45 1.45a.75.75 0 0 1-1.06 1.06l-1.45-1.45a5.493 5.493 0 0 1-1.188.687l.53 1.98a.75.75 0 1 1-1.448.388l-.531-1.98a5.5 5.5 0 0 1-6.144-6.143l-1.98-.532A.75.75 0 0 1 .95 5.334l1.98.531c.18-.426.411-.824.687-1.188l-1.45-1.45a.75.75 0 1 1 1.06-1.06l1.45 1.45a5.494 5.494 0 0 1 1.188-.687L5.335.95a.75.75 0 0 1 .53-.919ZM8 12a4 4 0 1 0-3.309-1.752L8.42 6.52a.75.75 0 0 1 1.06 1.06l-3.728 3.73c.64.435 1.414.69 2.248.69Z' clipRule='evenodd'/></g><defs><clipPath id='a'><path fill='currentColor' d='M0 0h16v16H0z' /></clipPath></defs></svg>",
+                        "description": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Group 2",
+                    "url": "#group_2",
+                    "items": [
+                      {
+                        "slug": "category_1_group_2_item_1",
+                        "title": "Group 2 Item 1",
+                        "url": "#category_1_group_2_item_1",
+                        "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy44MDUyIDUuNTY0MTdDOC43MjUzOCAxMC40NDk5IDIuNDUxNTQgMTkuODc2OSAyLjAyMzUxIDMwLjgwNTJIMTcuODA1MlY1LjU2NDE3Wk0yLjAxMDc0IDMyLjgwNTJDMi4zMDMwNCA0My44OTg4IDguNjE3NjQgNTMuNDkyMSAxNy44MDUyIDU4LjQzNThWMzIuODA1MkgyLjAxMDc0Wk0xOS44MDUyIDU5LjQxNzdDMjMuNTMxMiA2MS4wNzc1IDI3LjY1NzkgNjIgMzIuMDAwMSA2MkM0OC4yOTk1IDYyIDYxLjU2MjggNDkuMDAxNSA2MS45ODk1IDMyLjgwNTJIMTkuODA1MlY1OS40MTc3Wk02MS45NzY4IDMwLjgwNTJDNjEuMzQ5NSAxNC43OTA1IDQ4LjE2ODUgMiAzMi4wMDAxIDJDMjcuNjU3OSAyIDIzLjUzMTIgMi45MjI1MyAxOS44MDUyIDQuNTgyMjhWMzAuODA1Mkg2MS45NzY4WiIgZmlsbD0iIzg0ODg5NCIvPgo8L3N2Zz4K"
+                      },
+                      {
+                        "slug": "category_1_group_2_item_1",
+                        "title": "Group 2 Item 2",
+                        "url": "#category_1_group_2_item_2",
+                        "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy44MDUyIDUuNTY0MTdDOC43MjUzOCAxMC40NDk5IDIuNDUxNTQgMTkuODc2OSAyLjAyMzUxIDMwLjgwNTJIMTcuODA1MlY1LjU2NDE3Wk0yLjAxMDc0IDMyLjgwNTJDMi4zMDMwNCA0My44OTg4IDguNjE3NjQgNTMuNDkyMSAxNy44MDUyIDU4LjQzNThWMzIuODA1MkgyLjAxMDc0Wk0xOS44MDUyIDU5LjQxNzdDMjMuNTMxMiA2MS4wNzc1IDI3LjY1NzkgNjIgMzIuMDAwMSA2MkM0OC4yOTk1IDYyIDYxLjU2MjggNDkuMDAxNSA2MS45ODk1IDMyLjgwNTJIMTkuODA1MlY1OS40MTc3Wk02MS45NzY4IDMwLjgwNTJDNjEuMzQ5NSAxNC43OTA1IDQ4LjE2ODUgMiAzMi4wMDAxIDJDMjcuNjU3OSAyIDIzLjUzMTIgMi45MjI1MyAxOS44MDUyIDQuNTgyMjhWMzAuODA1Mkg2MS45NzY4WiIgZmlsbD0iIzg0ODg5NCIvPgo8L3N2Zz4K"
+                      },
+                      {
+                        "slug": "category_1_group_2_item_1",
+                        "title": "Group 2 Item 3",
+                        "url": "#category_1_group_2_item_3",
+                        "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy44MDUyIDUuNTY0MTdDOC43MjUzOCAxMC40NDk5IDIuNDUxNTQgMTkuODc2OSAyLjAyMzUxIDMwLjgwNTJIMTcuODA1MlY1LjU2NDE3Wk0yLjAxMDc0IDMyLjgwNTJDMi4zMDMwNCA0My44OTg4IDguNjE3NjQgNTMuNDkyMSAxNy44MDUyIDU4LjQzNThWMzIuODA1MkgyLjAxMDc0Wk0xOS44MDUyIDU5LjQxNzdDMjMuNTMxMiA2MS4wNzc1IDI3LjY1NzkgNjIgMzIuMDAwMSA2MkM0OC4yOTk1IDYyIDYxLjU2MjggNDkuMDAxNSA2MS45ODk1IDMyLjgwNTJIMTkuODA1MlY1OS40MTc3Wk02MS45NzY4IDMwLjgwNTJDNjEuMzQ5NSAxNC43OTA1IDQ4LjE2ODUgMiAzMi4wMDAxIDJDMjcuNjU3OSAyIDIzLjUzMTIgMi45MjI1MyAxOS44MDUyIDQuNTgyMjhWMzAuODA1Mkg2MS45NzY4WiIgZmlsbD0iIzg0ODg5NCIvPgo8L3N2Zz4K"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "category_2": {
+                "slug": "category_2",
+                "title": "Category 2",
+                "description": null,
+                "groups": [
+                  {
+                    "title": "Group 1",
+                    "url": "#group_1",
+                    "items": [
+                      {
+                        "slug": "item_1",
+                        "title": "Group 1 Item 1",
+                        "tag": {
+                          "text": "Tag",
+                          "color": "blue"
+                        },
+                        "url": "#group_1_item_1",
+                        "icon": "<svg xmlns='http://www.w3.org/2000/svg' width={16} height={16} fill='none' viewBox='0 0 16 16'><g clipPath='url(#a)'><path fill='currentColor' fillRule='evenodd' d='M5.865.031a.75.75 0 0 1 .918.53l.531 1.981a5.554 5.554 0 0 1 2.384.225 2.5 2.5 0 1 1 3.535 3.535 5.496 5.496 0 0 1 .225 2.384l1.98.53a.75.75 0 0 1-.388 1.45l-1.98-.53a5.49 5.49 0 0 1-.687 1.187l1.45 1.45a.75.75 0 0 1-1.06 1.06l-1.45-1.45a5.493 5.493 0 0 1-1.188.687l.53 1.98a.75.75 0 1 1-1.448.388l-.531-1.98a5.5 5.5 0 0 1-6.144-6.143l-1.98-.532A.75.75 0 0 1 .95 5.334l1.98.531c.18-.426.411-.824.687-1.188l-1.45-1.45a.75.75 0 1 1 1.06-1.06l1.45 1.45a5.494 5.494 0 0 1 1.188-.687L5.335.95a.75.75 0 0 1 .53-.919ZM8 12a4 4 0 1 0-3.309-1.752L8.42 6.52a.75.75 0 0 1 1.06 1.06l-3.728 3.73c.64.435 1.414.69 2.248.69Z' clipRule='evenodd'/></g><defs><clipPath id='a'><path fill='currentColor' d='M0 0h16v16H0z' /></clipPath></defs></svg>",
+                        "description": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+                      },
+                      {
+                        "slug": "item_2",
+                        "title": "Group 1 Item 2",
+                        "url": "#group_1_item_2",
+                        "icon": "<svg xmlns='http://www.w3.org/2000/svg' width={16} height={16} fill='none' viewBox='0 0 16 16'><g clipPath='url(#a)'><path fill='currentColor' fillRule='evenodd' d='M5.865.031a.75.75 0 0 1 .918.53l.531 1.981a5.554 5.554 0 0 1 2.384.225 2.5 2.5 0 1 1 3.535 3.535 5.496 5.496 0 0 1 .225 2.384l1.98.53a.75.75 0 0 1-.388 1.45l-1.98-.53a5.49 5.49 0 0 1-.687 1.187l1.45 1.45a.75.75 0 0 1-1.06 1.06l-1.45-1.45a5.493 5.493 0 0 1-1.188.687l.53 1.98a.75.75 0 1 1-1.448.388l-.531-1.98a5.5 5.5 0 0 1-6.144-6.143l-1.98-.532A.75.75 0 0 1 .95 5.334l1.98.531c.18-.426.411-.824.687-1.188l-1.45-1.45a.75.75 0 1 1 1.06-1.06l1.45 1.45a5.494 5.494 0 0 1 1.188-.687L5.335.95a.75.75 0 0 1 .53-.919ZM8 12a4 4 0 1 0-3.309-1.752L8.42 6.52a.75.75 0 0 1 1.06 1.06l-3.728 3.73c.64.435 1.414.69 2.248.69Z' clipRule='evenodd'/></g><defs><clipPath id='a'><path fill='currentColor' d='M0 0h16v16H0z' /></clipPath></defs></svg>",
+                        "description": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+                      },
+                      {
+                        "slug": "item_3",
+                        "title": "Group 1 Item 3",
+                        "url": "#group_1_item_3",
+                        "icon": "<svg xmlns='http://www.w3.org/2000/svg' width={16} height={16} fill='none' viewBox='0 0 16 16'><g clipPath='url(#a)'><path fill='currentColor' fillRule='evenodd' d='M5.865.031a.75.75 0 0 1 .918.53l.531 1.981a5.554 5.554 0 0 1 2.384.225 2.5 2.5 0 1 1 3.535 3.535 5.496 5.496 0 0 1 .225 2.384l1.98.53a.75.75 0 0 1-.388 1.45l-1.98-.53a5.49 5.49 0 0 1-.687 1.187l1.45 1.45a.75.75 0 0 1-1.06 1.06l-1.45-1.45a5.493 5.493 0 0 1-1.188.687l.53 1.98a.75.75 0 1 1-1.448.388l-.531-1.98a5.5 5.5 0 0 1-6.144-6.143l-1.98-.532A.75.75 0 0 1 .95 5.334l1.98.531c.18-.426.411-.824.687-1.188l-1.45-1.45a.75.75 0 1 1 1.06-1.06l1.45 1.45a5.494 5.494 0 0 1 1.188-.687L5.335.95a.75.75 0 0 1 .53-.919ZM8 12a4 4 0 1 0-3.309-1.752L8.42 6.52a.75.75 0 0 1 1.06 1.06l-3.728 3.73c.64.435 1.414.69 2.248.69Z' clipRule='evenodd'/></g><defs><clipPath id='a'><path fill='currentColor' d='M0 0h16v16H0z' /></clipPath></defs></svg>",
+                        "description": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "placeholder": "Search by section 1"
+        },
+        {
+          "title": "Section 2",
+          "type": "medium-popup-with-categories",
+          "section": "section_2",
+          "data": {
+            "groups": [
+              {
+                "title": "Group 1",
+                "imageSize": "xm",
+                "items": [
+                  {
+                    "title": "Group 1 Item 1",
+                    "url": "#group_1_item_1",
+                    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                    "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy44MDUyIDUuNTY0MTdDOC43MjUzOCAxMC40NDk5IDIuNDUxNTQgMTkuODc2OSAyLjAyMzUxIDMwLjgwNTJIMTcuODA1MlY1LjU2NDE3Wk0yLjAxMDc0IDMyLjgwNTJDMi4zMDMwNCA0My44OTg4IDguNjE3NjQgNTMuNDkyMSAxNy44MDUyIDU4LjQzNThWMzIuODA1MkgyLjAxMDc0Wk0xOS44MDUyIDU5LjQxNzdDMjMuNTMxMiA2MS4wNzc1IDI3LjY1NzkgNjIgMzIuMDAwMSA2MkM0OC4yOTk1IDYyIDYxLjU2MjggNDkuMDAxNSA2MS45ODk1IDMyLjgwNTJIMTkuODA1MlY1OS40MTc3Wk02MS45NzY4IDMwLjgwNTJDNjEuMzQ5NSAxNC43OTA1IDQ4LjE2ODUgMiAzMi4wMDAxIDJDMjcuNjU3OSAyIDIzLjUzMTIgMi45MjI1MyAxOS44MDUyIDQuNTgyMjhWMzAuODA1Mkg2MS45NzY4WiIgZmlsbD0iIzg0ODg5NCIvPgo8L3N2Zz4K"
+                  },
+                  {
+                    "title": "Group 1 Item 2",
+                    "url": "#group_1_item_2",
+                    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                    "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy44MDUyIDUuNTY0MTdDOC43MjUzOCAxMC40NDk5IDIuNDUxNTQgMTkuODc2OSAyLjAyMzUxIDMwLjgwNTJIMTcuODA1MlY1LjU2NDE3Wk0yLjAxMDc0IDMyLjgwNTJDMi4zMDMwNCA0My44OTg4IDguNjE3NjQgNTMuNDkyMSAxNy44MDUyIDU4LjQzNThWMzIuODA1MkgyLjAxMDc0Wk0xOS44MDUyIDU5LjQxNzdDMjMuNTMxMiA2MS4wNzc1IDI3LjY1NzkgNjIgMzIuMDAwMSA2MkM0OC4yOTk1IDYyIDYxLjU2MjggNDkuMDAxNSA2MS45ODk1IDMyLjgwNTJIMTkuODA1MlY1OS40MTc3Wk02MS45NzY4IDMwLjgwNTJDNjEuMzQ5NSAxNC43OTA1IDQ4LjE2ODUgMiAzMi4wMDAxIDJDMjcuNjU3OSAyIDIzLjUzMTIgMi45MjI1MyAxOS44MDUyIDQuNTgyMjhWMzAuODA1Mkg2MS45NzY4WiIgZmlsbD0iIzg0ODg5NCIvPgo8L3N2Zz4K"
+                  },
+                  {
+                    "title": "Group 1 Item 3",
+                    "url": "#group_1_item_3",
+                    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                    "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy44MDUyIDUuNTY0MTdDOC43MjUzOCAxMC40NDk5IDIuNDUxNTQgMTkuODc2OSAyLjAyMzUxIDMwLjgwNTJIMTcuODA1MlY1LjU2NDE3Wk0yLjAxMDc0IDMyLjgwNTJDMi4zMDMwNCA0My44OTg4IDguNjE3NjQgNTMuNDkyMSAxNy44MDUyIDU4LjQzNThWMzIuODA1MkgyLjAxMDc0Wk0xOS44MDUyIDU5LjQxNzdDMjMuNTMxMiA2MS4wNzc1IDI3LjY1NzkgNjIgMzIuMDAwMSA2MkM0OC4yOTk1IDYyIDYxLjU2MjggNDkuMDAxNSA2MS45ODk1IDMyLjgwNTJIMTkuODA1MlY1OS40MTc3Wk02MS45NzY4IDMwLjgwNTJDNjEuMzQ5NSAxNC43OTA1IDQ4LjE2ODUgMiAzMi4wMDAxIDJDMjcuNjU3OSAyIDIzLjUzMTIgMi45MjI1MyAxOS44MDUyIDQuNTgyMjhWMzAuODA1Mkg2MS45NzY4WiIgZmlsbD0iIzg0ODg5NCIvPgo8L3N2Zz4K"
+                  }
+                ]
+              },
+              {
+                "title": "Group 2",
+                "imageSize": "xm",
+                "items": [
+                  {
+                    "title": "Group 2 Item 1",
+                    "url": "#group_2_item_1",
+                    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                    "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy44MDUyIDUuNTY0MTdDOC43MjUzOCAxMC40NDk5IDIuNDUxNTQgMTkuODc2OSAyLjAyMzUxIDMwLjgwNTJIMTcuODA1MlY1LjU2NDE3Wk0yLjAxMDc0IDMyLjgwNTJDMi4zMDMwNCA0My44OTg4IDguNjE3NjQgNTMuNDkyMSAxNy44MDUyIDU4LjQzNThWMzIuODA1MkgyLjAxMDc0Wk0xOS44MDUyIDU5LjQxNzdDMjMuNTMxMiA2MS4wNzc1IDI3LjY1NzkgNjIgMzIuMDAwMSA2MkM0OC4yOTk1IDYyIDYxLjU2MjggNDkuMDAxNSA2MS45ODk1IDMyLjgwNTJIMTkuODA1MlY1OS40MTc3Wk02MS45NzY4IDMwLjgwNTJDNjEuMzQ5NSAxNC43OTA1IDQ4LjE2ODUgMiAzMi4wMDAxIDJDMjcuNjU3OSAyIDIzLjUzMTIgMi45MjI1MyAxOS44MDUyIDQuNTgyMjhWMzAuODA1Mkg2MS45NzY4WiIgZmlsbD0iIzg0ODg5NCIvPgo8L3N2Zz4K"
+                  },
+                  {
+                    "title": "Group 2 Item 2",
+                    "url": "#group_2_item_2",
+                    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+                    "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy44MDUyIDUuNTY0MTdDOC43MjUzOCAxMC40NDk5IDIuNDUxNTQgMTkuODc2OSAyLjAyMzUxIDMwLjgwNTJIMTcuODA1MlY1LjU2NDE3Wk0yLjAxMDc0IDMyLjgwNTJDMi4zMDMwNCA0My44OTg4IDguNjE3NjQgNTMuNDkyMSAxNy44MDUyIDU4LjQzNThWMzIuODA1MkgyLjAxMDc0Wk0xOS44MDUyIDU5LjQxNzdDMjMuNTMxMiA2MS4wNzc1IDI3LjY1NzkgNjIgMzIuMDAwMSA2MkM0OC4yOTk1IDYyIDYxLjU2MjggNDkuMDAxNSA2MS45ODk1IDMyLjgwNTJIMTkuODA1MlY1OS40MTc3Wk02MS45NzY4IDMwLjgwNTJDNjEuMzQ5NSAxNC43OTA1IDQ4LjE2ODUgMiAzMi4wMDAxIDJDMjcuNjU3OSAyIDIzLjUzMTIgMi45MjI1MyAxOS44MDUyIDQuNTgyMjhWMzAuODA1Mkg2MS45NzY4WiIgZmlsbD0iIzg0ODg5NCIvPgo8L3N2Zz4K"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Section 3",
+          "type": "medium-popup",
+          "section": "section_3",
+          "data": {
+            "groups": [
+              {
+                "imageSize": "xm",
+                "items": [
+                  {
+                    "title": "Item 1",
+                    "url": "#section_3_item_1",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                    "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy44MDUyIDUuNTY0MTdDOC43MjUzOCAxMC40NDk5IDIuNDUxNTQgMTkuODc2OSAyLjAyMzUxIDMwLjgwNTJIMTcuODA1MlY1LjU2NDE3Wk0yLjAxMDc0IDMyLjgwNTJDMi4zMDMwNCA0My44OTg4IDguNjE3NjQgNTMuNDkyMSAxNy44MDUyIDU4LjQzNThWMzIuODA1MkgyLjAxMDc0Wk0xOS44MDUyIDU5LjQxNzdDMjMuNTMxMiA2MS4wNzc1IDI3LjY1NzkgNjIgMzIuMDAwMSA2MkM0OC4yOTk1IDYyIDYxLjU2MjggNDkuMDAxNSA2MS45ODk1IDMyLjgwNTJIMTkuODA1MlY1OS40MTc3Wk02MS45NzY4IDMwLjgwNTJDNjEuMzQ5NSAxNC43OTA1IDQ4LjE2ODUgMiAzMi4wMDAxIDJDMjcuNjU3OSAyIDIzLjUzMTIgMi45MjI1MyAxOS44MDUyIDQuNTgyMjhWMzAuODA1Mkg2MS45NzY4WiIgZmlsbD0iIzg0ODg5NCIvPgo8L3N2Zz4K"
+                  },
+                  {
+                    "title": "Item 2",
+                    "url": "#section_3_item_2",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                    "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy44MDUyIDUuNTY0MTdDOC43MjUzOCAxMC40NDk5IDIuNDUxNTQgMTkuODc2OSAyLjAyMzUxIDMwLjgwNTJIMTcuODA1MlY1LjU2NDE3Wk0yLjAxMDc0IDMyLjgwNTJDMi4zMDMwNCA0My44OTg4IDguNjE3NjQgNTMuNDkyMSAxNy44MDUyIDU4LjQzNThWMzIuODA1MkgyLjAxMDc0Wk0xOS44MDUyIDU5LjQxNzdDMjMuNTMxMiA2MS4wNzc1IDI3LjY1NzkgNjIgMzIuMDAwMSA2MkM0OC4yOTk1IDYyIDYxLjU2MjggNDkuMDAxNSA2MS45ODk1IDMyLjgwNTJIMTkuODA1MlY1OS40MTc3Wk02MS45NzY4IDMwLjgwNTJDNjEuMzQ5NSAxNC43OTA1IDQ4LjE2ODUgMiAzMi4wMDAxIDJDMjcuNjU3OSAyIDIzLjUzMTIgMi45MjI1MyAxOS44MDUyIDQuNTgyMjhWMzAuODA1Mkg2MS45NzY4WiIgZmlsbD0iIzg0ODg5NCIvPgo8L3N2Zz4K"
+                  },
+                  {
+                    "title": "Item 3",
+                    "url": "#section_3_item_3",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                    "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy44MDUyIDUuNTY0MTdDOC43MjUzOCAxMC40NDk5IDIuNDUxNTQgMTkuODc2OSAyLjAyMzUxIDMwLjgwNTJIMTcuODA1MlY1LjU2NDE3Wk0yLjAxMDc0IDMyLjgwNTJDMi4zMDMwNCA0My44OTg4IDguNjE3NjQgNTMuNDkyMSAxNy44MDUyIDU4LjQzNThWMzIuODA1MkgyLjAxMDc0Wk0xOS44MDUyIDU5LjQxNzdDMjMuNTMxMiA2MS4wNzc1IDI3LjY1NzkgNjIgMzIuMDAwMSA2MkM0OC4yOTk1IDYyIDYxLjU2MjggNDkuMDAxNSA2MS45ODk1IDMyLjgwNTJIMTkuODA1MlY1OS40MTc3Wk02MS45NzY4IDMwLjgwNTJDNjEuMzQ5NSAxNC43OTA1IDQ4LjE2ODUgMiAzMi4wMDAxIDJDMjcuNjU3OSAyIDIzLjUzMTIgMi45MjI1MyAxOS44MDUyIDQuNTgyMjhWMzAuODA1Mkg2MS45NzY4WiIgZmlsbD0iIzg0ODg5NCIvPgo8L3N2Zz4K"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "title": "Section 4",
+          "type": "link",
+          "section": "scetion_4",
+          "link": {
+            "url": "#section_4",
+            "target": "_self"
+          }
+        }
+      ],
+      "searchResult": {
+        "notFound": {
+          "title": "No results found for your request",
+          "description": "Please check the spelling or try another keywords."
+        }
+      }
+    }
+  }
+}

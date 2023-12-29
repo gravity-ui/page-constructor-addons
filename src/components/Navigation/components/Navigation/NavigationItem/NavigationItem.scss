@@ -1,0 +1,82 @@
+@import '../../../../../../styles/mixins';
+@import '../../../../../../styles/variables';
+@import '../../../styles/mixins.scss';
+
+$block: '.#{$ns}navigation-item';
+
+#{$block} {
+    white-space: nowrap;
+
+    color: var(--g-color-text-primary);
+
+    &:hover {
+        #{$block}__text {
+            color: var(--g-color-text-link);
+        }
+    }
+
+    &__popup {
+        @include popup-styles(var(--pc-addons-navigation-border-radius));
+
+        --yc-popover-max-width: #{calc($newContentWidth + ($indentM * 2))};
+        --yc-popover-padding: #{$indentS};
+
+        width: var(--yc-popover-max-width);
+        left: 0;
+        box-shadow: 0 4px 24px var(--g-color-base-generic-hover),
+            0 2px 8px var(--g-color-base-generic-hover);
+    }
+
+    &__text {
+        @include reset-button-style();
+        @include reset-link-style();
+
+        display: block;
+        margin: 0 $indentXXS;
+        padding-bottom: $indentXXS;
+        border-bottom: 2px solid transparent;
+        color: var(--g-color-text-primary);
+        position: relative;
+
+        &:focus {
+            &::before {
+                content: '';
+                width: 100%;
+                height: calc(100% - $indentXXS - 2px);
+                position: absolute;
+                outline: 2px solid var(--g-color-line-focus);
+                border-radius: var(--g-focus-border-radius);
+                left: 0;
+                right: 0;
+                top: 2px;
+            }
+        }
+
+        &:focus:not(:focus-visible) {
+            &::before {
+                display: none;
+            }
+        }
+
+        &_active {
+            color: var(--g-color-text-link);
+            border-color: var(--g-color-text-link);
+        }
+
+        &_cursor_default {
+            cursor: default;
+        }
+    }
+
+    &:first-child {
+        #{$block}__text {
+            margin-left: 0;
+        }
+    }
+
+    @media (max-width: #{calc($newContentWidth + ($indentM * 2))}) {
+        &__popup {
+            --yc-popover-max-width: #{calc(100% - ($indentXS * 2))};
+        }
+    }
+}

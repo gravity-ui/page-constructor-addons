@@ -1,0 +1,13 @@
+@import '../../../../../styles/variables.scss';
+
+$block: '.#{$ns}search-not-found';
+
+#{$block} {
+    .yfm {
+        display: block;
+    }
+
+    &__title {
+        width: 100%;
+    }
+}

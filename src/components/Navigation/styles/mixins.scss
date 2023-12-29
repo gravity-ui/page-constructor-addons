@@ -1,0 +1,41 @@
+@mixin navigation-link() {
+    @include reset-link-style();
+
+    outline: none;
+    color: var(--g-color-text-link);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@mixin navigation-hover() {
+    color: var(--g-color-text-complementary);
+}
+
+@mixin popup-styles($borderRadius) {
+    --yc-popup-border-width: 0;
+    --yc-popup-border-color: none;
+
+    border-radius: $borderRadius;
+    box-shadow: 0 3px 10px var(--g-color-base-generic-hover);
+}
+
+@mixin reset-button-hover($block) {
+    &:hover {
+        &:before {
+            background: none;
+        }
+
+        #{$block}__icon {
+            @include navigation-hover;
+        }
+    }
+}
+
+@mixin navigation-overflow-popup($indent) {
+    max-height: calc(100vh - var(--pc-addons-navigation-header-height) - $indent);
+    overflow: auto;
+}
+
+@mixin navigation-hover() {
+    color: var(--g-color-text-complementary);
+}

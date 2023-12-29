@@ -1,0 +1,151 @@
+@import '../../../../../styles/mixins.scss';
+@import '../../../../../styles/variables.scss';
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+$block: '.#{$ns}dummy-search';
+
+#{$block} {
+    position: relative;
+    width: 80px;
+    display: flex;
+    border-radius: var(--g-border-radius-l);
+    transition: width 0.3s ease-in, background-color 0.3s ease-in;
+
+    &:hover {
+        &:not(#{$block}_search-mode) {
+            #{$block}__icon {
+                @include navigation-hover;
+            }
+        }
+    }
+
+    &__suggest {
+        .yc-text-input {
+            display: block;
+        }
+
+        .yc-text-input__content,
+        .yc-text-input__control,
+        .yc-text-input__control:hover {
+            /* stylelint-disable-next-line declaration-no-important */
+            border: none !important;
+        }
+
+        .yc-text-input__control {
+            padding: 0 0 0 var(--pc-addons-navigation-search-input-indent);
+            cursor: pointer;
+        }
+
+        &-popup {
+            @include popup-styles(var(--g-border-radius-l));
+        }
+    }
+
+    &__dummy-suggest {
+        width: 52px;
+        height: 34px;
+    }
+
+    &__button {
+        position: absolute;
+        right: 4px;
+        top: 5px;
+
+        @include reset-button-hover(#{$block}__button);
+    }
+
+    &__icon {
+        color: var(--g-color-text-hint);
+        transition: color 0.2s;
+    }
+
+    &__text {
+        @include text-size(body-1);
+
+        position: absolute;
+        line-height: 34px;
+        width: 100%;
+        padding-left: 10px;
+        pointer-events: none;
+
+        &_hidden {
+            opacity: 0;
+        }
+    }
+
+    &_search-mode {
+        background-color: var(--g-color-base-generic);
+        mix-blend-mode: multiply;
+
+        #{$block}__icon {
+            color: var(--g-color-text-hint);
+        }
+
+        #{$block}__text {
+            color: var(--g-color-text-hint);
+        }
+
+        #{$block}__suggest {
+            .yc-text-input__control {
+                cursor: initial;
+            }
+        }
+    }
+
+    @media (max-width: map-get($gridBreakpoints, 'lg') - 1) {
+        width: 24px;
+        margin-right: -$indentXXXS;
+
+        &__text {
+            opacity: 0;
+        }
+
+        &_search-mode {
+            #{$block}__text {
+                opacity: 1;
+                transition: opacity 0.1s;
+                transition-delay: 0.3s;
+
+                &_hidden {
+                    opacity: 0;
+                    transition: none;
+                }
+            }
+        }
+    }
+
+    @media (max-width: map-get($gridBreakpoints, 'md')) {
+        width: 36px;
+        transition: none;
+        margin-right: 2px;
+
+        &_search-mode {
+            margin-right: calc($indentXXXS / 2);
+            transition: width 0.3s ease-in, background-color 0.3s ease-in;
+
+            #{$block}__icon {
+                display: none;
+            }
+
+            #{$block}__text {
+                transition: none;
+
+                &_hidden {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    @media (max-width: map-get($gridBreakpoints, 'sm') - 1) {
+        &__button {
+            right: 6px;
+        }
+    }
+
+    &__container,
+    &_search-mode {
+        width: 100%;
+    }
+}

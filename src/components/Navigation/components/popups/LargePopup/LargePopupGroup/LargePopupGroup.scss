@@ -1,0 +1,19 @@
+@import '../../../../../../../styles/variables';
+
+$titlePadding: 15px;
+$paddingTop: 14px;
+
+$block: '.#{$ns}large-popup-group';
+
+#{$block} {
+    &__title {
+        margin-bottom: $indentXXXS;
+        padding: var(--pc-addons-navigation-popup-padding) $indentXXS;
+    }
+
+    &__items {
+        &.row.row {
+            margin-left: -$indentXS;
+        }
+    }
+}

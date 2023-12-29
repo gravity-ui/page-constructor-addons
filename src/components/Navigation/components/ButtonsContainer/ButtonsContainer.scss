@@ -1,0 +1,18 @@
+@import '../../../../../styles/variables.scss';
+
+$block: '.#{$ns}buttons-container';
+
+#{$block} {
+    display: flex;
+
+    &_direction {
+        &_row {
+            gap: $indentXXS;
+        }
+
+        &_column {
+            gap: $indentXXXS;
+            flex-direction: column;
+        }
+    }
+}

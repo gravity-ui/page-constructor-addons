@@ -1,0 +1,169 @@
+{
+  "simple": {
+    "type": "simple",
+    "underline": {
+      "copyright": "© 2023 Test Company"
+    }
+  },
+  "underline": {
+    "underline": {
+      "leftItems": [
+        {
+          "title": "Main page",
+          "url": "https://google.com/",
+          "blank": true,
+          "noreferrer": true
+        },
+        {
+          "title": "Test 1",
+          "url": "#test-1"
+        },
+        {
+          "title": "Test 2",
+          "url": "/test-2",
+          "blank": true
+        },
+        {
+          "title": "Test 3",
+          "url": "/test-3"
+        }
+      ],
+      "rightItems": [
+        {
+          "title": "Project",
+          "url": "https://google.com/",
+          "blank": true,
+          "noreferrer": true
+        }
+      ],
+      "copyright": "© 2023 Test Company"
+    }
+  },
+  "rich": {
+    "underline": {
+      "leftItems": [
+        {
+          "title": "Main page",
+          "url": "https://google.com/",
+          "blank": true,
+          "noreferrer": true
+        },
+        {
+          "title": "Test 1",
+          "url": "#test-1"
+        },
+        {
+          "title": "Test 2",
+          "url": "/test-2",
+          "blank": true
+        },
+        {
+          "title": "Test 3",
+          "url": "/test-3"
+        }
+      ],
+      "rightItems": [
+        {
+          "title": "Project",
+          "url": "https://google.com/",
+          "blank": true,
+          "noreferrer": true
+        }
+      ],
+      "langSwitch": {
+        "text": "Russian",
+        "showText": true,
+        "items": [
+          {
+            "url": "https://google.ru",
+            "title": "Ru",
+            "description": "Russian",
+            "active": true
+          },
+          {
+            "url": "https://google.com",
+            "title": "En",
+            "description": "English"
+          }
+        ]
+      },
+      "copyright": "© 2023 Test Company"
+    },
+    "columns": [
+      [
+        {
+          "title": "Column 1",
+          "items": [
+            {
+              "title": "Title 1",
+              "url": "/#title-1"
+            },
+            {
+              "title": "Title 2",
+              "url": "/#title-1"
+            }
+          ]
+        },
+        {
+          "title": "Column 1 Section 2",
+          "items": [
+            {
+              "title": "Title 3",
+              "url": "/#title-1"
+            },
+            {
+              "title": "Title 4",
+              "url": "https://google.com"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Column 2",
+          "items": [
+            {
+              "title": "Title 1",
+              "url": "/#title-1"
+            },
+            {
+              "title": "Title 2",
+              "url": "/#title-1"
+            },
+            {
+              "title": "Title 3",
+              "url": "/#title-1"
+            },
+            {
+              "title": "Title 4",
+              "url": "https://google.com"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Column 3",
+          "items": [
+            {
+              "title": "Title 1",
+              "url": "/#title-1"
+            },
+            {
+              "title": "Title 2",
+              "url": "/#title-1"
+            },
+            {
+              "title": "Title 3",
+              "url": "/#title-1"
+            },
+            {
+              "title": "Title 4",
+              "url": "https://google.com"
+            }
+          ]
+        }
+      ]
+    ]
+  }
+}

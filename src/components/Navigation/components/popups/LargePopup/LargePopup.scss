@@ -1,0 +1,62 @@
+@import '../../../../../../styles/mixins.scss';
+@import '../../../../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variables.scss';
+
+$block: '.#{$ns}large-popup';
+
+#{$block} {
+    &__categories {
+        @include reset-list-style();
+        @include text-size(body-2);
+        @include navigation-overflow-popup(calc($indentXXXL + $indentXXL));
+
+        width: 100%;
+
+        &_with-scroll {
+            padding-right: $indentXXXS;
+        }
+    }
+
+    &__links {
+        margin-top: $indentSM;
+    }
+
+    &__link {
+        margin: 0 0 calc($indentXXXS / 2);
+        padding: $indentXXXS $indentXXS;
+    }
+
+    &__search {
+        margin-top: $indentXS;
+    }
+
+    &__title {
+        margin-bottom: $indentXXXS;
+        padding: var(--pc-addons-navigation-popup-padding) $indentXXS;
+    }
+
+    &__left {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        padding-right: $indentL;
+    }
+
+    &__controls {
+        max-width: 100%;
+    }
+
+    &__right {
+        @include navigation-overflow-popup($indentXL);
+
+        overflow-y: auto;
+        padding-left: $indentXS;
+    }
+
+    &__items {
+        &.row.row {
+            margin-left: -$indentXS;
+        }
+    }
+}

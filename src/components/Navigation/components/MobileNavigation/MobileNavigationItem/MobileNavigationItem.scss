@@ -1,0 +1,71 @@
+@import '../../../../../../styles/mixins.scss';
+@import '../../../../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+$block: '.#{$ns}mobile-navigation-item';
+
+#{$block} {
+    $itemTopPadding: calc($indentS / 2);
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: $indentXXS 0;
+
+    &_type_link {
+        @include reset-link-style();
+
+        display: block;
+        color: var(--g-color-text-primary);
+    }
+
+    &__arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: var(--pc-addons-arrow-size);
+        height: var(--pc-addons-arrow-size);
+        min-width: var(--pc-addons-arrow-size);
+    }
+
+    &__text {
+        padding-right: $indentS;
+    }
+
+    &__list {
+        padding: $itemTopPadding $indentS;
+        background-color: var(--g-color-base-generic);
+        border-radius: var(--g-border-radius-l);
+
+        &:not(:first-child) {
+            margin-top: $indentXXS;
+        }
+
+        &-items {
+            @include reset-list-style();
+        }
+
+        &-title {
+            @include text-size(body-2);
+
+            margin: 0;
+            padding: $itemTopPadding 0;
+        }
+
+        &-item {
+            @include reset-link-style();
+            @include reset-link-hover();
+
+            display: block;
+            color: var(--g-color-text-primary);
+            padding: $itemTopPadding 0;
+        }
+
+        &-link {
+            @include navigation-link();
+
+            display: block;
+            padding: $itemTopPadding 0;
+        }
+    }
+}

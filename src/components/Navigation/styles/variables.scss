@@ -1,0 +1,15 @@
+:root {
+    --pc-addons-navigation-header-height: 64px;
+    --pc-addons-navigation-search-input-indent: 10px;
+    --pc-addons-navigation-popup-padding: 7px;
+    --pc-addons-navigation-popup-z-index: 99;
+    --pc-addons-arrow-size: 20px;
+}
+
+.g-root {
+    --pc-addons-navigation-color-tag-yellow: var(--g-color-base-warning-light);
+    --pc-addons-navigation-color-tag-green: var(--g-color-base-positive-light);
+    --pc-addons-navigation-color-tag-blue: var(--g-color-base-info-light);
+
+    --pc-addons-navigation-border-radius: var(--pc-border-radius, 24px);
+}

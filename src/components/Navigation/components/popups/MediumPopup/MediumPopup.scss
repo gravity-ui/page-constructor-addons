@@ -1,0 +1,11 @@
+@import '../../../../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+$block: '.#{$ns}medium-popup';
+
+#{$block} {
+    @include navigation-overflow-popup($indentXL);
+
+    display: flex;
+    flex-wrap: wrap;
+}
