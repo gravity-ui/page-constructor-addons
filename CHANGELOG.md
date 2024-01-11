@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/gravity-ui/page-constructor-addons/compare/v1.0.0...v1.0.1) (2024-01-11)
+
+
+### Bug Fixes
+
+* key warnings and focus trap error ([#6](https://github.com/gravity-ui/page-constructor-addons/issues/6)) ([3f77648](https://github.com/gravity-ui/page-constructor-addons/commit/3f7764844d5a16181e1e08941a6d2927dbcde5f8))
+
 ## 1.0.0 (2024-01-09)
 
 ### Features
