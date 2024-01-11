@@ -154,10 +154,12 @@ export const LargePopup = (props: LargePopupProps) => {
                         ) : (
                             <Fragment>
                                 {currentCategoryData.groups.map((group, index) => {
+                                    const key = group.title || group.url || index;
+
                                     return index ? (
-                                        <LargePopupSecondaryGroup {...group} />
+                                        <LargePopupSecondaryGroup {...group} key={key} />
                                     ) : (
-                                        <LargePopupGroup {...group} section={section} />
+                                        <LargePopupGroup {...group} section={section} key={key} />
                                     );
                                 })}
                             </Fragment>
