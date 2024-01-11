@@ -29,7 +29,12 @@ export const NavigationPopup = ({
     return headerRef?.current
         ? ReactDOM.createPortal(
               <FocusTrap enabled>
-                  <div className={b({['with-background']: withBackground}, className)} id={id}>
+                  <div
+                      // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
+                      tabIndex={0}
+                      className={b({['with-background']: withBackground}, className)}
+                      id={id}
+                  >
                       <Grid containerClass={b('grid-container')}>{children}</Grid>
                   </div>
               </FocusTrap>,
