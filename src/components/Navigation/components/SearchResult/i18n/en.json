@@ -1,5 +1,5 @@
 {
-  "search-found-section_1": [
+  "search-found": [
     "{{count}} item found",
     "{{count}} items found",
     "{{count}} items found",
@@ -7,13 +7,6 @@
     "",
     ""
   ],
-  "search-found-section_2": [
-    "{{count}} item found",
-    "{{count}} items found",
-    "{{count}} items found",
-    "",
-    "",
-    ""
-  ],
+
   "search-not-found": "Please check the spelling or try another keyword."
 }
