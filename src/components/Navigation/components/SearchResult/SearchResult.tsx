@@ -25,7 +25,7 @@ export const SearchResult = ({value, data, section, className}: SearchResultProp
     const result = applySearch(value, data);
 
     const title = {
-        text: i18n(`search-found-${section}`, {count: result.length}),
+        text: i18n('search-found', {count: result.length}),
         textSize: 'xs' as TextSize,
     };
 
